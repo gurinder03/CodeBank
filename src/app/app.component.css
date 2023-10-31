@@ -1,0 +1,13 @@
+p.card-text{
+    color: #000;
+    background-color: white;
+}
+.contact{
+    text-align: center;
+}
+
+
+@media only screen and (max-width:768px)
+{
+}
+

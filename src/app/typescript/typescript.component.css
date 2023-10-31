@@ -1,0 +1,53 @@
+/* .row{
+    display: flex;
+} */
+#bt:hover{
+    background-color: red;
+    color:white;
+
+}
+
+@media only screen and (max-width:768px)
+{
+      .card{
+        width: 23rem;
+       margin-top: 74px;
+       --bs-card-border-color: white var(--bs-border-color-translucent)
+        }
+    
+    .col-5{
+        width: 0;
+    }
+    .col-2{
+
+        width: 0%;
+    }
+    iframe{
+        height: 100%;
+        width: 110%;
+    
+    }
+    .contact{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    hr{
+        padding: 0%;
+        margin: 0%;
+        }
+    
+}
+
+div.card-header{
+    background-color: white;
+    text-align: center;
+}
+
+
+hr{
+    padding: 0%;
+    margin: 0%;
+    }
+    /* div.row{
+        padding: 0%;
+    } */

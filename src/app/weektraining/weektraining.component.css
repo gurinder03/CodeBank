@@ -1,0 +1,38 @@
+@media only screen and (max-width:768px)
+{
+  .first{
+  
+    width: 23rem;
+    margin-top: 74px;
+}
+.pa{
+    width:  120%;
+    text-align: center;
+}
+.test{
+    padding-left: 30%;
+}
+.jumbotron {
+  
+    background-color:white;
+   
+}
+
+
+}
+.accordion {
+    --bs-accordion-btn-focus-border-color: white; 
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0 white(250, 252, 255, 0.25);
+}
+button.accordion-button{
+    background-color:rgb(226, 63, 63); 
+    color: white;
+    padding: 10px;
+}
+
+.accordion-button::after{
+    color: white;
+    background-color: white;
+}
+
+

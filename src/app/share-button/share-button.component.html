@@ -1,0 +1,15 @@
+<div class="main-content">
+    <button *ngIf="type === 'facebook'" (click)="share()">
+        Share on Facebook
+    </button>
+    
+    <button *ngIf="type === 'twitter'" (click)="share()">
+        Share on Twitter
+    </button>
+    <button *ngIf="type === 'gmail'" (click)="share()">
+        Share on Gmail
+    </button>
+    <button *ngIf="type === 'linkedIn'" (click)="share()">
+        Share on LinkedIn
+    </button>
+</div>

@@ -1,0 +1,50 @@
+<div class="container pt-4">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+        <div class="title-container mb-3">
+            <h2 class="form-title">Title</h2>
+            <p class="title-txt">Be specific and imagine you’re asking a question to another person.</p>
+            <input type="text" id="qtitle" formControlName="title" placeholder="e.g. Is there an R function for finding the index of an element in a vector?">
+            <div *ngIf="form.controls['title'].invalid && (form.controls['title'].dirty || form.controls['title'].touched)" class="alert alert-danger" required>
+                <span *ngIf="form.controls['title'].hasError('required')">
+                    Field is required.
+                </span>
+            </div>
+        </div>
+        <div class="form-container">
+            <h2 class="problem-detail">What are the details of your problem?</h2>
+            <p class="title-txt">Be specific and imagine you’re asking a question to another person.</p>
+            <angular-editor formControlName="details" id="editor1" [config]="editorConfig"></angular-editor>
+            <div *ngIf="form.controls['details'].invalid && (form.controls['details'].dirty || form.controls['details'].touched)" class="alert alert-danger" required>
+                <span *ngIf="form.controls['details'].hasError('required')">
+                    Field is required.
+                </span>
+            </div>
+        </div>
+        <div class="form-container mt-3">
+            <p class="title-txt">Describe what you tried, what you expected to happen, and what actually resulted.
+            Minimum 20 characters.</p>
+            <angular-editor id="editor1" formControlName="discribe" [config]="editorConfig"></angular-editor>
+            <div *ngIf="form.controls['discribe'].invalid && (form.controls['discribe'].dirty || form.controls['discribe'].touched)" class="alert alert-danger" required>
+                <span *ngIf="form.controls['discribe'].hasError('required')">
+                    Field is required.
+                </span>
+                <span *ngIf="form.controls['discribe'].hasError('minlength')">
+                    Field Must be at least 20 characters long.
+                </span>
+            </div>
+        </div>
+        <div class="tags-section mt-3">
+            <p class="title-txt">Add up to 5 tags to describe what your question is about. Start typing to see
+                suggestions.
+            </p>
+            <tag-input formControlName="addTags" (onTagEdited)="onSelect($event)" [modelAsStrings]="true">
+            </tag-input>
+            <div *ngIf="form.controls['addTags'].invalid && (form.controls['addTags'].dirty || form.controls['addTags'].touched)" class="alert alert-danger" required>
+                <span *ngIf="form.controls['addTags'].hasError('required')">
+                    Field is required.
+                </span>
+            </div>
+        </div>
+        <button type="submit" class="submit-btn mt-2">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,65 @@
+<nav class="navbar navbar-dark navbar-expand-lg">
+  <a href="javascript:void(0)" class="navbar-brand"><img src="../assets/images/CodeBank.png" width="160px" alt="Bankcode"></a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mynavbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a [routerLink]="['home']" class="nav-link trans">Home</a>
+      </li>
+      <li class="nav-item"><a [routerLink]="['about-us']" class="nav-link trans">About</a></li>
+      <li class="nav-item"><a [routerLink]="['about-us']" class="nav-link trans">Services</a></li>
+      <!-- <li class="services-tab trans dropdown">
+        <a href="javascript:void(0)" class="nav-link  dropdown-toggle toggle-services" data-toggle="dropdown">Services
+        </a>
+        <div class="dropdown-menu bgg">
+          <a href="javascript:void(0)" class="dropdown-item trans">Link one</a>
+          <a href="javascript:void(0)" class="dropdown-item trans">Link two</a>
+          <a href="javascript:void(0)" class="dropdown-item trans">Link three</a>
+        </div>
+      </li> -->
+      <!-- <li class="nav-item"><a [routerLink]="['contact-us']" class="nav-link trans">Contact us</a></li> -->
+      <li class="nav-item"><a [routerLink]="['forum-list']" class="nav-link trans">Forum List</a></li>
+    </ul>
+    <form class="form-inline d-flex">
+      <input type="search" class="form-control bg" placeholder="Search...">
+      <button type="submit" class="new"><fa-icon [icon]="faSearch"></fa-icon></button>
+    </form>
+  </div>
+</nav>
+
+<div class="main-sub-nav text-center">
+  <div class=" subjects-list text-center">
+    <!-- <div class="arrow arrow-left" (click)="scrollLeft()">
+      <i class="fas fa-chevron-left fa-2x"></i>
+    </div> -->
+    <div class="sub-top-nav-container w-50  mx-auto">
+      <div class="sub-top-nav text-center" #subTopNav>
+        <a [routerLink]="['/html/html-tutorial']">Html</a>
+        <a href="javascript:void(0)">CSS</a>
+        <a href="javascript:void(0)">Javascript</a>
+        <a href="javascript:void(0)">Bootstrap</a>
+        <!-- <a href="javascript:void(0)">Angular Js</a>
+        <a href="javascript:void(0)">PHP</a>
+        <a href="javascript:void(0)">Python</a>
+        <a href="javascript:void(0)">React Js</a>
+        <a href="javascript:void(0)">Node Js</a>
+        <a href="javascript:void(0)">Flutter</a>
+        <a href="javascript:void(0)">Sql</a>
+        <a href="javascript:void(0)">Pl/Sql</a>
+        <a href="javascript:void(0)">Swift</a>
+        <a href="javascript:void(0)">C</a>
+        <a href="javascript:void(0)">C++</a>
+        <a href="javascript:void(0)">C#</a>
+        <a href="javascript:void(0)">Kotlin</a>
+        <a href="javascript:void(0)">Rust</a>
+        <a href="javascript:void(0)">Perl</a>
+        <a href="javascript:void(0)">Golang</a> -->
+      </div>
+    </div>
+    <!-- <div class="arrow arrow-right" (click)="scrollRight()">
+      <i class="fas fa-chevron-right fa-2x"></i>
+    </div> -->
+  </div>
+</div>

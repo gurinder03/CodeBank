@@ -1,0 +1,178 @@
+<div class="container">
+    <div class="row mt-3">
+        <div class="question-heading-btn col-md-8">
+            <h2 class="hdng">Define a Prisma schema to describe words and their related terms</h2>
+        </div>
+        <div class="add-question col-md-3 text-end mt-2">
+            <button type="submit" class="add-question-btn mt-2" (click)="addNewQuestion()">Add Question</button>
+            <!-- <a href="javascript:void(0);" class="add-question" (click)="addNewQuestion()">Add Question</a> -->
+        </div>
+    </div>
+    <div class="ask-section d-flex">
+        <p class="ask">Asked
+            <span style="margin-left: 5px;margin-right: 10px;"><a href="javascript:void(0);">Today</a></span>
+        </p>
+        <p class="modify">Modified
+            <span style="margin-left: 5px;margin-right: 10px;"><a href="javascript:void(0);">Today</a></span>
+        </p>
+        <p class="view">Viewd
+            <span style="margin-left: 5px;margin-right: 10px;"><a href="javascript:void(0);">8 Times</a></span>
+        </p>
+    </div>
+    <div class="row main-answer-section p-3 d-flex">
+        <div class="up-down-btn col-md-1 col-sm-1">
+            <a href="javascript:void(0);" class="up">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                    <path
+                        d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+                </svg>
+            </a>
+            <p class="answer-number">1</p>
+            <a href="javascript:void(0);" class="down">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                    <path
+                        d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                </svg>
+            </a><br><br>
+            <a href="javascript:void(0);" class="bookmark">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                    <path
+                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                </svg>
+            </a><br><br>
+            <a href="javascript:void(0);" class="history">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <path
+                        d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z" />
+                </svg>
+            </a>
+        </div>
+        <div class="answer-detail col-md-11 col-sm-10">
+            <p>I want to make a dictionary app to remember words with its related terms.</p>
+            <p>Let's say that there are three words: "now", "how", and "row".</p>
+            <ol>
+                <li>"now" has no related terms;</li>
+                <li>"now" has no related terms;</li>
+                <li>"now" has no related terms;</li>
+            </ol>
+            <p>
+                A word can hold zero or more related terms. A related term has two fields: "reason" and "term". The
+                "term" field connects to a word record. One or more related terms may point to a same word. But they
+                will be different "Related" model records, as there may be different "reason" field.
+            </p>
+            <p>For Prisma with MongoDB, I've implemented the following models.</p>
+            <div class="code-section">
+                <p>
+                    abc
+                </p>
+            </div>
+            <div class="comment-section">
+                <span class="comment-text" (click)="addComment()">Add Comment</span>
+            </div>
+            <br>
+            <div class="questions-list col-md-12 col-sm-12">
+                <div class="question-buttons col-md-12 col-sm-12">
+                    <a href="javascript:void(0);">mongodb</a>
+                    <a href="javascript:void(0);">model</a>
+                    <a href="javascript:void(0);">many-to-many</a>
+                    <a href="javascript:void(0);">prisma</a>
+                    <a href="javascript:void(0);">relation</a>
+                </div>
+                <div class="timing col-md-12 text-end mt-2">
+                    <div class="person-name">
+                        <p class="p-detail">
+                            <img src="./assets/images/cen4.jpg" style="margin-right: 4px;">Amit Kumar
+                            <span style="margin-left: 5px;">1 Asked </span><span>29 seconds ago</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="related-questions-section">
+        <h4>Related questions</h4>
+        <div class="related-container">
+            <div class="first-question d-flex">
+                <p>
+                    <span class="question-number">1</span>
+                </p>
+                <p>
+                    <span class="next-question">
+                        <a href="javascript:void(0);">
+                            prisma: How to convert a database table with more that one FK to prisma schema?
+                        </a>
+                    </span>
+                </p>
+            </div>
+            <div class="first-question d-flex">
+                <p>
+                    <span class="question-number">1</span>
+                </p>
+                <p>
+                    <span class="next-question">
+                        <a href="javascript:void(0);">
+                            prisma: How to convert a database table with more that one FK to prisma schema?
+                        </a>
+                    </span>
+                </p>
+            </div>
+            <div class="first-question d-flex">
+                <p>
+                    <span class="question-number">1</span>
+                </p>
+                <p>
+                    <span class="next-question">
+                        <a href="javascript:void(0);">
+                            prisma: How to convert a database table with more that one FK to prisma schema?
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <h3 class="who-answer mt-4 mb-3">Know someone who can answer? Share a link to this
+        <div class="main-div">
+            <share-buttons theme="modern-dark" [include]="['copy', 'facebook', 'email', 'linkedin', 'twitter']"
+                [showIcon]="true" [showText]="true" url="https://example.com" description="Test Update Links"
+                twitterAccount="Update New Account" class="pt-5">
+            </share-buttons>
+            <!-- <div class="facebook-share">
+                <app-share-button type='facebook' [shareUrl]='link'></app-share-button>
+            </div>
+            <div class="twitter-share">
+                <app-share-button type='twitter' [shareUrl]='twitter'></app-share-button>
+            </div>
+            <div class="twitter-share">
+                <app-share-button type='gmail' [shareUrl]='gmailBody' [gmailSubject]="gmailSubject"></app-share-button>
+            </div>
+            <div class="twitter-share">
+                <app-share-button type='linkedIn' [shareUrl]='linkedInText'></app-share-button>
+            </div> -->
+        </div>
+
+    </h3>
+    <h3 class="ur-answer"> Your Answer</h3>
+    <div class="form-container">
+        <form (ngSubmit)="onSubmit()" [formGroup]="formDetail">
+            <angular-editor id="editor1" formControlName="postAnswer" [config]="editorConfig"></angular-editor>
+            <div *ngIf="formDetail.controls['postAnswer'].invalid && (formDetail.controls['postAnswer'].dirty || formDetail.controls['postAnswer'].touched)" class="alert alert-danger" required>
+                <span *ngIf="formDetail.controls['postAnswer'].hasError('required')">
+                    Field is required.
+                </span>
+            </div>
+            <button type="submit" class="post-answer mt-2">Post Your Answer</button>
+        </form>
+    </div>
+    <div class="browse-section mt-3">
+        <div class="question-buttons col-md-12 col-sm-12">
+            <p>Browse other questions tagged: <br>
+                <a href="javascript:void(0);">mongodb</a>
+                <a href="javascript:void(0);">model</a>
+                <a href="javascript:void(0);">many-to-many</a>
+                <a href="javascript:void(0);">prisma</a>
+                <a href="javascript:void(0);">relation</a>or
+                <a href="javascript:void(0);" class="own-question"> ask your own question.</a>
+            </p>
+        </div>
+    </div>
+</div>

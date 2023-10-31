@@ -1,0 +1,56 @@
+@media only screen and (max-width:768px)
+{
+  .first{
+  
+    width: 23rem;
+    margin-top: 74px;
+}
+.pa{
+    width:  120%;
+    text-align: center;
+}
+.jumbotron {
+  
+    background-color:white;
+   
+}
+
+}
+
+.btn{
+   background-color:rgb(226, 63, 63);
+   width: 100%;
+   text-align: start;
+}
+.card-header {
+padding: 0%;
+
+}
+
+div.card{
+    width: 100%;
+    background-color: E9ECEF;
+
+}
+
+.accordion {
+    --bs-accordion-btn-focus-border-color: white; 
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0 white(250, 252, 255, 0.25);
+}
+button.accordion-button{
+    background-color:rgb(226, 63, 63); 
+    color: white;
+    padding: 10px;
+}
+.accordion-button::after{
+    color: white;
+    background-color: white;
+}
+
+
+.test{
+    text-align: left;
+}
+.container{
+    margin-top: 4%;
+}

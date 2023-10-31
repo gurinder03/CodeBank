@@ -1,0 +1,41 @@
+p.about-certification {
+    font-size: 19px;
+}
+.certificate-ro{
+    border: 1px solid #d9d9d9;
+    padding: 25px 24px 30px;
+    /* width: calc(33% - 2%);
+    margin-right: 2%; */
+    border-radius: 10px;
+}
+
+.course-image img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+}
+.course-price{
+    margin-left: 10px;
+}
+button.take-test-btn {
+    text-decoration: none;
+    background: #ff6930;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 2px solid #ff6930;
+}
+button.take-test-btn:hover{
+    background: #ffffff;
+    color: #ff6930;
+    border: 2px solid #ff6930;
+}
+h4.course-heading {
+    font-size: 18px;
+}
+@media screen and (max-width:1200px){
+    h4.course-heading {
+        font-size: 14px;
+    }
+}

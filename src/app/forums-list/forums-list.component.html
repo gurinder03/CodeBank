@@ -1,0 +1,81 @@
+<div class="container pt-4">
+    <div class="main-heading row justify-content-between">
+        <div class="all-questions col-md-3 col-sm-3">
+            <h2 class="question-heading">All Questions</h2>
+        </div>
+        <div class="add-btn col-md-3 col-sm-5 text-end">
+            <button type="button" class="ask-question" (click)="askQuestion()">Ask Question</button>
+        </div>
+    </div>
+    <div class="total-count row justify-content-between mt-3">
+        <div class="questions-count col-md-4">
+            <h4 class="total">23,926,941 questions</h4>
+        </div>
+        <div class="buttons col-md-8 col-sm-12 text-end">
+            <a href="javascript:void(0);">Newest</a>
+            <a href="javascript:void(0);">Active</a>
+            <a href="javascript:void(0);">Bountied <span class="number">123</span></a>
+            <a href="javascript:void(0);">Unanswered</a>
+            <a href="javascript:void(0);">More</a>
+        </div>
+    </div>
+    <div class="questions-container mt-4">
+        <div class="question-section row p-3">
+            <div class="vote-section col-md-2 col-sm-12">
+                <p><span>0</span><span style="margin-left: 8px;">Votes</span></p>
+                <p><span>0</span><span style="margin-left: 8px;">Answers</span></p>
+                <p><span>0</span><span style="margin-left: 8px;">Views</span></p>
+            </div>
+            <div class="questions-list col-md-8 col-sm-12">
+                <a href="javascript:void(0);" (click)="formDetail()" class="question">_score for nested documents in Elasticsearch</a>
+                <p>Is there a way to make _score for nested documents and for thouse parent? For example: Parent _doc
+                    title: "car" nested docs: "red", "blue" user searching for red car and ...</p>
+                <div class="question-buttons col-md-12 col-sm-12">
+                    <a href="javascript:void(0);">mongodb</a>
+                    <a href="javascript:void(0);">model</a>
+                    <a href="javascript:void(0);">many-to-many</a>
+                    <a href="javascript:void(0);">prisma</a>
+                    <a href="javascript:void(0);">relation</a>
+                </div>
+                <div class="timing col-md-12 text-end">
+                    <div class="person-name">
+                        <p class="p-detail">
+                            <img src="./assets/images/cen4.jpg" style="margin-right: 4px;">Amit Kumar
+                            <span style="margin-left: 5px;">1 Asked </span><span>29 seconds ago</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="question-section row p-3">
+            <div class="vote-section col-md-2 col-sm-12">
+                <p><span>0</span><span style="margin-left: 8px;">Votes</span></p>
+                <p><span>0</span><span style="margin-left: 8px;">Answers</span></p>
+                <p><span>0</span><span style="margin-left: 8px;">Views</span></p>
+            </div>
+            <div class="questions-list col-md-8 col-sm-12">
+                <a href="javascript:void(0);" (click)="formDetail()" class="question">_score for nested documents in Elasticsearch</a>
+                <p>Is there a way to make _score for nested documents and for thouse parent? For example: Parent _doc
+                    title: "car" nested docs: "red", "blue" user searching for red car and ...</p>
+                <div class="question-buttons col-md-12 col-sm-12">
+                    <a href="javascript:void(0);">mongodb</a>
+                    <a href="javascript:void(0);">model</a>
+                    <a href="javascript:void(0);">many-to-many</a>
+                    <a href="javascript:void(0);">prisma</a>
+                    <a href="javascript:void(0);">relation</a>
+                </div>
+                <div class="timing col-md-12 text-end mt-2">
+                    <div class="person-name">
+                        <p class="p-detail">
+                            <img src="./assets/images/cen4.jpg" style="margin-right: 4px;">Amit Kumar
+                            <span style="margin-left: 5px;">1 Asked </span><span>29 seconds ago</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+    aria-label="Select page" showFirstLastButtons>
+  </mat-paginator>
+</div>

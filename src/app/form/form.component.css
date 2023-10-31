@@ -1,0 +1,36 @@
+.title-container,.form-container,.tags-section  {
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+#qtitle,#tags-title{
+    width: 100%;
+    border: 1pt solid lightgray;
+    border-radius: 5px;
+    padding: 4px 10px 6px 10px;
+}
+h2.form-title,h2.problem-detail {
+    font-size: 19px;
+}
+button.submit-btn {
+    text-decoration: none;
+    background: #ff6930;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 2px solid #ff6930;
+}
+button.submit-btn:hover{
+    background: #ffffff;
+    color: #ff6930;
+    border: 2px solid #ff6930;
+}
+
+.main-div {
+    float: right;
+    display: flex;
+    padding: 10px;
+}
+
+.facebook-share {
+    margin-right: 6px;
+}
