@@ -1,0 +1,67 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Comments</h1>
+            <div class="comment px-4">
+                <p>
+                    HTML comments are not displayed in the browser, but they can help document your HTML source code.
+                </p>
+            </div>
+           <hr>
+            <div class="comment px-4">
+                <h2>HTML Comment Tag</h2>
+                <p>
+                    You can add comments to your HTML source .
+                </p>
+            </div>
+            <hr>
+            <div class="comment px-4">
+                <h2>Add Comments</h2>
+                <p>
+                    With comments you can place notifications and reminders in your HTML code.
+                </p>
+            </div>
+            <hr>
+            <div class="comment px-4">
+                <h2>Hide Content</h2>
+                <p>
+                    Comments can be used to hide content.
+                </p>
+                <p>
+                    This can be helpful if you hide content temporarily.
+                </p>
+            </div>
+            <hr>
+            <div class="comment px-4">
+                <h2>Hide Inline Content</h2>
+                <p>
+                    Comments can be used to hide parts in the middle of the HTML code.
+                </p>
+            </div>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="modules p-2 pt-3 px-4">
+                <h1>AngularJS Modules</h1>
+                <p>
+                    An AngularJS module defines an application.
+                </p>
+                <p>
+                    The module is a container for the different parts of an application.
+                </p>
+                <p>
+                    The module is a container for the application controllers.
+                </p>
+                <p>
+                    Controllers always belong to a module.
+                </p>
+            </div>
+            <hr>
+            <div class="modules p-2 pt-3 px-4">
+                <h2>Creating a Module</h2>
+                <p>
+                    A module is created by using the AngularJS function
+                    <span class="red-text">angular.module</span>
+                </p>
+
+            </div>
+            <hr>
+            <div class="modules p-2 pt-3 px-4">
+                <h2>Adding a Controller</h2>
+                <p>
+                    Add a controller to your application, and refer to the controller with the <span
+                        class="red-text">ng-controller</span> directive.
+                </p>
+                <p>
+                    You will learn more about controllers later in this tutorial.
+                </p>
+            </div>
+            <hr>
+            <div class="modules p-2 pt-3 px-4">
+                <h2>Adding a Directive</h2>
+                <p>
+                    AngularJS has a set of built-in directives which you can use to add functionality to your
+                    application.
+                </p>
+                <p>
+                    For a full reference, visit our <a href="AngularJS directive reference.">AngularJS directive
+                        reference.</a>
+                </p>
+                <p>
+                    In addition you can use the module to add your own directives to your applications
+                </p>
+            </div>
+            <hr>
+            <div class="modules p-2 pt-3 px-4">
+                <h2>Modules and Controllers in Files</h2>
+                <p>
+                    It is common in AngularJS applications to put the module and the controllers in JavaScript files.
+                </p>
+            </div>
+            <hr>
+            <div class="modules p-2 pt-3 px-4">
+                <h2>Functions can Pollute the Global Namespace</h2>
+                <p>
+                    Global functions should be avoided in JavaScript. They can easily be overwritten or destroyed by
+                    other scripts.
+                </p>
+                <p>
+                    AngularJS modules reduces this problem, by keeping all functions local to the module.
+                </p>
+            </div>
+            <hr>
+            <div class="modules p-2 pt-3 px-4">
+                <h2>When to Load the Library</h2>
+                <p>
+                    While it is common in HTML applications to place scripts at the end of the
+                    <span class="red-text">&lt;body&gt;</span> element, it is recommended that you load the AngularJS library either in the
+                    <span class="red-text">&lt;head&gt;</span> or at the start of the
+                    <span class="red-text">&lt;body&gt;</span>.
+                </p>
+                <p>
+                    This is because calls to <span class="red-text">angular.module</span> can only be compiled after the library has been loaded.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 <div class="wrapper">
     <div class="main-container">
-        <app-sidebar></app-sidebar>
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
         <!-- <app-sidebar *ngIf="blankUrl || !isCheckoutRoute()"></app-sidebar> -->
         <div class="content mb-5 p-4">
             <div class="home-next d-flex align-items-end flex-column p-3">
@@ -10,7 +10,7 @@
                             class="fas fa-chevron-right fa-2x"></i></span></button>
             </div>
             <h1 class="p-3" id="introduction">HTML Tutorial</h1>
-           
+
             <div class="defintion-tutorial mt-2 p-4">
                 <p class="hint">HTML is the standard markup language for Web pages.</p>
                 <p class="hint">With HTML you can create your own Website.</p>
@@ -30,28 +30,39 @@
                     </div>
                 </div>
             </div>
-            <div class="easy-learning p-4 mt-5">
-                <h2>Easy Learning with HTML "Try it Yourself"</h2>
-                <p class="example-txt">With our "Try it Yourself" editor, you can edit the HTML code and view the result:</p>
-                <div class="example-editor bg-light">
-                    <h2 class="p-3 pb-0">Example</h2>
-                    <div class="code-section mx-4 p-3 mb-4 mt-3">
-                        <p>
-                            Abc
-                            defg
-                            hijk
-                            lmno
-                            pqrs
-                            tuvw
-                            xyz
-                        </p>
-                    </div>
-                    <div class="try-yourself px-4  pb-4">
-                        <button type="button" class="home-btn"> Try it yourself <span class="right-arrow"><i
-                            class="fas fa-chevron-right fa-2x"></i></span></button>
+                <div class="easy-learning p-4 mt-5">
+                    <h2>Easy Learning with HTML "Try it Yourself"</h2>
+                    <p class="example-txt">With our "Try it Yourself" editor, you can edit the HTML code and view the
+                        result:</p>
+                    <div class="example-editor bg-light">
+                        <h2 class="p-3 pb-0">Example</h2>
+                        <div class="code-section mx-4 p-3 mb-4 mt-3"  id="html-content">
+                            <div class="code-section mx-4 p-3 mb-4 mt-3">
+                                <textarea #codeEditor></textarea>
+                            </div>
+                            <div class="output-frame w-100 p-3 mx-3">
+                                <div #outputContainer></div>
+                            </div>
+                        </div>
+                        <div class="try-yourself px-4  pb-4">
+                            <button type="button" class="home-btn" (click)="runCode()"> 
+                                Try it yourself 
+                                <span class="right-arrow">
+                                    <i class="fas fa-chevron-right fa-2x"></i>
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="easy-learning p-4 mt-5">
+                    <h2>Easy Learning with Video Tutorial</h2>
+                    <p class="example-txt">With our video tutorial you can easily learn html:</p>
+                    <div class="example-editor text-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7haQGLPWrwo?si=LjJnOCGevUpp3Iap" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
         </div>
     </div>
 

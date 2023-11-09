@@ -1,0 +1,171 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS Directives</h1>
+                <p>
+                    AngularJS lets you extend HTML with new attributes called <strong>Directives.</strong>
+                </p>
+                <p>
+                    AngularJS has a set of built-in directives which offers functionality to your applications.
+                </p>
+                <p>
+                    AngularJS also lets you define your own directives.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>AngularJS Directives</h2>
+                <p>
+                    AngularJS directives are extended HTML attributes with the prefix <span class="red-text">ng-</span>
+                    .
+                </p>
+                <p>
+                    The <span class="red-text">ng-app</span> directive initializes an AngularJS application.
+                </p>
+                <p>
+                    The <span class="red-text">ng-init</span> directive initializes application data.
+                </p>
+                <p>
+                    The <span class="red-text">ng-model</span> directive binds the value of HTML controls (input,
+                    select, textarea) to application
+                    data.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Data Binding</h2>
+                <p>
+                    The <span class="red-text">aabb</span> expression, in the example above, is an AngularJS data
+                    binding expression.
+                </p>
+                <p>
+                    Data binding in AngularJS binds AngularJS expressions with AngularJS data.
+                </p>
+                <p>
+                    <span class="red-text">aabb</span> is bound with <span class="red-text">ng-model="firstName"</span>.
+                </p>
+                <p>
+                    The <span class="red-text">ng-model</span> directive binds the value of HTML controls (input,
+                    select, textarea) to application
+                    data.
+                </p>
+            </div>
+            <div class="note p-4">
+                <p>
+                    Using <span class="red-text">ng-init</span> is not very common. You will learn how to initialize
+                    data in the chapter about
+                    controllers.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Repeating HTML Elements</h2>
+                <p>
+                    The <span class="red-text">ng-repeat</span> directive repeats an HTML element
+                </p>
+                <p>
+                    The <span class="red-text">ng-repeat</span> directive actually clones HTML elements once for each
+                    item in a collection.
+                </p>
+                <p>
+                    The <span class="red-text">ng-repeat</span> directive used on an array of objects
+                </p>
+            </div>
+            <div class="note p-4">
+                <p>
+                    AngularJS is perfect for database CRUD (Create Read Update Delete) applications.
+                    Just imagine if these objects were records from a database.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The ng-app Directive</h2>
+                <p>
+                    The <span class="red-text">ng-app</span> directive defines the <span>root element</span> of
+                    an AngularJS application.
+                </p>
+                <p>
+                    The <span class="red-text">ng-app</span> directive will <span>auto-bootstrap</span>
+                    (automatically
+                    initialize) the application when a web page is loaded.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The ng-init Directive</h2>
+                <p>
+                    The <span class="red-text">ng-init</span> directive defines <strong>initial values</strong> for an
+                    AngularJS application.
+                </p>
+                <p>
+                    Normally, you will not use ng-init. You will use a controller or module instead.
+                </p>
+                <p>
+                    You will learn more about controllers and modules later.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The ng-model Directive</h2>
+                <p>
+                    The <span class="red-text">ng-model</span> directive binds the value of HTML controls (input,
+                    select, textarea) to application data.
+                </p>
+                <p>
+                    The ng-model directive can also:
+                </p>
+               <ul>
+                <li>Provide type validation for application data (number, email, required).</li>
+                <li>Provide status for application data (invalid, dirty, touched, error).</li>
+                <li>Provide CSS classes for HTML elements.</li>
+                <li>Bind HTML elements to HTML forms.</li>
+               </ul>
+               <p>Read more about the <span class="red-text">ng-model</span> directive in the next chapter.</p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Create New Directives</h2>
+                <p>
+                    In addition to all the built-in AngularJS directives, you can create your own directives.
+                </p>
+                <p>
+                    New directives are created by using the <span class="red-text">.directive</span> function.
+                </p>
+               <p>To invoke the new directive, make an HTML element with the same tag name as the new directive.</p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                
+                <p>
+                    You can invoke a directive by using:
+                </p>
+                <ul>
+                    <li>Element name</li>
+                    <li>Attribute</li>
+                    <li>Class</li>
+                    <li>Comment</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Redirections</h2>
+                <p>You can restrict your directives to only be invoked by some of the methods.</p>
+                <ul>
+                    <li><span class="red-text">E</span> for Element name</li>
+                    <li><span class="red-text">A</span> for Attribute</li>
+                    <li><span class="red-text">C</span> for Class</li>
+                    <li><span class="red-text">M</span> for Comment</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

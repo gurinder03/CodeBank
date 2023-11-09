@@ -1,0 +1,153 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Links</h1>
+            <div class="links px-4">
+                <p>
+                    HTML links are hyperlinks.
+                </p>
+            </div>
+            <hr>
+            <div class="links px-4">
+                <h2>HTML Links - Hyperlinks</h2>
+                <p>
+                    HTML links are hyperlinks.
+                </p>
+                <p>
+                    You can click on a link and jump to another document.
+                </p>
+                <p>
+                    When you move the mouse over a link, the mouse arrow will turn into a little hand.
+                </p>
+            </div>
+            <hr>
+            <div class="links px-4">
+                <h2>HTML Links - Syntax</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;a&gt;</span> tag defines a hyperlink. It has the following
+                    syntax:
+                </p>
+                <p>
+                    <span class="red-text">&lt;a href="url"&gt;</span>Link Text
+                    <span class="red-text">&lt;/a&gt;</span>
+                </p>
+                <p>
+                    The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the
+                    link's destination.
+                    The link text is the part that will be visible to the reader.
+                </p>
+            </div>
+            <hr>
+            <div class="links px-4">
+                <h2>HTML Links - The target Attribute</h2>
+                <p>
+                    By default, the linked page will be displayed in the current browser window. To change this, you
+                    must specify another target for the link.
+                </p>
+                <p>
+                    The <span class="red-text">target</span> attribute specifies where to open the linked document.
+                </p>
+                <p>
+                    The <span class="red-text">target</span> attribute can have one of the following values:
+                </p>
+                <ul>
+                    <li>
+                        <span class="red-text">_self</span> - Default. Opens the document in the same window/tab as it
+                        was clicked
+                    </li>
+                    <li>
+                        <span class="red-text">_blank </span> - Opens the document in a new window or tab
+                    </li>
+                    <li>
+                        <span class="red-text">_parent</span> - Opens the document in the parent frame
+                    </li>
+                    <li>
+                        <span class="red-text">_top</span> - Opens the document in the full body of the window
+                    </li>
+                </ul>
+
+            </div>
+            <hr>
+            <div class="links px-4">
+                <h2>Absolute URLs vs. Relative URLs</h2>
+                <p>
+                    Both examples above are using an <strong>absolute URL </strong>(a full web address) in the <span
+                        class="red-text">href</span> attribute.
+                </p>
+                <p>
+                    A local link (a link to a page within the same website) is specified with a <strong>relative
+                        URL</strong> (without
+                    the "https://www" part):
+                </p>
+                <p>
+                    The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the
+                    link's destination.
+                    The link text is the part that will be visible to the reader.
+                </p>
+            </div>
+            <hr>
+            <div class="links px-4">
+                <h2>HTML Links - Use an Image as a Link</h2>
+                <p>
+                    To use an image as a link, just put the <span class="red-text">img</span> tag inside the <span
+                        class="red-text">a</span> tag
+                </p>
+
+            </div>
+            <hr>
+            <div class="links px-4">
+                <h2>Link to an Email Address</h2>
+                <p>
+                    Use <span class="red-text">mailto:</span> inside the <span class="red-text">href</span> attribute to
+                    create a link that opens the user's email program (to let them send a new email)
+                </p>
+
+            </div>
+            <hr>
+            <div class="links px-4">
+                <h2>Button as a Link</h2>
+                <p>
+                    To use an HTML button as a link, you have to add some JavaScript code.
+                </p>
+                <p>
+                    JavaScript allows you to specify what happens at certain events, such as a click of a button
+                </p>
+            </div>
+            <hr>
+            <div class="links px-4">
+                <h2>Link Titles</h2>
+                <p>
+                    The <span class="red-text">title</span> attribute specifies extra information about an element. The information is most often
+                    shown as a tooltip text when the mouse moves over the element.
+                </p>
+
+            </div>
+
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

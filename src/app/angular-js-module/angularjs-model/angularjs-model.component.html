@@ -1,0 +1,84 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS ng-model Directive</h1>
+                <p>
+                    The ng-model directive binds the value of HTML controls (input, select, textarea) to application
+                    data.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The ng-model Directive</h2>
+                <p>
+                    With the <span class="red-text">ng-model</span> directive you can bind the value of an input field
+                    to a variable created in AngularJS.
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Two-Way Binding</h2>
+                <p>
+                    The binding goes both ways. If the user changes the value inside the input field, the AngularJS
+                    property will also change its value
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Validate User Input</h2>
+                <p>
+                    The <span class="red-text">ng-model</span> directive can provide type validation for application
+                    data (number, e-mail, required)
+                </p>
+            </div>
+            <div class="note p-4">
+                <p>
+                    If the property in the <span class="red-text">ng-model</span> attribute does not exist, AngularJS
+                    will create one for you.
+                </p>
+            </div>
+
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Application Status</h2>
+                <p>
+                    The <span class="red-text">ng-model</span> directive can provide status for application data (valid, dirty, touched, error).
+                </p>
+            </div>
+
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>CSS Classes</h2>
+                <p>
+                    The <span class="red-text">ng-model</span> directive provides CSS classes for HTML elements, depending on their status.
+                </p>
+                <p>
+                    The ng-model directive adds/removes the following classes, according to the status of the form field.
+                </p>
+                <ul>
+                    <li>ng-empty</li>
+                    <li>ng-not-empty</li>
+                    <li>ng-touched</li>
+                    <li>ng-untouched</li>
+                    <li>ng-valid</li>
+                    <li>ng-invalid</li>
+                    <li>ng-dirty</li>
+                    <li>ng-pending</li>
+                    <li>ng-pristine</li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+</div>

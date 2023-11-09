@@ -1,0 +1,77 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="prerequisites p-2 pt-0 ">
+                <h1>.NET Core - Prerequisites</h1>
+                <p>In this chapter, we will discuss the various dependencies that you need to deploy and run. These
+                    include the .NET Core applications on Windows machines that are developed using Visual Studio.</p>
+
+            </div>
+            <hr>
+            <h3 class=" px-4">Supported Windows Versions</h3>
+            <div class="prerequisites  pt-0 px-4">
+                <p>In this chapter, we will discuss the various dependencies that you need to deploy and run. These
+                    include the .NET Core applications on Windows machines that are developed using Visual Studio.</p>
+            </div>
+            <div class="versions p-4">
+                <ul>
+                    <li>Windows 7 SP1</li>
+                    <li>Windows 8.1</li>
+                    <li>Windows 10</li>
+                    <li>Windows Server 2008 R2 SP1 (Full Server or Server Core)</li>
+                    <li>Windows Server 2012 SP1 (Full Server or Server Core)</li>
+                    <li>Windows Server 2012 R2 SP1 (Full Server or Server Core)</li>
+                    <li>Windows Server 2016 (Full Server, Server Core or Nano Server)</li>
+
+                </ul>
+            </div>
+            <hr>
+
+            <h3 class=" px-4">Dependencies</h3>
+            <div class="versions p-4">
+                <ul>
+                    <li>If you are running your .NET Core application on Windows versions earlier than Windows 10 and
+                        Windows Server 2016, then it will also require the Visual C++ Redistributable.</li>
+                    <li>This dependency is automatically installed for you if you use the .NET Core installer.</li>
+                    <li>You need to manually install the Visual C++ Redistributable for Visual Studio 2015 if you are
+                        installing .NET Core via the installer script or deploying a self-contained .NET Core
+                        application.</li>
+                    <li>For Windows 7 and Windows Server 2008 machines, you need to make sure that your Windows
+                        installation is up-to-date and also includes hotfix KB2533623 installed through Windows Update.
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+            <h3 class=" px-4">Prerequisites with Visual Studio</h3>
+            <div class="versions p-4">
+                <ul>
+                    <li>To develop .NET Core applications using the .NET Core SDK, you can use any editor of your
+                        choice.</li>
+                    <li>However, if you want to develop .NET Core applications on Windows using Visual Studio, you can
+                        use the following two versions −
+                        <ul>
+                            <li>
+                                Visual Studio 2015
+                            </li>
+                            <li>
+                                Visual Studio 2017 RC
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Projects created with Visual Studio 2015 will be project.json-based by default while projects
+                        created with Visual Studio 2017 RC will always be MSBuild-based.</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

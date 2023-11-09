@@ -45,3 +45,6 @@
   .left-arrow{
     margin-right: 5px;
   }
+  iframe{
+    width: 100%;
+  }

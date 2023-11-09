@@ -1,0 +1,111 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Formatting</h1>
+            <div class="styles px-4">
+                <p>HTML contains several elements for defining text with a special meaning.</p>
+
+            </div>
+            <hr>
+            <div class="styles px-4">
+                <h2>HTML Formatting Elements</h2>
+                <p>Formatting elements were designed to display special types of text:</p>
+                <ul>
+                    <li><span class="red-text">&lt;b&gt;</span> - Bold Text</li>
+                    <li><span class="red-text">&lt;strong&gt;</span> - Important text</li>
+                    <li><span class="red-text">&lt;i&gt;</span> - Italic text</li>
+                    <li><span class="red-text">&lt;em&gt;</span> - Emphasized text </li>
+                    <li><span class="red-text">&lt;mark&gt;</span> - Marked text</li>
+                    <li><span class="red-text">&lt;small&gt;</span> - Smaller text</li>
+                    <li><span class="red-text">&lt;del&gt;</span> - Deleted text</li>
+                    <li><span class="red-text">&lt;ins&gt;</span> - Inserted text</li>
+                    <li><span class="red-text">&lt;sub&gt;</span> - Subscript text</li>
+                    <li><span class="red-text">&lt;sup&gt;</span> - Superscript text</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="styles px-4">
+                <h2>HTML <span class="red-text">&lt;b&gt;</span> and <span class="red-text">&lt;strong&gt;</span>
+                    Elements</h2>
+                <p>The HTML <span class="red-text">&lt;b&gt;</span> element defines bold text, without any extra
+                    importance.</p>
+            </div>
+            <hr>
+            <div class="styles px-4">
+                <h2>HTML <span class="red-text">&lt;i&gt;</span> and <span class="red-text">&lt;em&gt;</span> Elements
+                </h2>
+                <p>The HTML <span class="red-text">&lt;i&gt;</span> element defines a part of text in an alternate voice or mood. The content inside is
+                        typically displayed in italic.</p>
+                <p>The HTML  <span class="red-text">&lt;em&gt;</span> element defines emphasized text. The content inside is typically displayed in italic.</p>
+            </div>
+            <hr>
+            
+
+            <div class="styles px-4">
+                <h2>HTML <span class="red-text">&lt;smalll&gt;</span>  Element
+                </h2>
+                <p>The HTML <span class="red-text">&lt;smalll&gt;</span> element defines smaller text.</p>
+            </div>
+            <hr>
+            
+            <div class="styles px-4">
+                <h2>HTML <span class="red-text">&lt;mark&gt;</span>  Element
+                </h2>
+                <p>The HTML <span class="red-text">&lt;mark&gt;</span>  element defines text that should be marked or highlighted.</p>
+            </div>
+            <hr>
+
+            <div class="styles px-4">
+                <h2>HTML <span class="red-text">&lt;del&gt;</span>  Element
+                </h2>
+                <p>The HTML <span class="red-text">&lt;del&gt;</span> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</p>
+            </div>
+            <hr>
+
+            <div class="styles px-4">
+                <h2>HTML <span class="red-text">&lt;ins&gt;</span>  Element
+                </h2>
+                <p>The HTML <span class="red-text">&lt;ins&gt;</span>  element defines a text that has been inserted into a document. Browsers will usually underline inserted text</p>
+            </div>
+            <hr>
+
+            <div class="styles px-4">
+                <h2>HTML <span class="red-text">&lt;sub&gt;</span>  Element
+                </h2>
+                <p>The HTML <span class="red-text">&lt;sub&gt;</span> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:</p>
+            </div>
+            <hr>
+            <div class="styles px-4">
+                <h2>HTML <span class="red-text">&lt;sup&gt;</span>  Element
+                </h2>
+                <p>The HTML <span class="red-text">&lt;sup&gt;</span> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:</p>
+            </div>
+            <hr>
+
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

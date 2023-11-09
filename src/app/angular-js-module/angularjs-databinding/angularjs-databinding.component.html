@@ -1,0 +1,87 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS Data Binding</h1>
+                <p>
+                    Data binding in AngularJS is the synchronization between the model and the view.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Data Model</h2>
+                <p>
+                    AngularJS applications usually have a data model. The data model is a collection of data available
+                    for the application.
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>HTML View</h2>
+                <p>
+                    The HTML container where the AngularJS application is displayed, is called the view.
+                </p>
+                <p>
+                    The view has access to the model, and there are several ways of displaying model data in the view.
+                </p>
+                <p>
+                    You can use the <span class="red-text">ng-bind</span> directive, which will bind the innerHTML of
+                    the element to the specified model property
+                </p>
+                <p>
+                    you can use the <span class="red-text">ng-model</span> directive on HTML controls to bind the model
+                    to the view.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The ng-model Directive</h2>
+                <p>
+                    Use the <span class="red-text">ng-model</span> directive to bind data from the model to the view on
+                    HTML controls (input, select, textarea)
+                </p>
+                <p>
+                    The <span class="red-text">ng-model</span> directive provides a two-way binding between the model
+                    and the view.
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Two-way Binding</h2>
+                <p>
+                    Data binding in AngularJS is the synchronization between the model and the view.
+                </p>
+                <p>
+                    When data in the model changes, the view reflects the change, and when data in the view changes, the
+                    model is updated as well. This happens immediately and automatically, which makes sure that the
+                    model and the view is updated at all times.
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>AngularJS Controller</h2>
+                <p>
+                    Applications in AngularJS are controlled by controllers. Read about controllers in the AngularJS
+                    Controllers chapter
+                </p>
+                <p>
+                    Because of the immediate synchronization of the model and the view, the controller can be completely
+                    separated from the view, and simply concentrate on the model data. Thanks to the data binding in
+                    AngularJS, the view will reflect any changes made in the controller.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>

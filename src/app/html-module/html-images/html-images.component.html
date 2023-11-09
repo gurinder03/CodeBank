@@ -1,0 +1,226 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> 
+                    <span class="left-arrow">
+                        <i class="fas fa-chevron-left fa-2x"></i>
+                    </span>Privious
+                </button>
+                <button type="button" class="next-btn ">Next 
+                    <span class="right-arrow">
+                        <i class="fas fa-chevron-right fa-2x"></i>
+                    </span>
+                </button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Images</h1>
+            <div class="images px-4">
+                <p>
+                    Images can improve the design and the appearance of a web page.
+                </p>
+            </div>
+            <div class="images px-4">
+                <h2>HTML Images Syntax</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;img&gt;</span> tag is used to embed an image in a web page.
+                </p>
+                <p>
+                    Images are not technically inserted into a web page; images are linked to web pages. The <span
+                        class="red-text">&lt;img&gt;</span> tag
+                    creates a holding space for the referenced image.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;img&gt;</span> tag is empty, it contains attributes only, and does
+                    not have a closing tag.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;img&gt;</span> tag has two required attributes:
+                </p>
+                <ul>
+                    <li>src - Specifies the path to the image</li>
+                    <li>alt - Specifies an alternate text for the image</li>
+                </ul>
+            </div>
+            <div class="images px-4">
+                <p>
+                    <span class="red-text">&lt;img src="url" alt="alternatetext" &gt;</span>
+                </p>
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>The src Attribute</h2>
+                <p>
+                    The required <span class="red-text"> src</span> attribute specifies the path (URL) to the image.
+                </p>
+                <p>
+                    <strong>Note :</strong> When a web page loads, it is the browser, at that moment, that gets the
+                    image from a web
+                    server and inserts it into the page. Therefore, make sure that the image actually stays in the same
+                    spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken
+                    link icon and the <span class="red-text">alt</span> text are shown if the browser cannot find the
+                    image.
+                </p>
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>The alt Attribute</h2>
+                <p>
+                    The required <span class="red-text"> alt </span> attribute provides an alternate text for an image,
+                    if the user for some reason
+                    cannot view it (because of slow connection, an error in the src attribute, or if the user uses a
+                    screen reader).
+                </p>
+                <p>
+                    The value of the <span class="red-text"> alt </span> attribute should describe the image.
+                </p>
+                <p>
+                    If a browser cannot find an image, it will display the value of the <span class="red-text"> alt
+                    </span> attribute
+                </p>
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>Image Size - Width and Height</h2>
+                <p>
+                    You can use the <span class="red-text">style</span> attribute to specify the width and height of an
+                    image.
+                </p>
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>Width and Height, or Style?</h2>
+                <p>
+                    The <span class="red-text">width , </span> <span class="red-text">height</span> and
+                    <span class="red-text">style</span> attributes are all valid in HTML.
+                </p>
+                <p>
+                    However, we suggest using the <span class="red-text">style</span> attribute. It prevents styles
+                    sheets from changing the size of
+                    images
+                </p>
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>Images in another folder</h2>
+                <p>
+                    If you have your images in a sub-folder, you must include the folder name in the
+                    <span class="red-text">src </span> attribute.
+                </p>
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>Images on Another Server/Website</h2>
+                <p>
+                    Some web sites point to an image on another server.
+                </p>
+                <p>
+                    To point to an image on another server, you must specify an absolute (full) URL in the <span
+                        class="red-text">src </span> attribute
+                </p>
+                <p>
+                    <strong>Notes on external images:</strong>External images might be under copyright. If you do not
+                    get permission to use it, you may be in violation of copyright laws. In addition, you cannot control
+                    external images; they can suddenly be removed or changed.
+                </p>
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>Animated Images</h2>
+                <p>
+                    HTML allows animated GIFs.
+                </p>
+
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>Image as a Link</h2>
+                <p>
+                    To use an image as a link, put the <span class="red-text">&lt;img&gt; </span> tag inside the <span
+                        class="red-text">&lt;a&gt; </span> tag
+                </p>
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>Image as a Link</h2>
+                <p>
+                    To use an image as a link, put the <span class="red-text">&lt;img&gt; </span> tag inside the <span
+                        class="red-text">&lt;a&gt; </span> tag
+                </p>
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>Image Floating</h2>
+                <p>
+                    Use the CSS <span class="red-text">float</span>  property to let the image float to the right or to the left of a text.
+                </p>
+            </div>
+            <hr>
+            <div class="images px-4">
+                <h2>Common Image Formats</h2>
+                <p>
+                    Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Abbreviation</th>
+                            <th>File Format</th>
+                            <th>File Extension</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>APNG</td>
+                            <td>Animated Portable Network Graphics</td>
+                            <td>.apng</td>
+                        </tr>
+                        <tr>
+                            <td>GIF</td>
+                            <td>Graphics Interchange Format</td>
+                            <td>.gif</td>
+                        </tr>
+                        <tr>
+                            <td>ICO</td>
+                            <td>Microsoft Icon</td>
+                            <td>.ico, .cur</td>
+                        </tr>
+                        <tr>
+                            <td>JPEG</td>
+                            <td>Joint Photographic Expert Group image</td>
+                            <td>.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
+                        </tr>
+                        <tr>
+                            <td>PNG</td>
+                            <td>Portable Network Graphics</td>
+                            <td>.png</td>
+                        </tr>
+                        <tr>
+                            <td>SVG</td>
+                            <td>Scalable Vector Graphics</td>
+                            <td>.svg</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

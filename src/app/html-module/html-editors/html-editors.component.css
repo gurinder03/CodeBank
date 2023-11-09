@@ -48,3 +48,6 @@ img{
   .steps p{
     font-size: 19px;
   }
+  iframe{
+    width: 100%;
+  }

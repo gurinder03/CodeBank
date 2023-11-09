@@ -1,0 +1,85 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS Scope</h1>
+                <p>
+                    The scope is the binding part between the HTML (view) and the JavaScript (controller).
+                </p>
+                <p>
+                    The scope is an object with the available properties and methods.
+                </p>
+                <p>
+                    The scope is available for both the view and the controller.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>How to Use the Scope?</h2>
+                <p>
+                    When you make a controller in AngularJS, you pass the <span class="red-text">$scope</span> object as
+                    an argument:
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Understanding the Scope</h2>
+                <p>
+                    If we consider an AngularJS application to consist of:
+                </p>
+                <ul>
+                    <li>
+                        View, which is the HTML.
+                    </li>
+                    <li>
+                        Model, which is the data available for the current view.
+                    </li>
+                    <li>
+                        Controller, which is the JavaScript function that makes/changes/removes/controls the data.
+                    </li>
+                </ul>
+                <p>Then the scope is the Model.</p>
+                <p>
+                    The scope is a JavaScript object with properties and methods, which are available for both the view
+                    and the controller.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Know Your Scope</h2>
+                <p>
+                    It is important to know which scope you are dealing with, at any time.
+                </p>
+                <p>
+                    In the two examples above there is only one scope, so knowing your scope is not an issue, but
+                    for larger applications there can be sections in the HTML DOM which can only access certain
+                    scopes.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Root Scope</h2>
+                <p>
+                    All applications have a <span class="red-text">$rootScope</span> which is the scope created on the
+                    HTML element that contains the <span class="red-text">ng-app</span> directive.
+                </p>
+                <p>
+                    The rootScope is available in the entire application.
+                </p>
+                <p>
+                    If a variable has the same name in both the current scope and in the rootScope, the application uses
+                    the one in the current scope.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

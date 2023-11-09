@@ -1,0 +1,63 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="project-files p-2 pt-0 ">
+                <h1>.NET Core - Project Files</h1>
+                <p>In this chapter, we will discuss .NET Core project files and how you can add existing files in your
+                    project.</p>
+
+                <p>Let us understand a simple example in which we have some files which are already created; we have to
+                    add these files in our FirstApp project. <br>
+                    Here is the implementation of the Student.cs file
+                </p>
+            </div>
+            <div class="code-container px-4 p-3 bg-primary">
+            </div>
+            <p>Here is the implementation of the Course.cs file.</p>
+
+            <div class="code-container px-4 p-3 bg-primary">
+            </div>
+            <p>Let us now save these three files in your disk and the source folder of your project.</p>
+
+            <div class="versions p-4">
+                <ul>
+                    <li>Now if you are familiar with .NET and this one was a traditional .NET framework console
+                        application, it is important to understand how to add these files in your project in Visual
+                        Studio.</li>
+                    <li>You first need to drag the files to the solution explorer to copy them in your project folder,
+                        because your project needs reference to these files.</li>
+                    <li>One of the benefits of .NET Core is the approach taken with the project file (project.json); we
+                        can just drop files into the root of our project and then these will be automatically included
+                        in our project.</li>
+                    <li>We don’t have to manually reference files like we did in the past for traditional .NET Framework
+                        application in Visual Studio.</li>
+
+
+                </ul>
+            </div>
+
+            <p>Let us now open the root of your project.</p>
+
+            <div class="code-container px-4 p-3 bg-primary">
+            </div>
+            <p>Let us now copy all of the three files into the root of your project.</p>
+            <p>You can now see all the files copied to the root folder.</p>
+            <p>Let us now go to Visual Studio; you will receive the following dialog box.</p>
+            <div class="image-container p-4 text-center">
+                <img src="https://www.tutorialspoint.com/dotnet_core/images/visual.jpg">
+            </div>
+
+            <p>Click <strong>Yes to All</strong> to reload your project.</p>
+            <p>You will now that files are automatically included in your project.</p>
+      
+        </div>
+    </div>
+</div>

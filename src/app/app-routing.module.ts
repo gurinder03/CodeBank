@@ -42,6 +42,14 @@ const routes: Routes = [
     loadChildren: () => import('./html-module/html-module.module').then(m => m.HtmlModuleModule),
   },
   {
+    path: 'dotnet',
+    loadChildren: () => import('./dot-net-module/dot-net-module.module').then(m => m.DotNetModuleModule),
+  },
+  {
+    path: 'angularjs',
+    loadChildren: () => import('./angular-js-module/angular-js-module.module').then(m => m.AngularJsModuleModule),
+  },
+  {
     path: 'formatting',
     component: CplusComponent,
   },

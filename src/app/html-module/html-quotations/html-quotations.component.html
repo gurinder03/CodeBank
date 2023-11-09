@@ -1,0 +1,119 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Quotation and Citation Elements</h1>
+            <div class="quotations px-4">
+                <p>
+                    In this chapter we will go through the
+                    <span class="red-text">&lt;blockquote&gt;</span>, <span class="red-text">&lt;q&gt;</span>, <span
+                        class="red-text">&lt;abbr&gt;</span>,
+                    <span class="red-text">&lt;address&gt;</span>, <span class="red-text">&lt;cite&gt;</span>,
+                    and <span class="red-text">&lt;bdo&gt;</span> HTML
+                    elements.
+                </p>
+            </div>
+            <div class="quotations px-4">
+                <h2>HTML <span class="red-text">&lt;blockquote&gt;</span> for Quotations</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;blockquote&gt;</span> element defines a section that is quoted
+                    from another source.
+
+                    Browsers usually indent <span class="red-text">&lt;blockquote&gt;</span> elements.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML <span class="red-text">&lt;q&gt;</span> for Short Quotations</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;q&gt;</span> tag defines a short quotation.
+
+                    Browsers normally insert quotation marks around the quotation.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML <span class="red-text">&lt;abbr&gt;</span> for Abbreviations</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;abbr&gt;</span> tag defines an abbreviation or an acronym, like
+                    "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+
+                    Marking abbreviations can give useful information to browsers, translation systems and
+                    search-engines.
+                </p>
+                <p>
+                    <strong>Tip : </strong>Use the global title attribute to show the description for the
+                    abbreviation/acronym when you mouse over the element.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML <span class="red-text">&lt;address&gt;</span> for Contact Information</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;address&gt;</span> tag defines the contact information for the
+                    author/owner of a document or an article.
+                </p>
+                <p>
+                    The contact information can be an email address, URL, physical address, phone number, social media
+                    handle, etc.
+                </p>
+                <p>
+                    The text in the
+                    <span class="red-text">&lt;address&gt;</span> element usually renders in italic, and browsers will
+                    always add a line break before and after
+                    the <span class="red-text">&lt;address&gt;</span> element.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML <span class="red-text">&lt;cite&gt;</span> for Work Title</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;cite&gt;</span> tag defines the title of a creative work (e.g. a
+                    book, a poem, a song, a movie, a
+                    painting, a sculpture, etc.).
+                </p>
+                <p>
+                    <strong>Note: A person's name is not the title of a work.</strong>
+                </p>
+                <p>
+                    The text in the <span class="red-text">&lt;cite&gt;</span> element usually renders in italic.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML <span class="red-text">&lt;bdo&gt;</span> for Bi-Directional Override</h2>
+                <p>
+                    BDO stands for Bi-Directional Override.
+                </p>
+                <p>
+                    The HTML <span class="red-text">&lt;bdo&gt;</span> tag is used to override the current text
+                    direction:
+                </p>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>

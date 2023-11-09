@@ -1,0 +1,178 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Meta Tags</h1>
+            <div class="meta px-4">
+                <p>HTML lets you specify metadata - additional important information about a document in a variety of
+                    ways. The META elements can be used to include name/value pairs describing properties of the HTML
+                    document, such as author, expiry date, a list of keywords, document author etc.
+                </p>
+                <p>
+                    The
+                    <span class="red-text">&lt;meta&gt;</span>tag is used to provide such additional information. This
+                    tag is an empty element and so
+                    does
+                    not have a closing tag but it carries information within its attributes.
+                </p>
+                <p>
+                    You can include one or more meta tags in your document based on what information you want to keep in
+                    your document but in general, meta tags do not impact physical appearance of the document so from
+                    appearance point of view, it does not matter if you include them or not.
+                </p>
+            </div>
+            <div class="meta px-4">
+                <h2>Adding Meta Tags to Your Documents</h2>
+                <p>
+                    You can add metadata to your web pages by placing
+                    <span class="red-text">&lt;meta&gt;</span> tags inside the header of the document which is
+                    represented by
+
+                    <span class="red-text">&lt;head&gt;</span> and <span class="red-text">&lt;/head&gt;</span> tags. A
+                    meta tag can have following attributes in addition to core attributes −
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="sr-no ">Sr.No</th>
+                            <th>Attribute &#38; Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">1</td>
+                            <td>
+                                <strong>Name</strong><br>
+                                <p>Name for the property. Can be anything. Examples include, keywords, description,
+                                    author, revised, generator etc.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2</td>
+                            <td>
+                                <strong>content</strong><br>
+                                <p>Specifies the property's value.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">3</td>
+                            <td>
+                                <strong>scheme</strong><br>
+                                <p>Specifies a scheme to interpret the property's value (as declared in the content
+                                    attribute).</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">4</td>
+                            <td>
+                                <strong>http-equiv</strong><br>
+                                <p>Used for http response message headers. For example, http-equiv can be used to
+                                    refresh the page or to set a cookie. Values include content-type, expires, refresh
+                                    and set-cookie.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="meta px-4 pt-3">
+                <h2>Specifying Keywords</h2>
+                <p>
+                    You can use
+                    <span class="red-text">&lt;meta&gt;</span> tag to specify important keywords related to the document
+                    and later these keywords are used
+                    by the search engines while indexing your webpage for searching purpose.
+                </p>
+            </div>
+
+            <div class="meta px-4 pt-3">
+                <h2>Document Description</h2>
+                <p>
+                    You can use
+                    <span class="red-text">&lt;meta&gt;</span> tag to give a short description about the document. This
+                    again can be used by various search
+                    engines while indexing your webpage for searching purpose.
+                </p>
+            </div>
+
+            <div class="meta px-4 pt-3">
+                <h2>Document Revision Date</h2>
+                <p>
+                    You can use
+                    <span class="red-text">&lt;meta&gt;</span> tag to give information about when last time the document
+                    was updated. This information can
+                    be used by various web browsers while refreshing your webpage.
+                </p>
+            </div>
+
+            <div class="meta px-4 pt-3">
+                <h2>Document Refreshing</h2>
+                <p>
+                    A
+                    <span class="red-text">&lt;meta&gt;</span> tag can be used to specify a duration after which your
+                    web page will keep refreshing
+                    automatically..
+                </p>
+            </div>
+
+            <div class="meta px-4 pt-3">
+                <h2>Page Redirection</h2>
+                <p>You can use
+                    <span class="red-text">&lt;meta&gt;</span> tag to redirect your page to any other webpage. You can
+                    also specify a duration if you want
+                    to redirect the page after a certain number of seconds.
+                </p>
+            </div>
+
+            <div class="meta px-4 pt-3">
+                <h2>Setting Cookies</h2>
+                <p>Cookies are data, stored in small text files on your computer and it is exchanged between web browser
+                    and web server to keep track of various information based on your web application need.
+                </p>
+                <p>
+                    You can use
+                    <span class="red-text">&lt;meta&gt;</span> tag to store cookies on client side and later this information can be used by the Web Server
+                    to track a site visitor.
+                </p>
+            </div>
+
+            <div class="meta px-4 pt-3">
+                <h2>Setting Author Name</h2>
+                <p>
+                    You can set an author name in a web page using meta tag
+                </p>
+            </div>
+
+            <div class="meta px-4 pt-3">
+                <h2>Specify Character Set</h2>
+                <p>
+                    You can use &lt;meta&gt; tag to specify character set used within the webpage.
+                </p>
+            </div>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>

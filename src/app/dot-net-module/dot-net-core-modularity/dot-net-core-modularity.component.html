@@ -1,0 +1,61 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="prerequisites p-2 pt-0 px-4">
+                <h1>.NET Core - Modularity</h1>
+                <p>It is another consideration of .NET Core to build and implement application that is modular. Instead
+                    of installing the entire .NET Framework, your application can now just install what is required. Let
+                    us go to the visual studio and see the modularity.
+                </p>
+
+                <p>Here is our simple .NET Core application, in Solution Explorer. Let us expand References and you will
+                    see reference to .NETCoreApp
+                </p>
+
+            </div>
+            <div class="modularity-images text-center">
+                <img src="https://www.tutorialspoint.com/dotnet_core/images/dotnet_core_app.jpg">
+            </div>
+            <div class="prerequisites pt-4 px-4">
+                <p>Inside .NETCoreApp, you will see package reference to NuGet; let us expand it.</p>
+            </div>
+            <div class="modularity-images text-center">
+                <img src="https://www.tutorialspoint.com/dotnet_core/images/nuget.jpg">
+            </div>
+
+            <div class="prerequisites pt-4 px-4">
+                <p>You will see the whole series of NuGet Package references. If you have worked in .NET Framework, then
+                    many of these namespaces will look familiar, because you are used to it by using in .NET Framework.
+                </p>
+                <p>.NET Framework is split into many different pieces and re-implemented with CoreFx; these pieces are
+                    further distributed as individual packages.
+                </p>
+            </div>
+            <div class="modularity-images text-center mb-3">
+                <img src="https://www.tutorialspoint.com/dotnet_core/images/framework.jpg">
+            </div>
+
+            <div class="versions p-4">
+                <ul>
+                    <li>Now if you expand the NETStandard.Library, you will see addition references. You will even
+                        notice System.Console which we are using in this application.</li>
+                    <li>Now you don’t have to bring in everything inside the .NET Framework, but just bring in what you
+                        need for your application.</li>
+                    <li>There are some other benefits as well; for example, these modules can be updated individually if
+                        desired.</li>
+
+
+                </ul>
+            </div>
+            <p class="mt-3">Modularity leads to performance benefits and your application can run faster, especially ASP.NET Core application.</p>
+        </div>
+    </div>
+</div>

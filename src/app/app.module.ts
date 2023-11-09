@@ -44,6 +44,9 @@ import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AbooutUsComponent } from './aboout-us/aboout-us.component';
+import { SharedModule } from './shared/shared.module';
+
+
 
 @NgModule({
   declarations: [
@@ -76,6 +79,8 @@ import { AbooutUsComponent } from './aboout-us/aboout-us.component';
     FooterComponent,
     ContactUsComponent,
     AbooutUsComponent,
+   
+
     
   ],
   schemas: [
@@ -102,6 +107,7 @@ import { AbooutUsComponent } from './aboout-us/aboout-us.component';
       positionClass: 'toast-bottom-right',
     }),
     MatPaginatorModule,
+    SharedModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },

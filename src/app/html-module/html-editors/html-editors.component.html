@@ -1,6 +1,6 @@
 <div class="wrapper">
     <div class="main-container">
-        <app-sidebar></app-sidebar>
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
         <div class="content mb-5 p-4">
             <div class="home-next d-flex justify-content-between p-3">
                 <button type="button" class="home-btn"> <span class="left-arrow"><i
@@ -9,45 +9,50 @@
                             class="fas fa-chevron-right fa-2x"></i></span></button>
             </div>
             <h1 class="p-3 pt-1" id="introduction">HTML Text Editors</h1>
-                <hr>
+            <hr>
             <div class="about-editors px-4 mt-2">
                 <ul>
                     <li>An HTML file is a text file, so to create an HTML file we can use any text editors.</li>
-                    <li>Text editors are the programs which allow editing in a written text, hence to create a web page we need to write our code in some text editor.</li>
-                    <li>There are various types of text editors available which you can directly download, but for a beginner, the best text editor is Notepad (Windows) or TextEdit (Mac).</li>
-                    <li>After learning the basics, you can easily use other professional text editors which are <strong>Notepad++, Sublime Text, Vim,  etc.</strong></li>
-                    <li>In our tutorial, we will use Notepad and sublime text editor. Following are some easy ways to create your first web page with Notepad, and sublime text.</li>
+                    <li>Text editors are the programs which allow editing in a written text, hence to create a web page
+                        we need to write our code in some text editor.</li>
+                    <li>There are various types of text editors available which you can directly download, but for a
+                        beginner, the best text editor is Notepad (Windows) or TextEdit (Mac).</li>
+                    <li>After learning the basics, you can easily use other professional text editors which are
+                        <strong>Notepad++, Sublime Text, Vim, etc.</strong></li>
+                    <li>In our tutorial, we will use Notepad and sublime text editor. Following are some easy ways to
+                        create your first web page with Notepad, and sublime text.</li>
 
                 </ul>
             </div>
             <hr>
             <div class="notpad-description px-4 mt-2">
                 <div class="steps">
-                        <h3>HTML code with Notepad. (Recommended for Beginners)</h3> 
-                        <p>Notepad is a simple text editor and suitable for beginners to learn HTML. It is available in all versions of Windows, from where you easily access it.</p>
+                    <h3>HTML code with Notepad. (Recommended for Beginners)</h3>
+                    <p>Notepad is a simple text editor and suitable for beginners to learn HTML. It is available in all
+                        versions of Windows, from where you easily access it.</p>
 
-                        <h3>Step 1: Open Notepad (Windows)</h3>
-                        <div class="notpad-step1 pt-3">
-                            <img src="./assets/images/notpad1.png">
-                        </div>
-                        <hr>
-                        <h3 class="pt-3">Step 2: Write code in HTML</h3>
-                        <div class="notpad-step1 pt-3">
-                            <img src="./assets/images/notpad2.png">
-                        </div>
-                        <hr>
-                        <h3 class="pt-3">Step 3: Save the HTML file with .htm or .html extension.</h3>
-                        <div class="notpad-step1 pt-3">
-                            <img src="./assets/images/notpad3.png">
-                        </div>
-<hr>
-                        <h3 class="pt-3">Step 4: Open the HTML page in your web browser.</h3>
-                        <div class="notpad-step1 pt-3">
-                            <img src="./assets/images/notpad4.png">
-                        </div>
-                        <div class="notpad-step1 pt-5">
-                            <img src="./assets/images/notpad5.png">
-                        </div>
+                    <h3>Step 1: Open Notepad (Windows)</h3>
+                    <div class="notpad-step1 pt-3">
+                        <img src="./assets/images/notpad1.png">
+                    </div>
+                    <hr>
+                    <h3 class="pt-3">Step 2: Write code in HTML</h3>
+                    <div class="notpad-step1 pt-3">
+                        <img src="./assets/images/notpad2.png">
+                    </div>
+                    <hr>
+                    <h3 class="pt-3">Step 3: Save the HTML file with .htm or .html extension.</h3>
+                    <div class="notpad-step1 pt-3">
+                        <img src="./assets/images/notpad3.png">
+                    </div>
+                    <hr>
+                    <h3 class="pt-3">Step 4: Open the HTML page in your web browser.</h3>
+                    <div class="notpad-step1 pt-3">
+                        <img src="./assets/images/notpad4.png">
+                    </div>
+                    <div class="notpad-step1 pt-5">
+                        <img src="./assets/images/notpad5.png">
+                    </div>
                 </div>
             </div>
         </div>

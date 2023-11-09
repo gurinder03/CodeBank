@@ -1,0 +1,65 @@
+{
+    "title": "HTML Tutorial",
+    "sidebarData": [
+        {
+        "text": "HTML Tutorial",
+        "link": "/html/html-tutorial"
+        },
+        {
+        "text": "HTML Introduction",
+        "link": "/html/html-intro"
+        },
+        {
+        "text": "HTML Editors",
+        "link": "/html/html-editors"
+        },
+        {
+        "text": "HTML Elements",
+        "link": "/html/html-elements"
+        },
+        {
+        "text": "HTML Attributes",
+        "link": "/html/html-attributes"
+        },
+        {
+        "text": "HTML Headings",
+        "link": "/html/html-headings"
+        },
+        {
+        "text": "HTML Paragraphs",
+        "link": "/html/html-paragraphs"
+        },
+        {
+        "text": "HTML Style",
+        "link": "/html/html-style"
+        },
+        {
+        "text": "HTML Formatting",
+        "link": "/html/html-formatting"
+        },
+        {
+        "text": "HTML Meta Tags",
+        "link": "/html/html-meta-tags"
+        },
+        {
+        "text": "HTML Quotations",
+        "link": "/html/html-quotations"
+        },
+        {
+        "text": "HTML Comments",
+        "link": "/html/html-comments"
+        },
+        {
+        "text": "HTML Colors",
+        "link": "/html/html-colors"
+        },
+        {
+        "text": "HTML Links",
+        "link": "/html/html-links"
+        },
+        {
+        "text": "HTML Images",
+        "link": "/html/html-images"
+        }
+    ]
+}

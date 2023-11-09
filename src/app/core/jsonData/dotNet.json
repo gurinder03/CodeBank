@@ -1,0 +1,53 @@
+{
+    "title": ".Net Core Tutorial",
+    "sidebarData": [
+        {
+        "text": ".Net Core Tutorial",
+        "link": "/dotnet/dot-net-tutorial"
+        },
+        {
+        "text": ".Net Core Introduction",
+        "link": "/dotnet/dot-net-intro"
+        },
+        {
+        "text": ".Net Core Prerequisites",
+        "link": "/dotnet/dot-net-core-prerequisites"
+        },
+        {
+        "text": ".Net Core Numericas",
+        "link": "/dotnet/dot-net-numerics"
+        },
+        {
+        "text": ".Net Core Garbage Collection",
+        "link": "/dotnet/dot-net-core-garbage-collection"
+        },
+        {
+        "text": ".Net Core code Execution",
+        "link": "/dotnet/dotnet-code-execution"
+        },
+        {
+        "text": ".Net Core Modularity",
+        "link": "/dotnet/dot-net-core-modularity"
+        },
+        {
+        "text": ".Net Core Project Files",
+        "link": "/dotnet/dot-net-core-project-files"
+        },
+        {
+        "text": ".Net Core Package References",
+        "link": "/dotnet/dot-net-core-package-references"
+        },
+        {
+        "text": ".Net Core MSBuild",
+        "link": "/dotnet/dot-net-core-msbuild"
+        },
+        {
+        "text": ".Net Core Meta Package",
+        "link": "/dotnet/dot-net-core-metapackage"
+        }
+
+
+
+    ]
+}
+  

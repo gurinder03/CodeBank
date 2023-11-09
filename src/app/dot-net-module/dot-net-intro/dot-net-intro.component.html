@@ -1,0 +1,119 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1>.NET Core - Overview</h1>
+            <div class="intro-dotnet p-4 pt-0 ">
+                <!-- <h2>Audience</h2> -->
+                <p>.NET Core is the latest general purpose development platform maintained by Microsoft. It works across
+                    different platforms and has been redesigned in a way that makes .NET fast, flexible and modern. This
+                    happens to be one of the major contributions by Microsoft. Developers can now build Android, iOS,
+                    Linux, Mac, and Windows applications with .NET, all in Open Source.</p>
+
+                <p>In this tutorial, we will cover .NET Core and a few new innovations including the .NET Framework
+                    updates, .NET Standard, and Universal Windows Platform updates, etc.</p>
+            </div>
+            <div class="intro-dotnet p-4 pt-0 ">
+                <h2>Characteristics of .NET Core</h2>
+                <p>The following are the major characteristics of .NET Core −</p>
+                <h3>Open source</h3>
+                <div class="characterstics p-4">
+                    <ul>
+                        <li>.NET Core is an open source implementation, using MIT and Apache 2 licenses.</li>
+                        <li>.NET Core is a .NET Foundation project and is available on GitHub.</li>
+                        <li>As an open source project, it promotes a more transparent development process and promotes
+                            an active and engaged community.</li>
+                    </ul>
+                </div>
+
+                <h3 class="pt-3">Cross Platform</h3>
+                <div class="characterstics p-4">
+                    <ul>
+                        <li>Application implemented in .NET Core can be run and its code can be reused regardless of
+                            your platform target.</li>
+                        <li>It currently supports three main operating systems (OS)
+                            <ul>
+                                <li>Windows</li>
+                                <li>Linux</li>
+                                <li>MacOS</li>
+                            </ul>
+                        </li>
+                        <li>As an open source project, it promotes a more transparent development process and promotes
+                            an active and engaged community.</li>
+                    </ul>
+                </div>
+
+
+                <h3 class="pt-3">Flexible deployment</h3>
+                <div class="characterstics p-4">
+                    <ul>
+                        <li>There can be two types of deployments for .NET Core applications −
+                            <ul>
+                                <li>Framework-dependent deployment</li>
+                                <li>Self-contained deployment</li>
+                            </ul>
+                        </li>
+                        <li>With framework-dependent deployment, your app depends on a system-wide version of .NET Core
+                            on which your app and third-party dependencies are installed.</li>
+                        <li>With self-contained deployment, the .NET Core version used to build your application is also
+                            deployed along with your app and third-party dependencies and can run side-by-side with
+                            other versions.</li>
+                    </ul>
+                </div>
+
+                <h3 class="pt-3">Command-line tools</h3>
+                <div class="characterstics p-4">
+                    <ul>
+                        <li>All product scenarios can be exercised at the command-line.</li>
+                    </ul>
+                </div>
+
+                <h3 class="pt-3">Compatible</h3>
+                <div class="characterstics p-4">
+                    <ul>
+                        <li>.NET Core is compatible with .NET Framework, Xamarin and Mono, via the .NET Standard Library
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 class="pt-3">Moduler</h3>
+                <div class="characterstics p-4">
+                    <ul>
+                        <li>.NET Core is released through NuGet in smaller assembly packages.</li>
+                        <li>.NET Framework is one large assembly that contains most of the core functionalities.</li>
+                        <li>.NET Core is made available as smaller feature-centric packages.</li>
+                        <li>This modular approach enables the developers to optimize their app by including just those
+                            NuGet packages which they need in their app.</li>
+                        <li>The benefits of a smaller app surface area include tighter security, reduced servicing,
+                            improved performance, and decreased costs in a pay-for-what-you-use model</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="intro-dotnet p-4 pt-0 ">
+                <h2>The .NET Core Platform</h2>
+                <p>.NET Core Platform contains the following main parts −</p>
+                <div class="characterstics p-4">
+                    <ul>
+                        <li><strong>.NET Runtime −</strong> It provides a type system, assembly loading, a garbage
+                            collector, native
+                            interop and other basic services.</li>
+                        <li><strong>Fundamental Libraries −</strong> A set of framework libraries, which provide
+                            primitive data types, app composition types and fundamental utilities.</li>
+                        <li><strong>SDK & Compiler −</strong> A set of SDK tools and language compilers that enable the
+                            base developer experience, available in the .NET Core SDK.</li>
+                        <li><strong>‘dotnet’ app host −</strong> It is used to launch .NET Core apps. It selects the runtime and hosts
+                            the runtime, provides an assembly loading policy and launches the app. The same host is also
+                            used to launch SDK tools in much the same way.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>

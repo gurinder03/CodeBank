@@ -1,0 +1,115 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="garbage p-2 pt-0 ">
+                <h1>.NET Core - Garbage Collection</h1>
+                <p>In this chapter, we will discuss the various dependencies that you need to deploy and run. These
+                    include the .NET Core applications on Windows machines that are developed using Visual Studio.</p>
+                <hr>
+                <p>In this chapter, we will cover the concept of Garbage collection which is one of most important
+                    features of the .NET managed code platform. The garbage collector (GC) manages the allocation and
+                    release of memory. The garbage collector serves as an automatic memory manager.
+                </p>
+
+            </div>
+            <div class="collection p-4">
+                <ul>
+                    <li>You do not need to know how to allocate and release memory or manage the lifetime of the objects
+                        that use that memory</li>
+                    <li>An allocation is made any time you declare an object with a “new” keyword or a value type is
+                        boxed. Allocations are typically very fast</li>
+                    <li>When there isn’t enough memory to allocate an object, the GC must collect and dispose of garbage
+                        memory to make memory available for new allocations.</li>
+                    <li>This process is known as <strong>garbage collection.</strong></li>
+                </ul>
+            </div>
+            <hr>
+
+            <h2>Advantages of Garbage Collection</h2>
+
+            <div class="collection p-4">
+                <p>Garbage Collection provides the following benefits −</p>
+                <ul>
+                    <li>You don’t need to free memory manually while developing your application.</li>
+                    <li>It also allocates objects on the managed heap efficiently.</li>
+                    <li>When objects are no longer used then it will reclaim those objects by clearing their memory, and
+                        keeps the memory available for future allocations.</li>
+                    <li>Managed objects automatically get clean content to start with, so their constructors do not have
+                        to initialize every data field.</li>
+                    <li>It also provides memory safety by making sure that an object cannot use the content of another
+                        object.</li>
+                </ul>
+            </div>
+            <hr>
+
+            <h2>Conditions for Garbage Collection</h2>
+            <div class="collection p-4">
+                <p>Garbage collection occurs when one of the following conditions is true.</p>
+                <ul>
+                    <li>The system has low physical memory.</li>
+                    <li>The memory that is used by allocated objects on the managed heap surpasses an acceptable
+                        threshold. This threshold is continuously adjusted as the process runs.</li>
+                    <li>The GC.Collect method is called and in almost all cases, you do not have to call this method,
+                        because the garbage collector runs continuously. This method is primarily used for unique
+                        situations and testing.</li>
+
+                </ul>
+            </div>
+            <hr>
+
+            <h2>Generations</h2>
+            <p>The .NET Garbage Collector has 3 generations and each generation has its own heap that that is used
+                for the storage of allocated objects. There is a basic principle that most objects are either
+                short-lived or long-lived.</p>
+
+            <h2>Generation First (0)</h2>
+            <div class="collection p-4">
+                <ul>
+                    <li>In Generation 0, objects are first allocated.</li>
+                    <li>In this generation, objects often don’t live past the first generation, since they are no longer
+                        in use (out of scope) by the time the next garbage collection occurs.</li>
+                    <li>Generation 0 is quick to collect because its associated heap is small.</li>
+
+                </ul>
+
+            </div>
+            <h2>Generation Second (1)</h2>
+            <div class="collection p-4">
+                <ul>
+                    <li>In Generation 1, objects have a second chance space.</li>
+                    <li>Objects that are short-lived but survive the generation 0 collection (often based on
+                        coincidental timing) go to generation 1.</li>
+                    <li>Generation 1 collections are also quick because its associated heap is also small.</li>
+                    <li>The first two heaps remain small because objects are either collected or promoted to the next
+                        generation heap.</li>
+                </ul>
+            </div>
+
+            <h2>Generation Third (2)</h2>
+            <div class="collection p-4">
+                <ul>
+                    <li>In Generation 2, all long objects are lived and its heap can grow to be very large.</li>
+                    <li>The objects in this generation can survive a long time and there is no next generation heap to
+                        further promote objects.</li>
+                    <li>The Garbage Collector has an additional heap for large objects known as Large Object Heap (LOH).
+                    </li>
+                    <li>It is reserved for objects that are 85,000 bytes or greater.</li>
+                    <li>Large objects are not allocated to the generational heaps but are allocated directly to the LOH</li>
+                    <li>Generation 2 and LOH collections can take noticeable time for programs that have run for a long time or operate over large amounts of data.</li>
+                    <li>Large server programs are known to have heaps in the 10s of GBs.</li>
+                    <li>The GC employs a variety of techniques to reduce the amount of time that it blocks program execution.</li>
+                    <li>The primary approach is to do as much garbage collection work as possible on a background thread in a way that does not interfere with program execution.</li>
+                    <li>The GC also exposes a few ways for developers to influence its behavior, which can be quite useful to improve performance.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

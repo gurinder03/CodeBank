@@ -1,0 +1,58 @@
+{
+    "title": "AngularJS Tutorial",
+    "sidebarData": [
+        {
+        "text": "AngularJS Home",
+        "link": "/angularjs/angularjs-tutorial"
+        },
+        {
+        "text": "AngularJS Introduction",
+        "link": "/angularjs/angularjs-intro"
+        },
+        {
+        "text": "AngularJS Expressions",
+        "link": "/angularjs/angularjs-expression"
+        },
+        {
+        "text": "AngularJS Modules",
+        "link": "/angularjs/angularjs-modules"
+        },
+        {
+        "text": "AngularJS Directives",
+        "link": "/angularjs/angularjs-directive"
+        },
+        {
+        "text": "AngularJS Models",
+        "link": "/angularjs/angularjs-model"
+        },
+        {
+        "text": "AngularJS Data Binding",
+        "link": "/angularjs/angularjs-databinding"
+        },
+        {
+        "text": "AngularJS Controllers",
+        "link": "/angularjs/angularjs-controllers"
+        },
+        {
+        "text": "AngularJS Scopes",
+        "link": "/angularjs/angularjs-scopes"
+        },
+        {
+        "text": "AngularJS Filters",
+        "link": "/angularjs/angularjs-filters"
+        },
+        {
+        "text": "AngularJS Services",
+        "link": "/angularjs/angularjs-services"
+        },
+        {
+        "text": "AngularJS Http",
+        "link": "/angularjs/angularjs-http"
+        },
+        {
+        "text": "AngularJS Tables",
+        "link": "/angularjs/angularjs-tables"
+        }
+
+    ]
+}

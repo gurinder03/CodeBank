@@ -1,0 +1,66 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS Filters</h1>
+                <p>
+                    Filters can be added in AngularJS to format data.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>AngularJS Filters</h2>
+                <p>
+                    AngularJS provides filters to transform data:
+                </p>
+                <ul>
+                    <li><span class="red-text">Currency</span> Format a number to a currency format.</li>
+                    <li><span class="red-text">date</span> Format a date to a specified format.</li>
+                    <li><span class="red-text">filter</span> Select a subset of items from an array.</li>
+                    <li><span class="red-text">json</span> Format an object to a JSON string.</li>
+                    <li><span class="red-text">limitTo</span> Limits an array/string, into a specified number of
+                        elements/characters.</li>
+                    <li><span class="red-text">lowercase</span>Format a string to lower case.</li>
+                    <li><span class="red-text">number</span>Format a number to a string.</li>
+                    <li><span class="red-text">orderBy</span>Orders an array by an expression.</li>
+                    <li><span class="red-text">uppercase</span>Format a string to upper case.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Adding Filters to Expressions</h2>
+                <p>
+                    Filters can be added to expressions by using the pipe character <span class="red-text">|</span> ,
+                    followed by a filter.
+                </p>
+                <p>The <span class="red-text">uppercase</span> filter format strings to upper case:</p>
+                <p>The <span class="red-text">lowercase</span> filter format strings to lower case</p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Adding Filters to Directives</h2>
+                <p>
+                    Filters are added to directives, like <span class="text-red">ng-repeat</span> , by using the pipe
+                    character <span class="text-red">|</span> , followed by a filter:
+                </p>
+               
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The currency Filter</h2>
+                <p>
+                    The <span class="red-text">currency</span>  filter formats a number as currency:
+                </p>
+               
+            </div>
+        </div>
+    </div>
+</div>

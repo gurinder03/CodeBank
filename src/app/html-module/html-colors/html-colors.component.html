@@ -1,0 +1,70 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Colors</h1>
+            <div class="colors px-4">
+                <p>
+                    HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
+                </p>
+            </div>
+            <div class="colors px-4">
+                <h2>Color Names</h2>
+                <p>
+                    In HTML, a color can be specified by using a color name(Tomato,Green,Yellow,Gray etc.)
+                </p>
+            </div>
+            <hr>
+            <div class="colors px-4">
+                <h2>Background Color</h2>
+                <p>
+                    You can set the background color for HTML elements.
+                </p>
+            </div>
+            <hr>
+            <div class="colors px-4">
+                <h2>Text Color</h2>
+                <p>
+                    You can set the color of text.
+                </p>
+            </div>
+            <hr>
+            <div class="colors px-4">
+                <h2>Border Color</h2>
+                <p>
+                    You can set the color of borders.
+                </p>
+            </div>
+            <hr>
+            <div class="colors px-4">
+                <h2>Color Values</h2>
+                <p>
+                    In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and
+                    HSLA values.
+                </p>
+            </div>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>

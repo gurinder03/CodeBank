@@ -1,0 +1,72 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Paragraphs</h1>
+            <div class="headings px-4">
+                <p>The HTML <span class="red-text">&lt;p&gt;</span> element defines a paragraph.</p>
+                <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin)
+                    before and after a paragraph.</p>
+            </div>
+            <hr>
+            <div class="headings px-4">
+                <h2>HTML Display</h2>
+                <p>You cannot be sure how HTML will be displayed.
+
+                    Large or small screens, and resized windows will create different results.
+
+                    With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+
+                    The browser will automatically remove any extra spaces and lines when the page is displayed:</p>
+            </div>
+            <hr>
+            <div class="headings px-4">
+                <h2>HTML Horizontal Rules</h2>
+                <p>
+                    The <span class="red-text">&lt;hr&gt;</span> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;hr&gt;</span> element is used to separate content (or define a change) in an HTML page:
+                </p>
+            </div>
+            <hr>
+            <div class="headings px-4">
+                <h2>HTML Line Breaks</h2>
+                <p>The HTML <span class="red-text">&lt;br&gt;</span> element defines a line break.</p>
+                <p>Use <span class="red-text">&lt;br&gt;</span> if you want a line break (a new line) without starting a new paragraph:</p>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="easy-learning p-4 mt-5">
+                <h2>Easy Learning with Video Tutorial</h2>
+                <p class="example-txt">With our video tutorial you can easily learn html:</p>
+                <div class="example-editor text-center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DRSEizAGjGY?si=q6bItFS8s6eyarRv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<aside class="sidebar">
+    <div class="wrapper">
+        <div class="main-container">
+            <div class="sidebar">
+                <h2>{{sidebarList?.title}}</h2>
+                <div class="sidebar-content">
+                    <ul>
+                        <li *ngFor="let item of sidebarList?.sidebarData">
+                            <a [routerLink]="[item.link]">{{ item.text }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
