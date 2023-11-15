@@ -60,6 +60,44 @@
         {
         "text": "HTML Images",
         "link": "/html/html-images"
+        },
+        {
+        "text": "HTML Favicon",
+        "link": "/html/html-favicon"
+        },
+        {
+        "text": "HTML Page Title",
+        "link": "/html/html-page-title"
+        },
+        {
+        "text": "HTML Tables",
+        "link": "/html/html-tables",
+        "subtopics": [
+            {
+              "text": "Table Border",
+              "link": "/html/html-tables/table-border"
+            },
+            {
+              "text": "Table Sizes",
+              "link": "/html/html-tables/table-sizes"
+            }
+        ]
+        },
+        {
+        "text": "HTML Lists",
+        "link": "/html/html-lists"
+        },
+        {
+        "text": "HTML Block & Inline",
+        "link": "/html/html-block-inline"
+        },
+        {
+        "text": "HTML Div",
+        "link": "/html/html-div"
+        },
+        {
+        "text": "HTML Classes",
+        "link": "/html/html-classes"
         }
     ]
 }

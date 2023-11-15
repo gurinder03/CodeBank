@@ -1,0 +1,96 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS Routing</h1>
+                <p>
+                    The <span class="red-text">ngRoute</span> module helps your application to become a Single Page
+                    Application.
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>What is Routing in AngularJS?</h2>
+                <p>
+                    If you want to navigate to different pages in your application, but you also want the application to
+                    be a SPA (Single Page Application), with no page reloading, you can use the <span
+                        class="red-text">ngRoute</span> module.
+                </p>
+                <p>The <span class="red-text">ngRoute</span> module routes your application to different pages without
+                    reloading the entire application.</p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>What do I Need?</h2>
+                <p>
+                    To make your applications ready for routing, you must include the AngularJS Route module
+                </p>
+                <div class="note p-3">
+                    <p>
+                        <span class="red-text">
+                            &lt;script
+                            src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"&lt;&gt;/script&gt;
+                        </span>
+                    </p>
+
+                </div>
+                <p>
+                    Then you must add the <span class="red-text">ngRoute </span> as a dependency in the application
+                    module.
+                </p>
+                <p>
+                    Use the <span class="red-text">$routeProvider</span> to configure different routes in your
+                    application.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Where Does it Go?</h2>
+                <p>
+                    Your application needs a container to put the content provided by the routing.
+                </p>
+                <p>
+                    This container is the <span class="red-text">ng-view</span> directive.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>$routeProvider</h2>
+                <p>
+                    With the <span class="red-text">$routeProvider</span> you can define what page to display when a
+                    user clicks a link.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Controllers</h2>
+                <p>
+                    With the <span class="red-text"> $routeProvider</span> you can also define a controller for each "view".
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Template</h2>
+                <p>
+                    You can use the template property, which allows you to write HTML directly in the property value, and not refer to a page.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The otherwise method</h2>
+                <p>
+                    You can use the otherwise method, which is the default route when none of the others get a match.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

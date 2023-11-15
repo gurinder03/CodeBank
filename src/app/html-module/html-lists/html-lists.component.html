@@ -1,0 +1,158 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Lists</h1>
+            <div class="lists px-4">
+                <p>
+                    HTML offers web authors three ways for specifying lists of information. All lists must contain one
+                    or more list elements. Lists may contain −
+                </p>
+                <div class="note p-3 mt-3">
+                    <ul>
+                        <li><strong>&lt;ul&gt;</strong> − An unordered list. This will list items using plain bullets.
+                        </li>
+                        <li><strong>&lt;ol&gt;</strong> − An ordered list. This will use different schemes of numbers to
+                            list your items.</li>
+                        <li><strong>&lt;dl&gt;</strong> − A definition list. This arranges your items in the same way as
+                            they are arranged in a dictionary.</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="lists px-4">
+                <h2>HTML Unordered Lists</h2>
+                <p>
+                    An unordered list is a collection of related items that have no special order or sequence. This list
+                    is created by using HTML
+                    <strong>&lt;ul&gt;</strong> tag. Each item in the list is marked with a bullet.
+                </p>
+            </div>
+           
+            <div class="lists px-4">
+                <h2>The type Attribute</h2>
+                <p>
+                    You can use type attribute for
+                    &lt;ul&gt; tag to specify the type of bullet you like. By default, it is a disc. Following are the
+                    possible
+                    options
+                </p>
+                <div class="note p-3">
+                    <p>
+                        &lt;ul type="square"&gt;
+                    </p>
+                    <p>
+                        &lt;ul type="disc"&gt;
+                    </p>
+                    <p>
+                        &lt;ul type="circle"&gt;
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="lists px-4">
+                <h2>HTML Ordered Lists</h2>
+                <p>If you are required to put your items in a numbered list instead of bulleted, then HTML ordered list
+                    will be used. This list is created by using
+                    <strong>&lt;ol&gt;</strong> tag. The numbering starts at one and is incremented by one for each
+                    successive ordered list element
+                    tagged with &lt;li&gt;.
+                </p>
+            </div>
+            <div class="lists px-4">
+                <h2>The type Attribute</h2>
+                <p>
+                    You can use type attribute for
+                    &lt;ol&gt; tag to specify the <strong>type</strong> of numbering you like. By default, it is a
+                    number. Following are the
+                    possible options −
+                </p>
+                <div class="note p-3">
+                    <p>
+                        &lt;ol type="1"&gt; - Default-Case Numerals.
+                    </p>
+                    <p>
+                        &lt;ol type="I"&gt; - Upper-Case Numerals.
+                    </p>
+                    <p>
+                        &lt;ol type="i"&gt; - Lower-Case Numerals.
+                    </p>
+                    <p>
+                        &lt;ol type="A"&gt; - Upper-Case Letters.
+                    </p>
+                    <p>
+                        &lt;ol type="a"&gt; - Lower-Case Letters.
+                    </p>
+                </div>
+            </div>
+            <div class="lists px-4 mt-2">
+                <h2>The start Attribute</h2>
+                <p>
+                    You can use <strong>start</strong> attribute for
+                    &lt;ol&gt; tag to specify the starting point of numbering you need. Following are the possible
+                    options −
+                </p>
+                <div class="note p-3">
+                    <p>
+                        &lt;ol type="1" start = "4" &gt; - Numerals starts with 4.
+                    </p>
+                    <p>
+                        &lt;ol type="I" start = "4" &gt; - Numerals starts with IV.
+                    </p>
+                    <p>
+                        &lt;ol type="i" start = "4" &gt; - Numerals starts with iv.
+                    </p>
+                    <p>
+                        &lt;ol type="A" start = "4" &gt; - Letters starts with d.
+                    </p>
+                    <p>
+                        &lt;ol type="a" start = "4" &gt; - Letters starts with D.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="lists px-4">
+                <h2>HTML Definition Lists</h2>
+                <p>
+                    HTML and XHTML supports a list style which is called <strong>definition lists</strong> where entries
+                    are listed like
+                    in a dictionary or encyclopedia. The definition list is the ideal way to present a glossary, list of
+                    terms, or other name/value list.
+                </p>
+                <p>Definition List makes use of following three tags.</p>
+                <div class="note p-3">
+                    <ul>
+                        <li>&lt;dl&gt; − Defines the start of the list</li>
+                        <li>&lt;dt&gt; − A term</li>
+                        <li>&lt;dd&gt; − Term definition</li>
+                        <li>&lt;/dl&gt; − Defines the end of the list</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

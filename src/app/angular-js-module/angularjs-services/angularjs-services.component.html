@@ -1,1 +1,109 @@
-<p>angularjs-services works!</p>
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS Services</h1>
+                <p>
+                    In AngularJS you can make your own service, or use one of the many built-in services.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>What is a Service?</h2>
+                <p>
+                    In AngularJS, a service is a function, or object, that is available for, and limited to, your
+                    AngularJS application.
+                </p>
+                <p>
+                    AngularJS has about 30 built-in services. One of them is the <span class="red-text">$location</span>
+                    service.
+                </p>
+                <p>
+                    The <span class="red-text">$location</span> service has methods which return information about the
+                    location of the current web page.
+                </p>
+                <p>
+                    Note that the <span class="red-text">$location</span> service is passed in to the controller as an
+                    argument. In order to use the
+                    service in the controller, it must be defined as a dependency.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Why use Services?</h2>
+                <p>
+                    For many services, like the <span class="red-text">$location</span> service, it seems like you could
+                    use objects that are already
+                    in the DOM, like the <span class="red-text">window.location</span> object, and you could, but it
+                    would have some limitations, at
+                    least for your AngularJS application.
+                </p>
+                <p>
+                    AngularJS constantly supervises your application, and for it to handle changes and events properly,
+                    AngularJS prefers that you use the <span class="red-text">$location</span> service instead of the
+                    <span class="red-text">window.location</span> object.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The $http Service</h2>
+                <p>
+                    The <span class="red-text">$http</span> service is one of the most common used services in AngularJS
+                    applications. The service
+                    makes a request to the server, and lets your application handle the response.
+                </p>
+                <p>
+                    This example demonstrates a very simple use of the <span class="red-text">$http</span> service.
+                    Learn more about the <span class="red-text">$http</span> service
+                    in the AngularJS Http Tutorial.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The $timeout Service</h2>
+                <p>
+                    The <span class="red-text">$timeout</span> service is AngularJS' version of the <span
+                        class="red-text">window.setTimeout</span>
+                    function.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The $interval Service</h2>
+                <p>
+                    The <span class="red-text">$interval</span> service is AngularJS' version of the <span
+                        class="red-text">window.setInterval</span> function.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Create Your Own Service</h2>
+                <p>
+                    To create your own service, connect your service to the module.
+                </p>
+                <p>
+                    To use your custom made service, add it as a dependency when defining the controller.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Use a Custom Service Inside a Filter</h2>
+                <p>
+                    Once you have created a service, and connected it to your application, you can use the service in
+                    any controller, directive, filter, or even inside other services.
+                </p>
+                <p>
+                    To use the service inside a filter, add it as a dependency when defining the filter.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

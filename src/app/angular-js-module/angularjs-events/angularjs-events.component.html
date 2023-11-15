@@ -1,0 +1,109 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="events p-2 pt-3 px-4">
+                <h1>AngularJS Events</h1>
+                <p>
+                    AngularJS has its own HTML events directives.
+                </p>
+            </div>
+            <hr>
+            <div class="events p-2 pt-3 px-4">
+                <h2>AngularJS Events</h2>
+                <p>
+                    You can add AngularJS event listeners to your HTML elements by using one or more of these
+                    directives.
+                </p>
+                <ul>
+                    <li><span class="red-text">ng-blur</span></li>
+                    <li><span class="red-text">ng-change</span></li>
+                    <li><span class="red-text">ng-click</span></li>
+                    <li><span class="red-text">ng-copy</span></li>
+                    <li><span class="red-text">ng-cut</span></li>
+                    <li><span class="red-text">ng-dblclick</span></li>
+                    <li><span class="red-text">ng-focus</span></li>
+                    <li><span class="red-text">ng-keydown</span></li>
+                    <li><span class="red-text">ng-keypress</span></li>
+                    <li><span class="red-text">ng-keyup</span></li>
+                    <li><span class="red-text">ng-mousedown</span></li>
+                    <li><span class="red-text">ng-mouseenter</span></li>
+                    <li><span class="red-text">ng-mouseleave</span></li>
+                    <li><span class="red-text">ng-mousemove</span></li>
+                    <li><span class="red-text">ng-mouseover</span></li>
+                    <li><span class="red-text">ng-mouseup</span></li>
+                    <li><span class="red-text">ng-paste</span></li>
+                </ul>
+                <p>The event directives allows us to run AngularJS functions at certain user events.</p>
+                <p>An AngularJS event will not overwrite an HTML event, both events will be executed.</p>
+            </div>
+            <hr>
+            <div class="events p-2 pt-3 px-4">
+                <h2>Mouse Events</h2>
+                <p>
+                    Mouse events occur when the cursor moves over an element, in this order:
+                </p>
+                <ol>
+                    <li>ng-mouseover</li>
+                    <li>ng-mouseenter</li>
+                    <li>ng-mousemove</li>
+                    <li>ng-mouseleave</li>
+                </ol>
+                <p>
+                    Or when a mouse button is clicked on an element, in this order:
+                </p>
+                <ol>
+                    <li>ng-mousedown</li>
+                    <li>ng-mouseup</li>
+                    <li>ng-click</li>
+                </ol>
+                <p>
+                    You can add mouse events on any HTML element.
+                </p>
+            </div>
+            <hr>
+            <div class="events p-2 pt-3 px-4">
+                <h2>The ng-click Directive</h2>
+                <p>
+                    The <strong class="red-text">ng-click</strong> directive defines AngularJS code that will be
+                    executed when the element is being clicked.
+                </p>
+            </div>
+            <hr>
+            <div class="events p-2 pt-3 px-4">
+                <h2>Toggle, True/False</h2>
+                <p>
+                    If you want to show a section of HTML code when a button is clicked, and hide when the button is
+                    clicked again, like a dropdown menu, make the button behave like a toggle switch.
+                </p>
+                <p>
+                    The <span class="red-text">showMe</span> variable starts out as the Boolean value <span
+                        class="red-text">false</span>.
+                </p>
+                <p>
+                    The <span class="red-text">myFunc</span> function sets the <span class="red-text">showMe</span>
+                    variable to the opposite of what
+                    it is, by using the <span class="red-text">!</span> (not) operator.
+                </p>
+            </div>
+            <hr>
+            <div class="events p-2 pt-3 px-4">
+                <h2>$event Object</h2>
+                <p>
+                    You can pass the <span class="red-text">$event</span> object as an argument when calling the
+                    function.
+                </p>
+                <p>
+                    The <span class="red-text">$event</span> object contains the browser's event object.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

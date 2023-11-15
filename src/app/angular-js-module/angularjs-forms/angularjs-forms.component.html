@@ -1,0 +1,90 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS Forms</h1>
+                <p>
+                    Forms in AngularJS provides data-binding and validation of input controls.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Input Controls</h2>
+                <p>
+                    Input controls are the HTML input elements:
+                </p>
+                <ul>
+                    <li>input elements</li>
+                    <li>select elements</li>
+                    <li>button elements</li>
+                    <li>textarea elements</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Data-Binding</h2>
+                <p>
+                    Input controls provides data-binding by using the <span class="red-text">ng-model</span> directive.
+                </p>
+                <div class="note p-3">
+                    <p>
+                        <span class="red-text">&lt;input type="text" ng-model="firstname"&gt;</span>
+                    </p>
+                </div>
+                <p>
+                    The <span class="red-text">ng-model</span> directive binds the input controller to the rest of your
+                    application.
+                </p>
+                <p>
+                    The property <span class="red-text">firstname</span>, can be referred to in a controller.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Checkbox</h2>
+                <p>
+                    A checkbox has the value <span class="red-text">true</span> or <span class="red-text">false</span>.
+                    Apply the <span class="red-text">ng-model</span> directive to a checkbox, and use its
+                    value in your application.
+                </p>
+            </div>
+
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Radiobuttons</h2>
+                <p>
+                    Bind radio buttons to your application with the <span class="red-text">ng-model</span> directive.
+                </p>
+                <p>
+                    Radio buttons with the same <span class="red-text">ng-model</span> can have different values, but
+                    only the selected one will be used.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Selectbox</h2>
+                <p>
+                    Bind select boxes to your application with the <span class="red-text">ng-model</span> directive.
+                </p>
+                <p>
+                    The property defined in the <span class="red-text">ng-model</span> attribute will have the value of
+                    the selected option in the selectbox.
+                </p>
+            </div>
+            <div class="note p-4">
+                <p>
+                    The <strong>novalidate</strong> attribute is new in HTML5. It disables any default browser
+                    validation.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

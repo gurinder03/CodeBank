@@ -52,7 +52,49 @@
         {
         "text": "AngularJS Tables",
         "link": "/angularjs/angularjs-tables"
+        },
+        {
+        "text": "AngularJS Select",
+        "link": "/angularjs/angularjs-select"
+        },
+        {
+        "text": "AngularJS SQL",
+        "link": "/angularjs/angularjs-sql"
+        },
+        {
+        "text": "AngularJS DOM",
+        "link": "/angularjs/angularjs-dom"
+        },
+        {
+        "text": "AngularJS Events",
+        "link": "/angularjs/angularjs-events"
+        },
+        {
+        "text": "AngularJS Forms",
+        "link": "/angularjs/angularjs-forms"
+        },
+        {
+        "text": "AngularJS Validation",
+        "link": "/angularjs/angularjs-validation"
+        },
+        {
+        "text": "AngularJS API",
+        "link": "/angularjs/angularjs-api"
+        },
+        {
+        "text": "AngularJS Includes",
+        "link": "/angularjs/angularjs-includes"
+        },
+        {
+        "text": "AngularJS Animations",
+        "link": "/angularjs/angularjs-animations"
+        },
+        {
+        "text": "AngularJS Routing",
+        "link": "/angularjs/angularjs-routing"
         }
+
 
     ]
 }
+

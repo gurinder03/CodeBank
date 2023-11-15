@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
   
   sidebarList: any
+
   @Input() sidebarData!: string;
 
   constructor(){}
@@ -18,4 +19,5 @@ export class SidebarComponent implements OnInit {
     console.log('sidebar fdd=> ', this.sidebarList);
   }
 
+ 
 }

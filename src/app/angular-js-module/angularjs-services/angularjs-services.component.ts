@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as jsonData from '../../core/jsonData/angularJs.json';
+
 
 @Component({
   selector: 'app-angularjs-services',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./angularjs-services.component.css']
 })
 export class AngularjsServicesComponent {
+  sidebar: any = jsonData;
 
 }

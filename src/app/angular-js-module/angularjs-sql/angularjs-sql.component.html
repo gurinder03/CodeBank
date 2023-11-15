@@ -1,0 +1,74 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS SQL</h1>
+                <p>
+                    AngularJS is perfect for displaying data from a Database. Just make sure the data is in JSON format.
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Fetching Data From a PHP Server Running MySQL</h2>
+            </div>
+
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Fetching Data From an ASP.NET Server Running SQL</h2>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Server Code Examples</h2>
+                <p>The following section is a listing of the server code used to fetch SQL data.</p>
+                <ol>
+                    <li>Using PHP and MySQL. Returning JSON.</li>
+                    <li>Using PHP and MS Access. Returning JSON.</li>
+                    <li>Using ASP.NET, VB, and MS Access. Returning JSON.</li>
+                    <li>Using ASP.NET, Razor, and SQL Lite. Returning JSON.</li>
+                </ol>
+            </div>
+
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Cross-Site HTTP Requests</h2>
+                <p>A request for data from a different server (other than the requesting page), are called cross-site
+                    HTTP requests.</p>
+                <p>Cross-site requests are common on the web. Many pages load CSS, images, and scripts from different servers.</p>
+                <p>In modern browsers, cross-site HTTP requests from scripts are restricted to same site for security reasons.</p>
+                <p>The following line, in our PHP examples, has been added to allow cross-site access.</p>
+                
+                <div class="note p-4">
+                    <p><span class="red-text">header("Access-Control-Allow-Origin: *");</span> </p>
+                </div>
+               
+            </div>
+
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>1. Server Code PHP and MySQL</h2> 
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>2. Server Code PHP and MS Access</h2>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>3. Server Code ASP.NET, VB and MS Access</h2>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>4. Server Code ASP.NET, Razor C# and SQL Lite</h2>
+            </div>
+           
+        </div>
+    </div>
+</div>

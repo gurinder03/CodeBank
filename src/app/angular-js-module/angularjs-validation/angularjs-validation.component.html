@@ -1,0 +1,153 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS Form Validation</h1>
+                <p>
+                    AngularJS can validate input data.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Form Validation</h2>
+                <p>
+                    AngularJS offers client-side form validation.
+                </p>
+                <p>
+                    AngularJS monitors the state of the form and input fields (input, textarea, select), and lets you
+                    notify the user about the current state.
+                </p>
+                <p>
+                    AngularJS also holds information about whether they have been touched, or modified, or not.
+                </p>
+                <p>
+                    You can use standard HTML5 attributes to validate input, or you can make your own validation
+                    functions.
+                </p>
+            </div>
+            <div class="note p-3">
+                <p>
+                    Client-side validation cannot alone secure user input. Server side validation is also necessary.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Required</h2>
+                <p>
+                    Use the HTML5 attribute <span class="red-text">required </span> to specify that the input field must
+                    be filled out.
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Email</h2>
+                <p>
+                    Use the HTML5 type <span class="red-text">email</span> to specify that the value must be an e-mail.
+                </p>
+            </div>
+
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Form State and Input State</h2>
+                <p>
+                    AngularJS is constantly updating the state of both the form and the input fields.
+                </p>
+                <p>
+                    Input fields have the following states:
+                </p>
+                <ul>
+                    <li><span class="red-text">$untouched</span> The field has not been touched yet</li>
+                    <li><span class="red-text">$touched</span> The field has been touched</li>
+                    <li><span class="red-text">$pristine</span> The field has not been modified yet</li>
+                    <li><span class="red-text">$dirty</span> The field has been modified</li>
+                    <li><span class="red-text">$invalid</span> The field content is not valid</li>
+                    <li><span class="red-text">$valid</span> The field content is valid</li>
+                </ul>
+                <p>
+                    They are all properties of the input field, and are either <span class="red-text">true</span> or
+                    <span class="red-text">false</span>.
+                </p>
+                <p>Forms have the following states:</p>
+                <ul>
+                    <li><span class="red-text">$pristine</span> No fields have been modified yet</li>
+                    <li><span class="red-text">$dirty</span> One or more have been modified</li>
+                    <li><span class="red-text">$invalid</span> The form content is not valid</li>
+                    <li><span class="red-text">$valid</span> The form content is valid</li>
+                    <li><span class="red-text">$submitted</span> The form is submitted</li>
+                </ul>
+                <p>
+                    They are all properties of the form, and are either <span class="red-text">true</span> or
+                    <span class="red-text">false</span>.
+                </p>
+                <p>
+                    You can use these states to show meaningful messages to the user. Example, if a field is required,
+                    and the user leaves it blank, you should give the user a warning.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>CSS Classes</h2>
+                <p>
+                    AngularJS adds CSS classes to forms and input fields depending on their states.
+                </p>
+                <p>
+                    The following classes are added to, or removed from, input fields:
+                </p>
+                <ul>
+                    <li><span class="red-text">ng-untouched</span> The field has not been touched yet</li>
+                    <li><span class="red-text">ng-touched</span> The field has been touched</li>
+                    <li><span class="red-text">ng-pristine</span> The field has not been modified yet</li>
+                    <li><span class="red-text">ng-dirty</span> The field has been modified</li>
+                    <li><span class="red-text">ng-valid</span> The field content is valid</li>
+                    <li><span class="red-text">ng-invalid</span> The field content is not valid</li>
+                    <li><span class="red-text">ng-valid-key</span> One key for each validation. Example:
+                        <span class="red-text">ng-valid-required</span>, useful when there are more than one thing that
+                        must be validated
+                    </li>
+                    <li><span class="red-text">ng-invalid-key</span>
+                        Example: <span class="red-text">ng-invalid-required</span>
+                    </li>
+
+                </ul>
+
+                <p>
+                    The following classes are added to, or removed from, forms:
+                </p>
+                <ul>
+                    <li><span class="red-text">ng-pristine</span> No fields has not been modified yet</li>
+                    <li><span class="red-text">ng-dirty</span> One or more fields has been modified</li>
+                    <li><span class="red-text">ng-valid</span> The form content is valid</li>
+                    <li><span class="red-text">ng-invalid</span> The form content is not valid</li>
+                    <li><span class="red-text">ng-valid-key</span> One key for each validation
+                        Example: <span class="red-text">ng-valid-required</span> , useful when there are more than one
+                        thing that must be validated
+                    </li>
+                    <li><span class="red-text">ng-invalid-key</span>Example: <span
+                            class="red-text">ng-invalid-required</span> </li>
+
+                </ul>
+            </div>
+
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Custom Validation</h2>
+                <p>
+                    To create your own validation function is a bit more tricky; You have to add a new directive to your
+                    application, and deal with the validation inside a function with certain specified arguments.
+                </p>
+
+                Example
+            </div>
+
+        </div>
+    </div>
+</div>

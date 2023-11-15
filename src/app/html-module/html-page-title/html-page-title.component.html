@@ -1,0 +1,78 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Page Title</h1>
+            <div class="title px-4">
+                <p>
+                    Every web page should have a page title to describe the meaning of the page.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;title&gt;</span> element adds a title to your page.
+                </p>
+                <p>
+                    The title should describe the content and the meaning of the page.
+                </p>
+                <p>
+                    The page title is very important for search engine optimization (SEO). The text is used by search
+                    engine algorithms to decide the order when listing pages in search results.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;title&gt;</span> element:
+                </p>
+                <ul>
+                    <li>defines a title in the browser toolbar</li>
+                    <li>provides a title for the page when it is added to favorites</li>
+                    <li>displays a title for the page in search engine-results</li>
+                </ul>
+                <p>So, try to make the title as accurate and meaningful as possible!</p>
+            </div>
+            <hr>
+            <div class="title px-4">
+                <h2>HTML Title Tag</h2>
+                <table>
+                    <thead>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;title&gt;</td>
+                            <td>Defines the title of the document</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="note p-3 mt-3">
+                    <p>
+                        For a complete list of all available HTML tags, visit our HTML Tag Reference.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <img src="./assets/images/title.png">
+                    <!-- <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

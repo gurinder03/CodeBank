@@ -1,0 +1,133 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS Animations</h1>
+                <p>
+                    AngularJS provides animated transitions, with help from CSS.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>What is an Animation?</h2>
+                <p>
+                    An animation is when the transformation of an HTML element gives you an illusion of motion.
+                </p>
+            </div>
+            <div class="note p-3">
+                <p>
+                    Applications should not be filled with animations, but some animations can make the application
+                    easier to understand.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>What do I Need?</h2>
+                <p>
+                    To make your applications ready for animations, you must include the AngularJS Animate library:
+                </p>
+                <div class="note p-3">
+                    <span class="red-text">
+                        &lt;script
+                        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"&gt;&lt;/script&gt;
+                    </span>
+                </div>
+                <p>
+                    Then you must refer to the <span class="red-text"> ngAnimate</span> module in your application.
+                </p>
+                <div class="note p-3">
+                    <span class="red-text">
+                        &lt;body ng-app="ngAnimate"&gt;
+                    </span>
+                </div>
+                <p>Or if your application has a name, add <span class="red-text">ngAnimate</span> as a dependency in
+                    your application module</p>
+            </div>
+
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>What Does ngAnimate Do?</h2>
+                <p>
+                    The ngAnimate module adds and removes classes.
+                </p>
+                <p>
+                    The ngAnimate module does not animate your HTML elements, but when ngAnimate notice certain events,
+                    like hide or show of an HTML element, the element gets some pre-defined classes which can be used to
+                    make animations.
+                </p>
+                <p>
+                    The directives in AngularJS who add/remove classes are:
+                </p>
+                <ul>
+                    <li><span class="red-text">ng-show</span></li>
+                    <li><span class="red-text">ng-hide</span></li>
+                    <li><span class="red-text">ng-class</span></li>
+                    <li><span class="red-text">ng-view</span></li>
+                    <li><span class="red-text">ng-include</span></li>
+                    <li><span class="red-text">ng-repeat</span></li>
+                    <li><span class="red-text">ng-if</span></li>
+                    <li><span class="red-text">ng-switch</span></li>
+                </ul>
+
+                <p>
+                    The <span class="red-text">ng-show</span> and <span class="red-text">ng-hide</span> directives adds
+                    or removes a <span class="red-text">ng-hide</span> class value.
+                </p>
+                <p>
+                    The other directives adds a <span class="red-text">ng-enter</span> class value when they enter the
+                    DOM, and a <span class="red-text">ng-leave</span> attribute when they are removed from the DOM.
+                </p>
+                <p>
+                    The <span class="red-text">ng-repeat</span> directive also adds a <span
+                        class="red-text">ng-move</span> class value when the HTML element changes position.
+                </p>
+                <p>
+                    In addition, during the animation, the HTML element will have a set of class values, which will be
+                    removed when the animation has finished. Example: the <span class="red-text">ng-hide</span>
+                    directive will add these class values:
+                </p>
+                <ul>
+                    <li><span class="red-text">ng-animate</span></li>
+                    <li><span class="red-text">ng-hide-animate</span></li>
+                    <li><span class="red-text">ng-hide-add</span> (if the element will be hidden)</li>
+                    <li><span class="red-text">ng-hide-remove</span> (if the element will be showed)</li>
+                    <li><span class="red-text">ng-hide-add-active</span> (if the element will be hidden)</li>
+                    <li><span class="red-text">ng-hide-remove-active</span> (if the element will be showed)</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Animations Using CSS</h2>
+                <p>
+                    We can use CSS transitions or CSS animations to animate HTML elements. This tutorial will show you
+                    both. <br>
+
+                    To learn more about CSS Animation, study our CSS Transition Tutorial and our CSS Animation Tutorial.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>CSS Transitions</h2>
+                <p>
+                    CSS transitions allows you to change CSS property values smoothly, from one value to another, over a
+                    given duration
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>CSS Animations</h2>
+                <p>
+                    CSS Animations allows you to change CSS property values smoothly, from one value to another, over a
+                    given duration:
+                </p>
+            </div>
+        </div>
+    </div>

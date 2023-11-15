@@ -1,1 +1,76 @@
-<p>angularjs-http works!</p>
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS AJAX - $http</h1>
+                <p>
+                    <strong>$http</strong> is an AngularJS service for reading data from remote servers.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>AngularJS $http</h2>
+                <p>
+                    The AngularJS <span class="red-text">$http</span> service makes a request to the server, and returns
+                    a response.
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Methods</h2>
+                <p>
+                    The example above uses the <span clas="red-text">.get</span> method of the <span
+                        class="red-text">$http</span> service.
+                </p>
+                <p>
+                    The .get method is a shortcut method of the $http service. There are several shortcut methods:
+                </p>
+                <ul>
+                    <li><span class="red-text">.delete()</span></li>
+                    <li><span class="red-text">.get()</span></li>
+                    <li><span class="red-text">.head()</span></li>
+                    <li><span class="red-text">.jsonp()</span></li>
+                    <li><span class="red-text">.patch()</span></li>
+                    <li><span class="red-text">.post()</span></li>
+                    <li><span class="red-text">.put()</span></li>
+                </ul>
+                <p>The methods above are all shortcuts of calling the $http service</p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Properties</h2>
+                <p>
+                    The response from the server is an object with these properties:
+                </p>
+
+                <ul>
+                    <li><span class="red-text">.config</span> the object used to generate the request</li>
+                    <li><span class="red-text">.data</span> a string, or an object, carrying the response from the
+                        server</li>
+                    <li><span class="red-text">.headers</span>a function to use to get header information.</li>
+                    <li><span class="red-text">.status</span>a number defining the HTTP status.</li>
+                    <li><span class="red-text">.statusText</span> a string defining the HTTP status.</li>
+                </ul>
+                <p>To handle errors, add one more functions to the <span class="red-text">.then</span> method</p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>JSON</h2>
+                <p>
+                    The data you get from the response is expected to be in JSON format.
+                </p>
+                <p>JSON is a great way of transporting data, and it is easy to use within AngularJS, or any other
+                    JavaScript.</p>
+            </div>
+        </div>
+    </div>
+</div>

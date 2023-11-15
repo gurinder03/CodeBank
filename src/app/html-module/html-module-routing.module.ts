@@ -15,6 +15,13 @@ import { HtmlCommentsComponent } from './html-comments/html-comments.component';
 import { HtmlColorsComponent } from './html-colors/html-colors.component';
 import { HtmlLinksComponent } from './html-links/html-links.component';
 import { HtmlImagesComponent } from './html-images/html-images.component';
+import { HtmlFaviconComponent } from './html-favicon/html-favicon.component';
+import { HtmlPageTitleComponent } from './html-page-title/html-page-title.component';
+import { HtmlTablesComponent } from './html-tables/html-tables.component';
+import { HtmlListsComponent } from './html-lists/html-lists.component';
+import { HtmlBlockInlineComponent } from './html-block-inline/html-block-inline.component';
+import { HtmlDivComponent } from './html-div/html-div.component';
+import { HtmlClassesComponent } from './html-classes/html-classes.component';
 
 
 
@@ -91,6 +98,34 @@ const routes: Routes = [
       {
         path: 'html-images',
         component:HtmlImagesComponent
+      },
+      {
+        path: 'html-favicon',
+        component:HtmlFaviconComponent
+      },
+      {
+        path: 'html-page-title',
+        component:HtmlPageTitleComponent
+      },
+      {
+        path: 'html-tables',
+        component:HtmlTablesComponent
+      },
+      {
+        path: 'html-lists',
+        component:HtmlListsComponent
+      },
+      {
+        path: 'html-block-inline',
+        component:HtmlBlockInlineComponent
+      },
+      {
+        path: 'html-div',
+        component:HtmlDivComponent
+      },
+      {
+        path: 'html-classes',
+        component:HtmlClassesComponent
       }
    
    

@@ -1,0 +1,66 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="select p-2 pt-3 px-4">
+                <h1>AngularJS Select Boxes</h1>
+                <p>
+                    AngularJS lets you create dropdown lists based on items in an array, or an object.
+                </p>
+            </div>
+            <hr>
+            <div class="select p-2 pt-3 px-4">
+                <h2>Creating a Select Box Using ng-options</h2>
+                <p>
+                    If you want to create a dropdown list, based on an object or an array in AngularJS, you should use
+                    the <span class="red-text"> ng-options </span>directive.
+                </p>
+            </div>
+            <hr>
+            <div class="select p-2 pt-3 px-4">
+                <h2>ng-options vs ng-repeat</h2>
+                <p>
+                    You can also use the <span class="red-text">ng-repeat</span> directive to make the same dropdown
+                    list.
+                </p>
+                <p>
+                    Because the <span class="red-text">ng-repeat</span> directive repeats a block of HTML code for each
+                    item in an array, it can be
+                    used to create options in a dropdown list, but the <span class="red-text"> ng-options </span>
+                    directive was made especially for
+                    filling a dropdown list with options.
+                </p>
+            </div>
+            <hr>
+            <div class="select p-2 pt-3 px-4">
+                <h2>What Do I Use?</h2>
+                <p>
+                    You can use both the <span class="red-text">ng-repeat</span> directive and the <span
+                        class="red-text"> ng-options </span> directive
+                </p>
+                <p>
+                    When the selected value is an object, it can hold more information, and your application can be more flexible.
+                </p>
+                <p>
+                    We will use the <span class="red-text"> ng-options </span> directive in this tutorial.
+                </p>
+            </div>
+
+            <hr>
+            <div class="select p-2 pt-3 px-4">
+                <h2>The Data Source as an Object</h2>
+                <p>
+                    we can also use data source as an object.
+                </p>
+               
+            </div>
+        </div>
+    </div>
+</div>

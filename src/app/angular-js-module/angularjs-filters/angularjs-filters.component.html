@@ -8,7 +8,6 @@
                 <button type="button" class="next-btn ">Next <span class="right-arrow"><i
                             class="fas fa-chevron-right fa-2x"></i></span></button>
             </div>
-
             <div class="expression p-2 pt-3 px-4">
                 <h1>AngularJS Filters</h1>
                 <p>
@@ -51,7 +50,6 @@
                     Filters are added to directives, like <span class="text-red">ng-repeat</span> , by using the pipe
                     character <span class="text-red">|</span> , followed by a filter:
                 </p>
-               
             </div>
             <hr>
             <div class="expression p-2 pt-3 px-4">
@@ -59,7 +57,57 @@
                 <p>
                     The <span class="red-text">currency</span>  filter formats a number as currency:
                 </p>
-               
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>The filter Filter</h2>
+                <p>
+                    The <span class="red-text">filter</span>  filter selects a subset of an array.
+                </p>
+                <p>
+                    The <span class="red-text">filter</span> filter can only be used on arrays, and it returns an array containing only the matching items.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Filter an Array Based on User Input</h2>
+                <p>
+                    By setting the <span class="red-text">ng-model</span> directive on an input field, we can use the value of the input field as an expression in a filter.
+                </p>
+               <ul>
+                <li>Jani</li>
+                <li>Carl</li>
+                <li>Margareth</li>
+                <li>Hege</li>
+                <li>Joe</li>
+                <li>Gustav</li>
+                <li>Birgit</li>
+                <li>Mary</li>
+                <li>Kai</li>
+               </ul>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Sort an Array Based on User Input</h2>
+                <p>
+                    Click the table headers to change the sort order::
+                </p>
+               <table>
+
+               </table>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Custom Filters</h2>
+                <p>
+                    You can make your own filters by registering a new filter factory function with your module.
+                </p>
+                <p>
+                    The <span class="red-text">myFormat </span> filter will format every other character to uppercase.
+                </p>
+               <table>
+
+               </table>
             </div>
         </div>
     </div>

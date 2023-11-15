@@ -16,6 +16,16 @@ import { AngularjsFiltersComponent } from './angularjs-filters/angularjs-filters
 import { AngularjsServicesComponent } from './angularjs-services/angularjs-services.component';
 import { AngularjsHttpComponent } from './angularjs-http/angularjs-http.component';
 import { AngularjsTablesComponent } from './angularjs-tables/angularjs-tables.component';
+import { AngularjsSelectComponent } from './angularjs-select/angularjs-select.component';
+import { AngularjsSqlComponent } from './angularjs-sql/angularjs-sql.component';
+import { AngularjsDomComponent } from './angularjs-dom/angularjs-dom.component';
+import { AngularjsEventsComponent } from './angularjs-events/angularjs-events.component';
+import { AngularjsFormsComponent } from './angularjs-forms/angularjs-forms.component';
+import { AngularjsValidationComponent } from './angularjs-validation/angularjs-validation.component';
+import { AngularjsApiComponent } from './angularjs-api/angularjs-api.component';
+import { AngularjsIncludesComponent } from './angularjs-includes/angularjs-includes.component';
+import { AngularjsAnimationsComponent } from './angularjs-animations/angularjs-animations.component';
+import { AngularjsRoutingComponent } from './angularjs-routing/angularjs-routing.component';
 
 
 
@@ -34,6 +44,16 @@ import { AngularjsTablesComponent } from './angularjs-tables/angularjs-tables.co
     AngularjsServicesComponent,
     AngularjsHttpComponent,
     AngularjsTablesComponent,
+    AngularjsSelectComponent,
+    AngularjsSqlComponent,
+    AngularjsDomComponent,
+    AngularjsEventsComponent,
+    AngularjsFormsComponent,
+    AngularjsValidationComponent,
+    AngularjsApiComponent,
+    AngularjsIncludesComponent,
+    AngularjsAnimationsComponent,
+    AngularjsRoutingComponent,
   
   ],
   imports: [

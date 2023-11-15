@@ -1,0 +1,147 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Div Element</h1>
+            <div class="div px-4">
+                <p>
+                    The <span class="red-text">&lt;div&gt;</span> element is used as a container for other HTML
+                    elements.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>The <span class="red-text">&lt;div&gt;</span> Element</h2>
+                <p>
+                    The
+                    <span class="red-text">&lt;div&gt;</span> element is by default a block element, meaning that it
+                    takes all available width, and comes with
+                    line breaks before and after.
+                </p>
+                <p>The <span class="red-text">&lt;div&gt;</span> element has no required attributes, but <span
+                        class="red-text">style</span> , <span class="red-text">class</span> and <span
+                        class="red-text">id</span> are common.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2><span class="red-text">&lt;div&gt;</span> as a container</h2>
+                <p>
+                    The <span class="red-text">&lt;div&gt;</span> element is often used to group sections of a web page
+                    together.
+                </p>
+
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Center align a <span class="red-text">&lt;div&gt;</span> element</h2>
+                <p>
+                    If you have a
+                    <span class="red-text">&lt;div&gt;</span> element that is not 100% wide, and you want to
+                    center-align it, set the CSS <span class="red-text">margin</span> property to
+                    <span class="red-text">auto</span> .
+                </p>
+
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Multiple <span class="red-text">&lt;div&gt;</span> elements</h2>
+                <p>
+                    You can have many <span class="red-text">&lt;div&gt;</span> containers on the same page.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Aligning <span class="red-text">&lt;div&gt;</span> elements side by side</h2>
+                <p>
+                    When building web pages, you often want to have two or more <span
+                        class="red-text">&lt;div&gt;</span> elements side by side, like this
+                </p>
+                <p>
+                    There are different methods for aligning elements side by side, all include some CSS styling. We
+                    will look at the most common methods:
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Float</h2>
+                <p>
+                    The CSS <span class="red-text">float</span> property was not originally meant to align <span
+                        class="red-text">&lt;div&gt;</span> elements side-by-side, but has been used for this purpose
+                    for many years.
+                </p>
+                <p>
+                    The CSS <span class="red-text">float</span> property is used for positioning and formatting content
+                    and allow elements float next to each other instead of on top of each other.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Inline-block</h2>
+                <p>
+                    If you change the <span class="red-text">&lt;div&gt;</span> element's <span class="red-text">
+                        display</span> property from <span class="red-text"> block</span> to
+                    <span class="red-text">inline-block</span>, the <span class="red-text">&lt;div&gt;</span> elements
+                    will no longer add a line break
+                    before and after, and will be displayed side by side instead of on top of each other.
+                </p>
+
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Flex</h2>
+                <p>
+                    The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout
+                    structure without using float or positioning.
+                </p>
+                <p>
+                    To make the CSS flex method work, surround the <span class="red-text">&lt;div&gt;</span> elements
+                    with another <span class="red-text">&lt;div&gt;</span> element and give it the status as a flex
+                    container.
+                </p>
+
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Grid</h2>
+                <p>
+                    The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it
+                    easier to design web pages without having to use floats and positioning..
+                </p>
+                <p>
+                    Sounds almost the same as flex, but has the ability to define more than one row and position each
+                    row individually.
+                </p>
+                <p>
+                    The CSS grid method requires that you surround the <span class="red-text">&lt;div&gt;</span>
+                    elements with another <span class="red-text">&lt;div&gt;</span> element and give the status as a
+                    grid container, and you must specify the width of each column.
+                </p>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

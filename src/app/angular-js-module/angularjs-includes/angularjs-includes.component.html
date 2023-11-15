@@ -1,0 +1,52 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4 ">
+            <div class="home-next d-flex justify-content-between">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="expression p-2 pt-3 px-4">
+                <h1>AngularJS Includes</h1>
+                <p>
+                    With AngularJS, you can include HTML from an external file.
+                </p>
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>AngularJS Includes</h2>
+                <p>
+                    With AngularJS, you can include HTML content using the <strong>ng-include</strong> directive.
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Include AngularJS Code</h2>
+                <p>
+                    The HTML files you include with the ng-include directive, can also contain AngularJS code.
+                </p>
+
+            </div>
+            <hr>
+            <div class="expression p-2 pt-3 px-4">
+                <h2>Include Cross Domains</h2>
+                <p>
+                    By default, the ng-include directive does not allow you to include files from other domains
+                </p>
+                <p>
+                    To include files from another domain, you can add a whitelist of legal files and/or domains in the
+                    config function of your application.
+                </p>
+            </div>
+            <div class="note p-3">
+                <p>
+                    Be sure that the server on the destination allows cross domain file access.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

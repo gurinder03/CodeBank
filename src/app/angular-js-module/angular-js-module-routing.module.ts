@@ -12,6 +12,17 @@ import { AngularjsScopesComponent } from './angularjs-scopes/angularjs-scopes.co
 import { AngularjsFiltersComponent } from './angularjs-filters/angularjs-filters.component';
 import { AngularjsServicesComponent } from './angularjs-services/angularjs-services.component';
 import { AngularjsTablesComponent } from './angularjs-tables/angularjs-tables.component';
+import { AngularjsHttpComponent } from './angularjs-http/angularjs-http.component';
+import { AngularjsSelectComponent } from './angularjs-select/angularjs-select.component';
+import { AngularjsSqlComponent } from './angularjs-sql/angularjs-sql.component';
+import { AngularjsDomComponent } from './angularjs-dom/angularjs-dom.component';
+import { AngularjsEventsComponent } from './angularjs-events/angularjs-events.component';
+import { AngularjsFormsComponent } from './angularjs-forms/angularjs-forms.component';
+import { AngularjsValidationComponent } from './angularjs-validation/angularjs-validation.component';
+import { AngularjsApiComponent } from './angularjs-api/angularjs-api.component';
+import { AngularjsIncludesComponent } from './angularjs-includes/angularjs-includes.component';
+import { AngularjsAnimationsComponent } from './angularjs-animations/angularjs-animations.component';
+import { AngularjsRoutingComponent } from './angularjs-routing/angularjs-routing.component';
 
 const routes: Routes = [
   {
@@ -73,11 +84,51 @@ const routes: Routes = [
       },
       {
         path: 'angularjs-http',
-        component: AngularjsServicesComponent
+        component: AngularjsHttpComponent
       },
       {
         path: 'angularjs-tables',
         component: AngularjsTablesComponent
+      },
+      {
+        path: 'angularjs-select',
+        component: AngularjsSelectComponent
+      },
+      {
+        path: 'angularjs-sql',
+        component: AngularjsSqlComponent
+      },
+      {
+        path: 'angularjs-dom',
+        component: AngularjsDomComponent
+      },
+      {
+        path: 'angularjs-events',
+        component: AngularjsEventsComponent
+      },
+      {
+        path: 'angularjs-forms',
+        component: AngularjsFormsComponent
+      },
+      {
+        path: 'angularjs-validation',
+        component: AngularjsValidationComponent
+      },
+      {
+        path: 'angularjs-api',
+        component: AngularjsApiComponent
+      },
+      {
+        path: 'angularjs-includes',
+        component: AngularjsIncludesComponent
+      },
+      {
+        path: 'angularjs-animations',
+        component: AngularjsAnimationsComponent
+      },
+      {
+        path: 'angularjs-routing',
+        component: AngularjsRoutingComponent
       }
     ],
   },
