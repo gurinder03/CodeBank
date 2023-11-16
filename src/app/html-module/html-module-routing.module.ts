@@ -31,6 +31,7 @@ import { HtmlLayoutComponent } from './html-layout/html-layout.component';
 import { HtmlResponsiveComponent } from './html-responsive/html-responsive.component';
 import { HtmlComputercodeComponent } from './html-computercode/html-computercode.component';
 import { HtmlSemanticsComponent } from './html-semantics/html-semantics.component';
+import { HtmlStyleGuideComponent } from './html-style-guide/html-style-guide.component';
 
 
 
@@ -171,6 +172,10 @@ const routes: Routes = [
       {
         path: 'html-semantics',
         component:HtmlSemanticsComponent
+      },
+      {
+        path: 'html-style-guide',
+        component:HtmlStyleGuideComponent
       }
     ]
   },

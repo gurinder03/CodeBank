@@ -137,6 +137,108 @@
                     <li>logo or icon</li>
                     <li>authorship information</li>
                 </ul>
+                <p>
+                    <strong>Note :</strong>
+                    You can have several
+                    <span class="red-text">&lt;header&gt;</span> elements in one HTML document. However, <span
+                        class="red-text">&lt;header&gt;</span> cannot be placed within a <span
+                        class="red-text">&lt;footer&gt;</span>, <span class="red-text">&lt;address&gt;</span>
+                    or another <span class="red-text">&lt;header&gt;</span> element.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;footer&gt; Element</h2>
+                <p>
+                    The <span class="red-text">&lt;footer&gt;</span> element defines a footer for a document or section.
+                </p>
+                <p>
+                    A <span class="red-text">&lt;footer&gt;</span> element typically contains:
+                </p>
+                <ul>
+                    <li>authorship information</li>
+                    <li>copyright information</li>
+                    <li>contact information</li>
+                    <li>sitemap</li>
+                    <li>back to top links</li>
+                    <li>related documents</li>
+                </ul>
+                <p>You can have several <span class="red-text">&lt;footer&gt;</span> elements in one document.</p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;nav&gt; Element</h2>
+                <p>
+                    The <span class="red-text">&lt;nav&gt;</span> element defines a set of navigation links.
+                </p>
+                <div class="note p-3 mt-3">
+                    <p>
+                        Notice that NOT all links of a document should be inside a <span
+                            class="red-text">&lt;nav&gt;</span>
+                        element. The <span class="red-text">&lt;nav&gt;</span> element is intended
+                        only for major blocks of navigation links.
+                    </p>
+                    <p>
+                        Browsers, such as screen readers for disabled users, can use this element to determine whether
+                        to omit the initial rendering of this content.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;aside&gt; Element</h2>
+                <p>
+                    The
+                    <span class="red-text">&lt;aside&gt;</span> element defines some content aside from the content it
+                    is placed in (like a sidebar).
+                </p>
+                <p>
+                    The <span class="red-text">&lt;aside&gt;</span> content should be indirectly related to the
+                    surrounding content.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;figure&gt; and &lt;figcaption&gt; Elements</h2>
+                <p>
+                    The <span class="red-text">&lt;figure&gt;</span> tag specifies self-contained content, like
+                    illustrations, diagrams, photos, code listings, etc.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;figcaption&gt;</span> tag defines a caption for a <span
+                        class="red-text">&lt;figure&gt;</span> element. The <span
+                        class="red-text">&lt;figcaption&gt;</span> element can be placed as the first or as the last
+                    child of a <span class="red-text">&lt;figure&gt;</span> element.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;img&gt;</span> element defines the actual image/illustration.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Why Semantic Elements?</h2>
+                <p>
+                    According to the CodeBank: "A semantic Web allows data to be shared and reused across applications,
+                    enterprises, and communities."
+                </p>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

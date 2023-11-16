@@ -7,10 +7,9 @@ import * as jsonData from '../../core/jsonData/htmlSidebar.json';
 @Component({
   selector: 'app-html-semantics',
   templateUrl: './html-semantics.component.html',
-  styleUrls: ['./html-semantics.component.css']
+  styleUrls: ['./html-semantics.component.css'],
 })
 export class HtmlSemanticsComponent {
-
   @ViewChild('codeEditor') codeEditor!: ElementRef;
   @ViewChild('outputContainer') outputContainer!: ElementRef;
 
@@ -22,29 +21,51 @@ export class HtmlSemanticsComponent {
   defaultHtml = `<!DOCTYPE html>
   <html>
   <body>
+
+  <article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+  <p>WWF's mission is to st.</p>
+</article>
+<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+  <section>
+    <h1>WWF</h1>
+    <p>The World Wide Fund for Nature (WWF) </p>
+  </section>
   
-  <p>Here is a quote from WWF's website:</p>
+  <section>
+    <h1>WWF's Panda symbol</h1>
+    <p>The Panda has become the symbol of WWF. </p>
+  </section>
   
-  <blockquote cite="http://www.worldwildlife.org/who/index.html">
-  For 60 years, WWF has 
-  </blockquote>
 
-  <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+  <h1>The article element</h1>
 
-  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+  <article>
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser </p>
+  </article>
 
-  <address>
-    Written by John Doe.<br>
-    Visit us at:<br>
-    Example.com<br>
-    Box 564, Disneyland<br>
-    USA
-  </address>
+  <article>
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source </p>
+  </article>
 
-  <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-
-  <bdo dir="rtl">This text will be written from right to left</bdo> 
-  
+  <footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
   </body>
   </html>`;
 
@@ -62,5 +83,4 @@ export class HtmlSemanticsComponent {
     const outputContainer = this.outputContainer.nativeElement;
     outputContainer.innerHTML = this.htmlVal;
   }
-
 }

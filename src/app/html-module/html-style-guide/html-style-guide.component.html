@@ -1,0 +1,188 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Style Guide</h1>
+            <div class="quotations px-4">
+                <p>
+                    A consistent, clean, and tidy HTML code makes it easier for others to read and understand your code.
+                </p>
+                <p>
+                    Here are some guidelines and tips for creating good HTML code.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Always Declare Document Type</h2>
+                <p>
+                    Always declare the document type as the first line in your document.
+                </p>
+                <p>
+                    The correct document type for HTML is:
+                </p>
+                <div class="note p-3 mt-3">
+                    <p>
+                        &lt;!DOCTYPE html&gt;
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Use Lowercase Element Names</h2>
+                <p>
+                    HTML allows mixing uppercase and lowercase letters in element names.
+                </p>
+                <p>
+                    However, we recommend using lowercase element names, because:
+                </p>
+                <ul>
+                    <li>Mixing uppercase and lowercase names looks bad</li>
+                    <li>Developers normally use lowercase names</li>
+                    <li>Lowercase looks cleaner</li>
+                    <li>Lowercase is easier to write</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Close All HTML Elements</h2>
+                <p>
+                    In HTML, you do not have to close all elements (for example the <span
+                        class="red-text">&lt;p&gt;</span> element).
+                </p>
+                <p>
+                    However, we strongly recommend closing all HTML elements.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Use Lowercase Attribute Names</h2>
+                <p>
+                    HTML allows mixing uppercase and lowercase letters in attribute names.
+                </p>
+                <p>
+                    However, we recommend using lowercase attribute names, because:
+                </p>
+                <ul>
+                    <li>Mixing uppercase and lowercase names looks bad</li>
+                    <li>Developers normally use lowercase names</li>
+                    <li>Lowercase looks cleaner</li>
+                    <li>Lowercase is easier to write</li>
+
+                </ul>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Always Quote Attribute Values</h2>
+                <p>
+                    HTML allows attribute values without quotes.
+                </p>
+                <p>
+                    However, we recommend quoting attribute values, because:
+                </p>
+                <ul>
+                    <li>Developers normally quote attribute values</li>
+                    <li>Quoted values are easier to read</li>
+                    <li>You MUST use quotes if the value contains spaces</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Always Specify alt, width, and height for Images</h2>
+                <p>
+                    Always specify the <span class="red-text">alt</span> attribute for images. This attribute is
+                    important if the image for some reason cannot be displayed.
+                </p>
+                <p>
+                    Also, always define the <span class="red-text">Width</span> and <span class="red-text">height</span>
+                    of images. This reduces flickering, because the browser can
+                    reserve space for the image before loading.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Spaces and Equal Signs</h2>
+                <p>
+                    HTML allows spaces around equal signs. But space-less is easier to read and groups entities better
+                    together.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Avoid Long Code Lines</h2>
+                <p>
+                    When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.
+                </p>
+                <p>
+                    Try to avoid too long code lines.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Blank Lines and Indentation</h2>
+                <p>
+                    Do not add blank lines, spaces, or indentations without a reason.
+                </p>
+                <p>
+                    For readability, add blank lines to separate large or logical code blocks.
+                </p>
+                <p>
+                    For readability, add two spaces of indentation. Do not use the tab key.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Never Skip the &lt;title&gt; Element</h2>
+                <p>
+                    The <span class="red-text">&lt;title&gt;</span> element is required in HTML.
+                </p>
+                <p>
+                    The contents of a page title is very important for search engine optimization (SEO)! The page title
+                    is used by search engine algorithms to decide the order when listing pages in search results.
+                </p>
+                <p>
+                    The <span class="red-text">title</span> element :
+                </p>
+                <ul>
+                    <li>defines a title in the browser toolbar</li>
+                    <li>provides a title for the page when it is added to favorites</li>
+                    <li>displays a title for the page in search-engine results</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Omitting &lt;html&gt; and &lt;body&gt;?</h2>
+                <p>
+                    An HTML page will validate without the <span class="red-text">&lt;html&gt;</span> and <span
+                        class="red-text">&lt;body&gt;</span> tags:
+                </p>
+                <p>
+                    we strongly recommend to always add the <span class="red-text">&lt;html&gt;</span> and <span
+                        class="red-text">&lt;body&gt;</span> tags!
+                </p>
+                <p>Omitting <span class="red-text">&lt;body&gt;</span> can produce errors in older browsers.</p>
+                <p>
+                    Omitting <span class="red-text">&lt;html&gt;</span> and <span class="red--text">&lt;body&gt;</span>
+                    can also crash DOM and XML software.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Omitting &lt;head&gt;?</h2>
+                <p>
+                    The HTML &lt;head&gt; tag can also be omitted.
+                </p>
+                <p>
+                    Browsers will add all elements before <span class="red-text">&lt;body&gt;</span>, to a default <span
+                        class="red-text">head</span> element.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
