@@ -26,6 +26,15 @@ import { HtmlListsComponent } from './html-lists/html-lists.component';
 import { HtmlBlockInlineComponent } from './html-block-inline/html-block-inline.component';
 import { HtmlDivComponent } from './html-div/html-div.component';
 import { HtmlClassesComponent } from './html-classes/html-classes.component';
+import { HtmlIdComponent } from './html-id/html-id.component';
+import { HtmlIframeComponent } from './html-iframe/html-iframe.component';
+import { HtmlJavascriptComponent } from './html-javascript/html-javascript.component';
+import { HtmlFilePathsComponent } from './html-file-paths/html-file-paths.component';
+import { HtmlHeadComponent } from './html-head/html-head.component';
+import { HtmlLayoutComponent } from './html-layout/html-layout.component';
+import { HtmlResponsiveComponent } from './html-responsive/html-responsive.component';
+import { HtmlComputercodeComponent } from './html-computercode/html-computercode.component';
+import { HtmlSemanticsComponent } from './html-semantics/html-semantics.component';
 
 
 @NgModule({
@@ -52,6 +61,15 @@ import { HtmlClassesComponent } from './html-classes/html-classes.component';
     HtmlBlockInlineComponent,
     HtmlDivComponent,
     HtmlClassesComponent,
+    HtmlIdComponent,
+    HtmlIframeComponent,
+    HtmlJavascriptComponent,
+    HtmlFilePathsComponent,
+    HtmlHeadComponent,
+    HtmlLayoutComponent,
+    HtmlResponsiveComponent,
+    HtmlComputercodeComponent,
+    HtmlSemanticsComponent,
   ],
   imports: [
     CommonModule,

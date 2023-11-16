@@ -5,11 +5,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 import * as jsonData from '../../core/jsonData/htmlSidebar.json';
 
 @Component({
-  selector: 'app-html-classes',
-  templateUrl: './html-classes.component.html',
-  styleUrls: ['./html-classes.component.css']
+  selector: 'app-html-id',
+  templateUrl: './html-id.component.html',
+  styleUrls: ['./html-id.component.css']
 })
-export class HtmlClassesComponent {
+export class HtmlIdComponent {
 
   @ViewChild('codeEditor') codeEditor!: ElementRef;
   @ViewChild('outputContainer') outputContainer!: ElementRef;
@@ -23,60 +23,42 @@ export class HtmlClassesComponent {
   <html>
   <head>
   <style>
+  /* Style the element with the id "myHeader" */
+  #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Style all elements with the class name "city" */
   .city {
     background-color: tomato;
     color: white;
-    border: 2px solid black;
-    margin: 20px;
-    padding: 20px;
-  }
-  .main {
-    text-align: center;
-  }
+    padding: 10px;
+  } 
   </style>
   </head>
   <body>
   
-  <div class="city">
-  <h2>Punjab</h2>
-  <p>Chandigarh is the capital of punjab.</p>
-  </div> 
+  <h2>Difference Between Class and ID</h2>
+  <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
   
-  <div class="city">
-  <h2>Haryana</h2>
-  <p>Chandigarh is the capital of punjab.</p>
-  </div>
+  <!-- An element with a unique id -->
+  <h1 id="myHeader">My Cities</h1>
   
-  <div class="city">
-  <h2>Himachal</h2>
+  <!-- Multiple elements with same class -->
+  <h2 class="city">Himachal</h2>
   <p>Shimla is the capital of Himachal.</p>
-  </div>
-  <h2 class="city main">India</h2>
+  
+  <h2 class="city">India</h2>
+  <p>Delhi is the capital of India.</p>
+  
+  <h2 class="city">Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
 
 
-
-  <h2>Use of The class Attribute in JavaScript</h2>
-<p>Click the button to hide all elements with class name "city":</p>
-
-<button onclick="myFunction()">Hide elements</button>
-
-<h2 class="city1">London</h2>
-<p>London is the capital of England.</p>
-
-<h2 class="city1">Paris</h2>
-<p>Paris is the capital of France.</p>
-
-<h2 class="city1">Tokyo</h2>
-<p>Tokyo is the capital of Japan.</p>
-
-<script>
-function myFunction() {
-  var x = document.getElementsByClassName("city1");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-}
-</script>
+  
   </body>
   </html>`;
 

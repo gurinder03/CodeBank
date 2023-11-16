@@ -1,0 +1,143 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Semantic Elements</h1>
+            <div class="quotations px-4">
+                <p>
+                    Semantic elements = elements with a meaning.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>What are Semantic Elements?</h2>
+                <p>
+                    A semantic element clearly describes its meaning to both the browser and the developer.
+                </p>
+                <p>
+                    Examples of <strong>non-semantic</strong> elements: <span class="red-text">&lt;div&gt;</span> and
+                    <span class="red-text">&lt;span&gt; </span>-
+                    Tells nothing about its content.
+                </p>
+                <p>
+                    Examples of <strong>semantic</strong> elements: <span class="red-text">&lt;form&gt;</span> ,
+                    <span class="red-text">&lt;table&gt;</span>, and
+                    <span class="red-text">&lt;article&gt;</span> - Clearly defines its content.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Semantic Elements in HTML</h2>
+                <p>Many web sites contain HTML code like: &lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div
+                    id="footer"&gt; to indicate navigation, header, and footer.
+                </p>
+                <p>
+                    In HTML there are some semantic elements that can be used to define different parts of a web page:
+                </p>
+                <ul>
+                    <li>&lt;article&gt;</li>
+                    <li>&lt;aside&gt;</li>
+                    <li>&lt;details&gt;</li>
+                    <li>&lt;figcaption&gt;</li>
+                    <li>&lt;figure&gt;</li>
+                    <li>&lt;footer&gt;</li>
+                    <li>&lt;header&gt;</li>
+                    <li>&lt;mian&gt;</li>
+                    <li>&lt;mark&gt;</li>
+                    <li>&lt;nav&gt;</li>
+                    <li>&lt;section&gt;</li>
+                    <li>&lt;summary&gt;</li>
+                    <li>&lt;time&gt;</li>
+
+                </ul>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;section&gt; Element</h2>
+                <p>The <span class="red-text">&lt;section&gt;</span> element defines a section in a document.
+                </p>
+                <p>
+                    According to codebank's HTML documentation: "A section is a thematic grouping of content, typically
+                    with a heading."
+                </p>
+                <p>
+                    Examples of where a <span class="red-text">&lt;section&gt;</span> element can be used:
+                </p>
+                <ul>
+                    <li>Chapters</li>
+                    <li>Introduction</li>
+                    <li>News Items</li>
+                    <li>Contact Information</li>
+                </ul>
+                <p>
+                    A web page could normally be split into sections for introduction, content, and contact information.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;article&gt; Element</h2>
+                <p>
+                    The <span class="red-text">&lt;article&gt;</span> element specifies independent, self-contained
+                    content.
+                </p>
+                <p>
+                    An article should make sense on its own, and it should be possible to distribute it independently
+                    from the rest of the web site.
+                </p>
+                <p>
+                    Examples of where a <span class="red-text">&lt;article&gt;</span> element can be used:
+                </p>
+                <ul>
+                    <li>Forum posts</li>
+                    <li>Blog posts</li>
+                    <li>User comments</li>
+                    <li>Product cards</li>
+                    <li>Newspaper articles</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Nesting &lt;article&gt; in &lt;article&gt; or Vice Versa?</h2>
+                <p>
+                    The <span class="red-text">&lt;article&gt;</span> element specifies independent, self-contained
+                    content.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;section&gt;</span> element defines section in a document.
+                </p>
+                <p>
+                    Can we use the definitions to decide how to nest those elements? No, we cannot!
+                </p>
+                <p>
+                    So, you will find HTML pages with
+                    <span class="red-text">&lt;section&gt;</span> elements containing <span
+                        class="red-text">&lt;article&gt;</span> elements, and
+                    <span class="red-text">&lt;article&gt;</span> elements containing <span
+                        class="red-text">&lt;section&gt;</span> elements.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;header&gt; Element</h2>
+                <p>
+                    The <span class="red-text">&lt;header&gt;</span> element represents a container for introductory
+                    content or a set of navigational links.
+                </p>
+                <p>
+                    A <span class="red-text">&lt;header&gt;</span> element typically contains:
+                </p>
+                <ul>
+                    <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+                    <li>logo or icon</li>
+                    <li>authorship information</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

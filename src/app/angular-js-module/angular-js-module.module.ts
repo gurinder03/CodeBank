@@ -26,6 +26,7 @@ import { AngularjsApiComponent } from './angularjs-api/angularjs-api.component';
 import { AngularjsIncludesComponent } from './angularjs-includes/angularjs-includes.component';
 import { AngularjsAnimationsComponent } from './angularjs-animations/angularjs-animations.component';
 import { AngularjsRoutingComponent } from './angularjs-routing/angularjs-routing.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -54,11 +55,12 @@ import { AngularjsRoutingComponent } from './angularjs-routing/angularjs-routing
     AngularjsIncludesComponent,
     AngularjsAnimationsComponent,
     AngularjsRoutingComponent,
-  
   ],
   imports: [
     CommonModule,
     AngularJsModuleRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     SharedModule
   ]
 })

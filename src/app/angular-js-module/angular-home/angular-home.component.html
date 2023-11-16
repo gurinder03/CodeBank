@@ -85,22 +85,23 @@
                     CodeBank AngularJS tutorial contains lots of AngularJS examples!
                 </p>
             </div>
-            <div class="code-section mx-4 p-3 mb-4 mt-3"  id="html-content">
+            <div class="code-section mx-4 p-3 mb-4 mt-3" id="html-content">
                 <div class="code-section mx-4 p-3 mb-4 mt-3">
-                    <textarea #codeEditor></textarea>
+                  <textarea #codeEditor [(ngModel)]="defaultHtml"></textarea>
                 </div>
                 <div class="output-frame w-100 p-3 mx-3">
-                    <div #outputContainer></div>
+                  <div #outputContainer></div>
                 </div>
-            </div>
-            <div class="try-yourself px-4  pb-4">
-                <button type="button" class="home-btn" (click)="runCode()"> 
-                    Try it yourself 
-                    <span class="right-arrow">
-                        <i class="fas fa-chevron-right fa-2x"></i>
-                    </span>
+              </div>
+              
+              <div class="try-yourself px-4 pb-4">
+                <button type="button" class="home-btn" (click)="runCode()">
+                  Try it yourself
+                  <span class="right-arrow">
+                    <i class="fas fa-chevron-right fa-2x"></i>
+                  </span>
                 </button>
-            </div>
+              </div>
         </div>
     </div>
 </div>

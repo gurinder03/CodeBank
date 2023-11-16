@@ -98,6 +98,42 @@
         {
         "text": "HTML Classes",
         "link": "/html/html-classes"
+        },
+        {
+        "text": "HTML Id",
+        "link": "/html/html-id"
+        },
+        {
+        "text": "HTML Iframe",
+        "link": "/html/html-iframe"
+        },
+        {
+        "text": "HTML Javascript",
+        "link": "/html/html-javascript"
+        },
+        {
+        "text": "HTML File Paths",
+        "link": "/html/html-file-paths"
+        },
+        {
+        "text": "HTML Head",
+        "link": "/html/html-head"
+        },
+        {
+        "text": "HTML Layout",
+        "link": "/html/html-layout"
+        },
+        {
+        "text": "HTML Responsive",
+        "link": "/html/html-responsive"
+        },
+        {
+        "text": "HTML Computercode",
+        "link": "/html/html-computercode"
+        },
+        {
+        "text": "HTML Semantics",
+        "link": "/html/html-semantics"
         }
     ]
 }

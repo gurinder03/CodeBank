@@ -1,0 +1,136 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Responsive Web Design</h1>
+            <div class="quotations px-4">
+                <p>
+                    Responsive web design is about creating web pages that look good on all devices!
+                </p>
+                <p>
+                    A responsive web design will automatically adjust for different screen sizes and viewports.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>What is Responsive Web Design?</h2>
+                <p>
+                    Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge,
+                    a website, to make it look good on all devices (desktops, tablets, and phones).
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Setting The Viewport</h2>
+                <p>
+                    To create a responsive website, add the following <span class="red-text">&lt;meta&gt;</span> tag to
+                    all your web pages:
+                </p>
+                <div class="note p-3 mt-3">
+                    <p>
+                        <span class="red-text"> &lt;meta name="viewport" content="width=device-width,
+                            initial-scale=1.0"&gt;</span>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Responsive Images</h2>
+                <p>
+                    Responsive images are images that scale nicely to fit any browser size.
+                </p>
+                <h2>Using the width Property</h2>
+                <p>
+                    If the CSS <span classs="red-text">width</span> property is set to 100%, the image will be
+                    responsive and scale up and down
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Using the max-width Property</h2>
+                <p>
+                    If the <span class="red-text">max-width</span> property is set to 100%, the image will scale down if
+                    it has to, but never scale up
+                    to be larger than its original size
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Show Different Images Depending on Browser Width</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;picture&gt;</span> element allows you to define different images
+                    for different browser window sizes.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Responsive Text Size</h2>
+                <p>
+                    The text size can be set with a "vw" unit, which means the "viewport width".
+                </p>
+                <p>
+                    That way the text size will follow the size of the browser window.
+                </p>
+                <div class="note p-3 mt-3">
+                    <p>
+                        Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide,
+                        1vw is 0.5cm.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Media Queries</h2>
+                <p>
+                    In addition to resize text and images, it is also common to use media queries in responsive web
+                    pages.
+                </p>
+                <p>
+                    With media queries you can define completely different styles for different browser sizes.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Responsive Web Design - Frameworks</h2>
+                <p>
+                    All popular CSS Frameworks offer responsive design.
+                </p>
+                <p>
+                    They are free, and easy to use.
+                </p>
+            </div>
+            
+            <div class="quotations px-4">
+                <h2>Bootstrap</h2>
+                <p>
+                  Bootstrap is the popular framework of css.
+                </p>
+                
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

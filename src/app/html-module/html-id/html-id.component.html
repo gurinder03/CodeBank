@@ -1,0 +1,102 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML id Attribute</h1>
+            <div class="quotations px-4">
+                <p>
+                    The HTML <span class="red-text"> id</span> attribute is used to specify a unique id for an HTML
+                    element.
+                </p>
+                <p>
+                    You cannot have more than one element with the same id in an HTML document.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Using The id Attribute</h2>
+                <p>
+                    The <span class="red-text"> id</span> attribute specifies a unique id for an HTML element. The value
+                    of the id attribute must be unique within the HTML document.
+                </p>
+                <p>
+                    The <span class="red-text"> id</span> attribute is used to point to a specific style declaration in
+                    a style sheet. It is also used
+                    by JavaScript to access and manipulate the element with the specific id.
+                </p>
+                <p>
+                    The syntax for id is: write a hash character (#), followed by an id name.
+                </p>
+                <div class="note mt-3 p-3">
+                    <p>
+                        <strong>Note:</strong> The id name is case sensitive!
+                    </p>
+                    <p>
+                        <strong>Note:</strong> The id name must contain at least one character, cannot start with a
+                        number, and must not
+                        contain whitespaces (spaces, tabs, etc.).
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Difference Between Class and ID</h2>
+                <p>
+                    A class name can be used by multiple HTML elements, while an id name must only be used by one HTML
+                    element within the page
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML Bookmarks with ID and Links</h2>
+                <p>
+                    HTML bookmarks are used to allow readers to jump to specific parts of a webpage.
+                </p>
+                <p>
+                    Bookmarks can be useful if your page is very long.
+                </p>
+                <p>
+                    To use a bookmark, you must first create it, and then add a link to it.
+                </p>
+                <p>
+                    Then, when the link is clicked, the page will scroll to the location with the bookmark.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Using The id Attribute in JavaScript</h2>
+                <p>
+                    The <span class="red-text"></span> attribute can also be used by JavaScript to perform some tasks for that specific element.
+                </p>
+                <p>
+                    JavaScript can access an element with a specific id with the 
+                    <span class="red-text">getElementById()</span>  method
+                </p>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Computer Code Elements</h1>
+            <div class="quotations px-4">
+                <p>
+                    HTML contains several elements for defining user input and computer code.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;kbd&gt; For Keyboard Input
+                </h2>
+                <p>
+                    The HTML <span class="red-text">&lt;kbd&gt;</span> element is used to define keyboard input. The
+                    content inside is displayed in the
+                    browser's default monospace font.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;samp&gt; For Program Output</h2>
+                <p>
+                    The HTML <span class="red-text"> &lt;samp&gt;</span> element is used to define sample output from a
+                    computer program. The content inside
+                    is displayed in the browser's default monospace font.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;code&gt; For Computer Code</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;code&gt;</span> element is used to define a piece of computer
+                    code. The content inside is displayed in the browser's default monospace font.
+                </p>
+                <p>
+                    Notice that the <span class="red-text">&lt;code&gt;</span> element does not preserve extra
+                    whitespace and line-breaks.
+                </p>
+                <p>
+                    To fix this, you can put the <span class="red-text">&lt;code&gt;</span> element inside a <span
+                        class="red-text">&lt;pre&gt;</span> element
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML &lt;var&gt; For Variables</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;var&gt;</span> element is used to define a variable in programming or in a mathematical expression.
+                        The content inside is typically displayed in italic.
+                </p>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>

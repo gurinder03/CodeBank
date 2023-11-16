@@ -79,9 +79,6 @@ import { SharedModule } from './shared/shared.module';
     FooterComponent,
     ContactUsComponent,
     AbooutUsComponent,
-   
-
-    
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
