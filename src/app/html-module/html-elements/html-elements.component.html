@@ -3,13 +3,13 @@
         <app-sidebar [sidebarData]="sidebar"></app-sidebar>
         <div class="content mb-5 p-4">
             <div class="home-next d-flex justify-content-between p-3">
-                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                <button type="button" class="home-btn"[routerLink]="['../html-editors']"> <span class="left-arrow"><i
                             class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
-                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                <button type="button" class="next-btn " [routerLink]="['../html-attributes']">Next <span class="right-arrow"><i
                             class="fas fa-chevron-right fa-2x"></i></span></button>
             </div>
             <h1 class="p-3 pt-1" id="introduction">HTML Elements</h1>
-            <hr>
+            
             <div class="element-heading px-4">
                 <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
                 <p>The HTML element is everything from the start tag to the end tag:</p>

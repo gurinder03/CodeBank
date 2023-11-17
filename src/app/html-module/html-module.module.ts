@@ -36,6 +36,7 @@ import { HtmlResponsiveComponent } from './html-responsive/html-responsive.compo
 import { HtmlComputercodeComponent } from './html-computercode/html-computercode.component';
 import { HtmlSemanticsComponent } from './html-semantics/html-semantics.component';
 import { HtmlStyleGuideComponent } from './html-style-guide/html-style-guide.component';
+import { HtmlEntitiesComponent } from './html-entities/html-entities.component';
 
 
 @NgModule({
@@ -72,6 +73,7 @@ import { HtmlStyleGuideComponent } from './html-style-guide/html-style-guide.com
     HtmlComputercodeComponent,
     HtmlSemanticsComponent,
     HtmlStyleGuideComponent,
+    HtmlEntitiesComponent,
   ],
   imports: [
     CommonModule,

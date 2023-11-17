@@ -3,9 +3,9 @@
         <app-sidebar [sidebarData]="sidebar"></app-sidebar>
         <div class="content mb-5 p-4">
             <div class="home-next d-flex justify-content-between p-3">
-                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                <button type="button" class="home-btn" [routerLink]="['../html-quotations']"> <span class="left-arrow"><i
                             class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
-                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                <button type="button" class="next-btn " [routerLink]="['../html-colors']">Next <span class="right-arrow"><i
                             class="fas fa-chevron-right fa-2x"></i></span></button>
             </div>
             <h1 class="p-3 pt-1" id="introduction">HTML Comments</h1>

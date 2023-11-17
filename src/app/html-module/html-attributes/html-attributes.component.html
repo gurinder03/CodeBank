@@ -3,9 +3,9 @@
         <app-sidebar [sidebarData]="sidebar"></app-sidebar>
         <div class="content mb-5 p-4">
             <div class="home-next d-flex justify-content-between p-3">
-                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                <button type="button" class="home-btn" [routerLink]="['../html-elements']"> <span class="left-arrow"><i
                             class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
-                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                <button type="button" class="next-btn " [routerLink]="['../html-headings']">Next <span class="right-arrow"><i
                             class="fas fa-chevron-right fa-2x"></i></span></button>
             </div>
             <h1 class="p-3 pt-1" id="introduction">HTML Attributes</h1>
@@ -76,15 +76,17 @@
                     Web page. This is meant to assist search engines and browsers.</p>
 
             </div>
-            
+
             <div class="href-attribute px-4 ">
-                <p>Country codes can also be added to the language code in the <span class="red-text">lang</span> attribute. So, the first two characters
+                <p>Country codes can also be added to the language code in the <span class="red-text">lang</span>
+                    attribute. So, the first two characters
                     define the language of the HTML page, and the last two characters define the country.</p>
             </div>
 
             <div class="href-attribute p-4 ">
                 <h2>The title Attribute</h2>
-                <p>The <span class="red-text">title</span> attribute defines some extra information about an element.</p>
+                <p>The <span class="red-text">title</span> attribute defines some extra information about an element.
+                </p>
 
             </div>
 
@@ -108,3 +110,4 @@
             <hr>
         </div>
     </div>
+</div>

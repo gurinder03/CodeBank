@@ -18,6 +18,8 @@ export class HtmlAttributesComponent implements OnInit {
 
   defaultHtml = `<!DOCTYPE html>
   <html lang="en">
+  <head>
+  </head>
   <body>
   
   <h2>The href Attribute</h2>
@@ -25,9 +27,12 @@ export class HtmlAttributesComponent implements OnInit {
   <p>HTML links are defined with the a tag. The link address is specified in the href attribute:</p>
   
   <a href="https://thetechenigneer.in/">Visit CodeBank</a><br>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg" height="100" width="100"><br>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg" width="300" height="300"><br><br>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg" width=200" height="200" alt="Girl with a jacket"><br>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg"
+   height="100" width="100"><br>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg"
+   width="300" height="300"><br><br>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg"
+   width=200" height="200" alt="Girl with a jacket"><br>
   <p style="color:red;">This is a red paragraph.</p><br>
   
   </body>

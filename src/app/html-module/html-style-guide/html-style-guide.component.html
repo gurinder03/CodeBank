@@ -182,7 +182,193 @@
                         class="red-text">&lt;head&gt;</span> element.
                 </p>
             </div>
-        </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Close Empty HTML Elements?</h2>
+                <p>
+                    In HTML, it is optional to close empty elements.
+                </p>
+                <p>
+                    If you expect XML/XHTML software to access your page, keep the closing slash (/), because it is
+                    required in XML and XHTML.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Add the lang Attribute</h2>
+                <p>
+                    You should always include the lang attribute inside the <span class="red-text">&lt;html&gt;</span>
+                    tag, to declare the language of the
+                    Web page. This is meant to assist search engines and browsers.
+                </p>
 
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Setting The Viewport</h2>
+                <p>
+                    The viewport is the user's visible area of a web page. It varies with the device - it will be
+                    smaller on a mobile phone than on a computer screen.
+                </p>
+                <p>
+                    You should include the following <span class="red-text">&lt;meta&gt;</span> element in all your web
+                    pages:
+                </p>
+                <div class="note p-3 mt-3">
+                    <p>
+                        <span class="red-text">
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        </span>
+                    </p>
+                </div>
+                <p>
+                    This gives the browser instructions on how to control the page's dimensions and scaling.
+                </p>
+                <p>
+                    The <span class="red-text">width=device-width</span> part sets the width of the page to follow
+                    the screen-width of the device
+                    (which will vary depending on the device).
+                </p>
+                <p>
+                    The <span class="red-text">initial-scale=1.0</span> part sets the initial zoom level when the page
+                    is first loaded by the browser.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML Comments</h2>
+                <p>
+                    Short comments should be written on one line, like this:
+                </p>
+                <div class="note p-3 mt-3">
+                    <p>
+                        <span class="green-text">
+                            &lt;!-- This is a comment --&gt;
+                        </span>
+                    </p>
+                </div>
+                <p>
+                    Comments that spans more than one line, should be written like this:
+                </p>
+                <div class="note p-3 mt-3">
+                    <p>
+                        <span class="green-text">
+                            &lt;!--
+                            This is a long comment example. This is a long comment example.
+                            This is a long comment example. This is a long comment example.
+                            --&gt;
+                        </span>
+                    </p>
+                </div>
+                <p>
+                    Long comments are easier to observe if they are indented with two spaces.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Using Style Sheets</h2>
+                <p>
+                    Use simple syntax for linking to style sheets (the <span class="red-text">type</span> attribute is
+                    not necessary):
+                </p>
+            </div>
+            <div class="note p-3 mt-3">
+                <p>
+                    <span class="red-text">
+                        &lt;link rel="stylesheet" href="styles.css"&gt;
+                    </span>
+                </p>
+            </div>
+            <div class="quotations px-4">
+                <ul>
+                    <li>Place the opening bracket on the same line as the selector</li>
+                    <li>Use one space before the opening bracket</li>
+                    <li>Use two spaces of indentation</li>
+                    <li>Use semicolon after each property-value pair, including the last</li>
+                    <li>Only use quotes around values if the value contains spaces</li>
+                    <li>Place the closing bracket on a new line, without leading spaces</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Loading JavaScript in HTML</h2>
+                <p>
+                    Use simple syntax for loading external scripts (the <span class="red-text">type</span> attribute is
+                    not necessary):
+                </p>
+                <div class="note p-3 mt-3">
+                    <p>
+                        <span class="red-text">&lt;script src="myscript.js"&gt;&lt;/script&gt;</span>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Accessing HTML Elements with JavaScript</h2>
+                <p>
+                    Using "untidy" HTML code can result in JavaScript errors.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Use Lower Case File Names</h2>
+                <p>
+                    Some web servers (Apache, Unix) are case sensitive about file names: "abc.jpg" cannot be accessed
+                    as "Abc.jpg".
+                </p>
+                <p>
+                    Other web servers (Microsoft, IIS) are not case sensitive: "abc.jpg" can be accessed as "Abc.jpg".
+                </p>
+                <p>
+                    If you use a mix of uppercase and lowercase, you have to be aware of this.
+                </p>
+                <p>
+                    If you move from a case-insensitive to a case-sensitive server, even small errors will break your
+                    web!
+                </p>
+                <p>
+                    To avoid these problems, always use lowercase file names!
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>File Extensions</h2>
+                <p>
+                    HTML files should have a <strong>.html</strong> extension (<strong>.htm</strong> is allowed).
+                </p>
+                <p>
+                    CSS files should have a <strong>.css</strong> extension.
+                </p>
+                <p>
+                    JavaScript files should have a <strong>.js</strong> extension.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Differences Between .htm and .html?</h2>
+                <p>
+                    There is no difference between the .htm and .html file extensions!
+                </p>
+                <p>
+                    Both will be treated as HTML by any web browser and web server.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Default Filenames</h2>
+                <p>
+                    When a URL does not specify a filename at the end (like "https://codebank.in/"), the server
+                    just adds a default filename, such as "index.html", "index.htm", "default.html", or "default.htm".
+                </p>
+                <p>
+                    If your server is configured only with "index.html" as the default filename, your file must be named
+                    "index.html", and not "default.html".
+                </p>
+                <p>
+                    However, servers can be configured with more than one default filename; usually you can set up as
+                    many default filenames as you want.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
