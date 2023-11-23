@@ -5,11 +5,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 import * as jsonData from '../../core/jsonData/htmlSidebar.json';
 
 @Component({
-  selector: 'app-html-entities',
-  templateUrl: './html-entities.component.html',
-  styleUrls: ['./html-entities.component.css']
+  selector: 'app-html-forms-attribute',
+  templateUrl: './html-forms-attribute.component.html',
+  styleUrls: ['./html-forms-attribute.component.css']
 })
-export class HtmlEntitiesComponent {
+export class HtmlFormsAttributeComponent {
 
   @ViewChild('codeEditor') codeEditor!: ElementRef;
   @ViewChild('outputContainer') outputContainer!: ElementRef;
@@ -23,27 +23,17 @@ export class HtmlEntitiesComponent {
   <html>
   <body>
   
-  <p>Here is a quote from WWF's website:</p>
+  <h2>HTML Forms</h2>
   
-  <blockquote cite="http://www.worldwildlife.org/who/index.html">
-  For 60 years, WWF has 
-  </blockquote>
-
-  <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-
-  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-
-  <address>
-    Written by John Doe.<br>
-    Visit us at:<br>
-    Example.com<br>
-    Box 564, Disneyland<br>
-    USA
-  </address>
-
-  <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-
-  <bdo dir="rtl">This text will be written from right to left</bdo> 
+  <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  
+  <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
   
   </body>
   </html>`;
@@ -62,5 +52,4 @@ export class HtmlEntitiesComponent {
     const outputContainer = this.outputContainer.nativeElement;
     outputContainer.innerHTML = this.htmlVal;
   }
-
 }

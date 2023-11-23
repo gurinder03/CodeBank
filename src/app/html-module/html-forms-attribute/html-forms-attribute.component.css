@@ -38,9 +38,18 @@
   .red-text{
     color: red;
   }
-  .quotations p,p,li{
+  .quotations p,p{
     font-size: 18px;
   }
-  .note{
-    background-color: #ffffcc;
+  table{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #e7e7e7;
+  }
+  th{
+    background-color: #ff6930;
+  }
+  td,th,tr{
+    padding: 4px;
+    border: 2px solid #e7e7e7;
   }

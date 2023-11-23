@@ -44,3 +44,18 @@
   .note{
     background-color: #ffffcc;
   }
+  table{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #e7e7e7;
+  }
+  tr{
+    height: 30px;
+  }
+  td,th{
+    border: 2px solid #e7e7e7;
+    padding: 4px;
+  }
+  th{
+    background-color: #ff6930;
+  }

@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  
+ 
   sidebarList: any
 
   @Input() sidebarData!: string;
@@ -17,6 +17,8 @@ export class SidebarComponent implements OnInit {
     this.sidebarList = this.sidebarData
     
     console.log('sidebar fdd=> ', this.sidebarList);
+
+    
   }
 
  

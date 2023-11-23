@@ -1,0 +1,33 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn" [routerLink]="['../html-entities']"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn " [routerLink]="['../html-charset']">Next <span
+                        class="right-arrow"><i class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Symbols</h1>
+            <div class="quotations px-4">
+                <p>
+                    Symbols or letters that are not present on your keyboard can be added to HTML using entities.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>HTML Symbol Entities</h2>
+                <p>
+                    HTML entities were described in the previous chapter.
+                </p>
+                <p>
+                    Many mathematical, technical, and currency symbols, are not present on a normal keyboard.
+                </p>
+                <p>
+                    To add such symbols to an HTML page, you can use the entity name or the entity number (a decimal or
+                    a hexadecimal reference) for the symbol:
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

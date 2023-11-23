@@ -32,6 +32,13 @@ import { HtmlResponsiveComponent } from './html-responsive/html-responsive.compo
 import { HtmlComputercodeComponent } from './html-computercode/html-computercode.component';
 import { HtmlSemanticsComponent } from './html-semantics/html-semantics.component';
 import { HtmlStyleGuideComponent } from './html-style-guide/html-style-guide.component';
+import { HtmlEntitiesComponent } from './html-entities/html-entities.component';
+import { HtmlSymbolsComponent } from './html-symbols/html-symbols.component';
+import { HtmlCharsetComponent } from './html-charset/html-charset.component';
+import { HtmlUrlEncodeComponent } from './html-url-encode/html-url-encode.component';
+import { HtmlXhtmlComponent } from './html-xhtml/html-xhtml.component';
+import { HtmlFormsComponent } from './html-forms/html-forms.component';
+import { HtmlFormsAttributeComponent } from './html-forms-attribute/html-forms-attribute.component';
 
 
 
@@ -176,6 +183,34 @@ const routes: Routes = [
       {
         path: 'html-style-guide',
         component:HtmlStyleGuideComponent
+      },
+      {
+        path: 'html-entities',
+        component:HtmlEntitiesComponent
+      },
+      {
+        path: 'html-symbols',
+        component:HtmlSymbolsComponent
+      },
+      {
+        path: 'html-charset',
+        component:HtmlCharsetComponent
+      },
+      {
+        path: 'html-url-encode',
+        component:HtmlUrlEncodeComponent
+      },
+      {
+        path: 'html-xhtml',
+        component:HtmlXhtmlComponent
+      },
+      {
+        path: 'html-forms',
+        component:HtmlFormsComponent
+      },
+      {
+        path: 'html-forms-attribute',
+        component:HtmlFormsAttributeComponent
       }
     ]
   },

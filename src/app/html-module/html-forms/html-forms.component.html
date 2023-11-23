@@ -1,0 +1,167 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn" [routerLink]="['../html-xhtml']"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn " [routerLink]="['../html-forms-attribute']">Next <span
+                        class="right-arrow"><i class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <h1 class="p-3 pt-1" id="introduction">HTML Forms</h1>
+            <div class="quotations px-4">
+                <p>
+                    An HTML form is used to collect user input. The user input is most often sent to a server for
+                    processing.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>The &lt;form&gt; Element</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;form&gt;</span> element is used to create an HTML form for user
+                    input:
+                </p>
+                <p>
+                    The
+                    <span class="red-text">&lt;form&gt;</span> element is a container for different types of input
+                    elements, such as: text fields, checkboxes,
+                    radio buttons, submit buttons, etc.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>The &lt;input&gt; Element</h2>
+                <p>
+                    The HTML <span class="red-text">&lt;input&gt;</span> element is the most used form element.
+                </p>
+                <p>
+                    An <span class="red-text">&lt;input&gt;</span> element can be displayed in many ways, depending on
+                    the type attribute.
+                </p>
+                <p>
+                    Here are some examples:
+                </p>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="text"&gt;</td>
+                        <td>Displays a single-line text input field</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="radio"&gt;</td>
+                        <td>Displays a radio button (for selecting one of many choices)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="checkbox"&gt;</td>
+                        <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="submit"&gt;</td>
+                        <td>Displays a submit button (for submitting the form)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="button"&gt;</td>
+                        <td>Displays a clickable button</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Text Fields</h2>
+                <p>
+                    The <span class="red-text">&lt;input type="text"&gt;</span> defines a single-line input field for
+                    text input.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>The &lt;label&gt; Element</h2>
+                <p>
+                    Notice the use of the <span class="red-text">&lt;label&gt;</span> element in the example above.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;label&gt;</span> tag defines a label for many form elements.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;label&gt;</span> element is useful for screen-reader users, because
+                    the screen-reader will read out loud
+                    the label when the user focuses on the input element.
+                </p>
+                <p>
+                    The <span class="red-text">&lt;label&gt;</span> element also helps users who have difficulty
+                    clicking on very small regions (such as
+                    radio buttons or checkboxes) - because when the user clicks the text within the <span
+                        class="red-text">&lt;label&gt;</span> element,
+                    it toggles the radio button/checkbox.
+                </p>
+                <p>
+                    The <span class="red-text">for</span> attribute of the <span class="red-text">&lt;label&gt;</span>
+                    tag should be equal to the <span class="red-text">id</span> attribute of the <span
+                        class="red-text">&lt;input&gt; </span> element to
+                    bind them together.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Radio Buttons</h2>
+                <p>
+                    The <span class="red-text">&lt;input type="radio"&gt;</span> defines a radio button.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>Checkboxes</h2>
+                <p>
+                    The <span class="red-text">&lt;input type="checkbox"&gt;</span> defines a checkbox.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>The Submit Button</h2>
+                <p>
+                    The <span class="red-text">&lt;input type="submit"&gt;</span> defines a button for submitting the
+                    form data to a form-handler.
+                </p>
+                <p>
+                    The form-handler is typically a file on the server with a script for processing input data.
+                </p>
+                <p>
+                    The form-handler is specified in the form's <span class="red-text">action</span> attribute.
+                </p>
+            </div>
+            <hr>
+            <div class="quotations px-4">
+                <h2>The Name Attribute for &lt;input&gt;</h2>
+                <p>
+                    Notice that each input field must have a <span class="red-text">name</span> attribute to be
+                    submitted.
+                </p>
+                <p>
+                    If the <span class="red-text">name</span> attribute is omitted, the value of the input field will not be sent at all.
+                </p>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4 pt-1">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3  mt-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-3 mx-3">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -71,17 +71,8 @@
         },
         {
         "text": "HTML Tables",
-        "link": "/html/html-tables",
-        "subtopics": [
-            {
-              "text": "Table Border",
-              "link": "/html/html-tables/table-border"
-            },
-            {
-              "text": "Table Sizes",
-              "link": "/html/html-tables/table-sizes"
-            }
-        ]
+        "link": "/html/html-tables"
+        
         },
         {
         "text": "HTML Lists",
@@ -138,6 +129,34 @@
         {
         "text": "HTML Style Guide",
         "link": "/html/html-style-guide"
+        },
+        {
+        "text": "HTML Entities",
+        "link": "/html/html-entities"
+        },
+        {
+        "text": "HTML Symbols",
+        "link": "/html/html-symbols"
+        },
+        {
+        "text": "HTML Charset",
+        "link": "/html/html-charset"
+        },
+        {
+        "text": "HTML URL Encode",
+        "link": "/html/html-url-encode"
+        },
+        {
+        "text": "HTML Vs XHTML",
+        "link": "/html/html-xhtml"
+        },
+        {
+        "text": "HTML Forms",
+        "link": "/html/html-forms"
+        },
+        {
+        "text": "HTML Forms Attribute",
+        "link": "/html/html-forms-attribute"
         }
     ]
 }

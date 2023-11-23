@@ -38,9 +38,6 @@
   .red-text{
     color: red;
   }
-  .quotations p,p,li{
+  .quotations p,p{
     font-size: 18px;
-  }
-  .note{
-    background-color: #ffffcc;
   }

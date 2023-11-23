@@ -37,6 +37,12 @@ import { HtmlComputercodeComponent } from './html-computercode/html-computercode
 import { HtmlSemanticsComponent } from './html-semantics/html-semantics.component';
 import { HtmlStyleGuideComponent } from './html-style-guide/html-style-guide.component';
 import { HtmlEntitiesComponent } from './html-entities/html-entities.component';
+import { HtmlSymbolsComponent } from './html-symbols/html-symbols.component';
+import { HtmlCharsetComponent } from './html-charset/html-charset.component';
+import { HtmlUrlEncodeComponent } from './html-url-encode/html-url-encode.component';
+import { HtmlXhtmlComponent } from './html-xhtml/html-xhtml.component';
+import { HtmlFormsComponent } from './html-forms/html-forms.component';
+import { HtmlFormsAttributeComponent } from './html-forms-attribute/html-forms-attribute.component';
 
 
 @NgModule({
@@ -74,6 +80,12 @@ import { HtmlEntitiesComponent } from './html-entities/html-entities.component';
     HtmlSemanticsComponent,
     HtmlStyleGuideComponent,
     HtmlEntitiesComponent,
+    HtmlSymbolsComponent,
+    HtmlCharsetComponent,
+    HtmlUrlEncodeComponent,
+    HtmlXhtmlComponent,
+    HtmlFormsComponent,
+    HtmlFormsAttributeComponent,
   ],
   imports: [
     CommonModule,

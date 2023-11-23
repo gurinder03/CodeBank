@@ -5,11 +5,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 import * as jsonData from '../../core/jsonData/htmlSidebar.json';
 
 @Component({
-  selector: 'app-html-entities',
-  templateUrl: './html-entities.component.html',
-  styleUrls: ['./html-entities.component.css']
+  selector: 'app-html-symbols',
+  templateUrl: './html-symbols.component.html',
+  styleUrls: ['./html-symbols.component.css']
 })
-export class HtmlEntitiesComponent {
+export class HtmlSymbolsComponent {
 
   @ViewChild('codeEditor') codeEditor!: ElementRef;
   @ViewChild('outputContainer') outputContainer!: ElementRef;
