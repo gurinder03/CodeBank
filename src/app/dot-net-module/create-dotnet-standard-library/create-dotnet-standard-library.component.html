@@ -1,0 +1,134 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <div class="garbage p-2 pt-0 ">
+                <h1>.NET Core - Create .NET Standard Library</h1>
+                <p>
+                    A class library defines the types and methods that can be called from any application.
+                </p>
+            </div>
+            <div class="note p-3 ">
+                <ul>
+                    <li>
+                        A class library developed using .NET Core supports the .NET Standard Library, which allows your
+                        library to be called by any .NET platform that supports that version of the .NET Standard
+                        Library.
+                    </li>
+                    <li>
+                        When you finish your class library, you can decide whether you want to distribute it as a
+                        third-party component, or whether you want to include it as a component that is bundled with one
+                        or more applications.
+                    </li>
+                </ul>
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    Let us start by adding a class library project in our Console application; right-click on the
+                    <strong>src</strong>
+                    folder in Solution Explorer and select <strong>Add → New Project…</strong>
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/new_project.jpg">
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    In the <strong>Add New Project</strong> dialog box, choose the .NET Core node, then choose the Class
+                    Library (.NET Core) project template.
+                </p>
+                <p>
+                    In the Name text box, enter "UtilityLibrary" as the name of the project, as the following figure
+                    shows.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/utilitylibrary.jpg">
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    Click OK to create the class library project. Once the project is created, let us add a new class.
+                    Right-click on <strong>project</strong> in Solution Explorer and select <strong>Add →
+                        Class...</strong>
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/class.jpg">
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    Select class in the middle pane and enter StringLib.cs in the name and field and then click Add.
+                    Once the class is added, then replace the following code in StringLib.cs file.
+                </p>
+            </div>
+            <div class="note p-3 ">
+                <pre>
+
+                </pre>
+            </div>
+            <br>
+            <div class="note p-3 ">
+                <ul>
+                    <li>
+                        The class library, <strong>UtilityLibrary.StringLib,</strong> contains some methods like,
+                        <strong>StartsWithUpper, StartsWithLower, and StartsWithNumber </strong> which returns a Boolean
+                        value that indicates whether the
+                        current string instance begins with an uppercase, lowercase and number respectively.
+                    </li>
+                    <li>
+                        In .NET Core, the Char.IsUpper method returns true if a character is in uppercase, the
+                        Char.IsLower method returns true if a character is in lowercase, and similarly the Char.IsNumber
+                        method returns true if a character is a numeric.
+                    </li>
+                    <li>
+                        On the menu bar, choose Build, Build Solution. The project should compile without error.
+                    </li>
+                    <li>
+                        Our .NET Core console project doesn't have access to our class library.
+                    </li>
+                    <li>
+                        Now to consume this class library we need to add reference of this class library in our console
+                        project.
+                    </li>
+                </ul>
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    To do so, expand FirstApp and right-click on References and select <strong>Add Reference…</strong>
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/firstapp.jpg">
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    In the Reference Manager dialog box, select UtilityLibrary, our class library project, and then
+                    click OK.
+                </p>
+                <p>
+                    Let us now open the Program.cs file of the console project and replace all of the code with the
+                    following code.
+                </p>
+            </div>
+            <div class="note p-3 ">
+                <pre>
+
+                </pre>
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    Let us now run your application and you will see the following output.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/application.jpg">
+            </div>
+        </div>
+    </div>
+</div>

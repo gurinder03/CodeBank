@@ -1,1 +1,145 @@
-<p>dot-net-core-metapackage works!</p>
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="garbage p-2 pt-0 ">
+                <h1>.NET Core - Metapackage</h1>
+                <p>In this chapter, we will discuss the references between our Console app and our UWP app. If you look
+                    at the References in Solution Explorer of your Console application, you will see the .NETCoreApp as
+                    shown below.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/console_application.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>.NETCoreApp is a new framework that targeted .NET Core application. Now if you look under the
+                    References of UWP application, it will look a bit different as shown below.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/uwp_application.jpg">
+            </div>
+            <div class="note mt-3 p-3">
+                <ul>
+                    <li>The main reason for this is because here in UWP we have the *.csproj, so we are back to the old
+                        style of references and we can target only one framework with this project type.
+                    </li>
+                    <li>
+                        The references are similar though. You can now see that in UWP application, the
+                        Miscrosoft.NETCore.UniversalWindowsPlatform NuGet Package reference is similar to the
+                        Microsoft.NETCore.App NuGet reference in Console application.
+                    </li>
+                    <li>
+                        Both Miscrosoft.NETCore.UniversalWindowsPlatform and Microsoft.NETCore.App are meta-package
+                        which means that they are composed of other packages.
+                    </li>
+                    <li>
+                        In Console application, we can drill in and see other packages inside Microsoft.NETCore.App, but
+                        we can’t do the same Miscrosoft.NETCore.UniversalWindowsPlatform in Solution Explorer.
+                    </li>
+                    <li>
+                        However, we can use another tool, the NuGet Package Explorer to look at this. Let us now open
+                        this url in the browser −
+
+                        <a href="https://npe.codeplex.com/downloads/get/clickOnce/NuGetPackageExplorer.application"
+                            class="red-text">https://npe.codeplex.com/downloads/get/clickOnce/NuGetPackageExplorer.application
+                        </a> <br>
+                        and you will see a small utility downloading.
+                    </li>
+                    <li>
+                        Once downloading completes, then double-click on that file.
+                    </li>
+                </ul>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/open_file.jpg">
+            </div>
+            <div class="note mt-3 p-3">
+                <ul>
+                    <li>
+                        Click <b>Install</b> to start installation on the NuGet Package Explorer.
+                    </li>
+                </ul>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/nuget_package_explorer.jpg">
+            </div>
+            <div class="note mt-3 p-3">
+                <ul>
+                    <li>
+                        When the installation is finished, you will see the following dialog box.
+                    </li>
+                </ul>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/finished.jpg">
+            </div>
+            <div class="note mt-3 p-3">
+                <ul>
+                    <li>
+                        Let us now click on the <b>Open a package from online feed</b> option.
+                    </li>
+                </ul>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/online_feed.jpg">
+            </div>
+            <div class="note mt-3 p-3">
+                <ul>
+                    <li>
+                        By default it will search for the nuget.org feed. Let us now search for
+                        Microsoft.NETCore.UniversalWindowsPlatform in the search box and you will see 1 result as shown
+                        below.
+                    </li>
+                </ul>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/nuget_org_feed.jpg">
+            </div>
+            <div class="note mt-3 p-3">
+                <ul>
+                    <li>
+                        Click the <b>open</b> link and it will open the top-level dependencies of this metapackage.
+                    </li>
+                </ul>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/open_link.jpg">
+            </div>
+            <div class="note mt-3 p-3">
+                <ul>
+                    <li>
+                        Let us now open the .NETCore meta package for the .NETCore application and meta-package for UWP
+                        application side by side.
+                    </li>
+                </ul>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/meta_package.jpg">
+            </div>
+            <div class="note mt-3 p-3">
+                <ul>
+                    <li>
+                        You can now see that each meta-package is composed of different set of packages.
+                    </li>
+                    <li>
+                        .NET Core is a subset of the classes available in .NET Framework at least at this point of time,
+                        but is growing and will be as per the base classes of .NET Framework.
+                    </li>
+                    <li>
+                        The UWP is based on .NET Core, it is a superset of the APIs available for Windows Store
+                        development.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

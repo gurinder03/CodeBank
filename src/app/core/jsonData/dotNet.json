@@ -44,8 +44,23 @@
         {
         "text": ".Net Core Meta Package",
         "link": "/dotnet/dot-net-core-metapackage"
+        },
+        {
+        "text": "Windows Runtime & Extension SDKs",
+        "link": "/dotnet/window-runtime-ext-sdk"
+        },
+        {
+        "text": "Create .Net Standard Library",
+        "link": "/dotnet/create-dotnet-standard-library"
+        },
+        {
+        "text": ".Net Core Portable Class Library",
+        "link": "/dotnet/dot-net-core-portable-class-library"
+        },
+        {
+        "text": "Adding Reference to Library",
+        "link": "/dotnet/dot-net-core-adding-reference-to-library"
         }
-
 
 
     ]

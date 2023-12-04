@@ -1,0 +1,108 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <div class="garbage p-2 pt-0 ">
+                <h1>Windows Runtime and Extension SDKs</h1>
+                <p>Windows Runtime components are self-contained objects that you can instantiate and use from any
+                    language, including C#, Visual Basic, JavaScript, and C++. In addition to the .NET Core meta-package
+                    we saw in the previous chapter, UWP app also has a reference by default to a Universal Windows SDK.
+                </p>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/universal_windows_sdk.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    Universal Windows is the reference to Windows Runtime and it has been factored into a series of APIs
+                    contracts.
+                </p>
+                <p>
+                    The set of APIs within a device family is broken down into subdivisions known as API contracts. You
+                    can find a list of different API contracts here
+                    <a href="https://msdn.microsoft.com/en-us/library/windows/apps/dn706135.aspx">https://msdn.microsoft.com/en-us/library/windows/apps/dn706135.aspx
+                    </a>
+                </p>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/api.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    Most of those APIs inside windows runtime are factored into a single contract. Let us now search for
+                    the Universal keyword on the API Contracts page.
+                </p>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/api_contracts_page.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    You can see links to various APIs and you can also see the Universal family is so big that it has 12
+                    pages of documentation.
+                </p>
+                <p>
+                    You can also search for phone API contract on this page.
+                </p>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/phone_api.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    Let us now click on the <b>Windows.Phone.PhoneContract</b> and scroll down; you will now see the
+                    battery information of phone or the mobile device.
+                </p>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/battery_information.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    If you want to add this information on top of what you already have, then you should add the
+                    references manually. Let us now go to the Visual Studio and right-click on the References in
+                    Solution Explorer.
+                </p>
+                <p>
+                    Select <strong>Add References…</strong>
+                </p>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/add_references.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    You can now see the new reference category for Universal Windows; under this category there is Core
+                    which refers to the core Universal Windows API contracts
+                </p>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/api_contracts.jpg">
+            </div>
+            <div class="note p-3 mt-3">
+                <ul>
+                    <li>
+                        The Extensions allow us to extend the functionality and you will see different references
+                        Mobile, Desktop and other Extensions.
+                    </li>
+                    <li>
+                        There are different SKD extensions and you can add on top to get more APIs.
+                    </li>
+                    <li>
+                        You can also see different versions. So, make sure you get the latest version to get the updated
+                        APIs and then click OK.
+                    </li>
+                </ul>
+            </div>
+            <div class="console-img text-center mt-3">
+                <img src="./assets/images/updated_apis.jpg">
+            </div>
+        </div>
+    </div>
+</div>

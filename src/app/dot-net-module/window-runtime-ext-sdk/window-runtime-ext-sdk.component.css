@@ -44,9 +44,9 @@
   .collection{
     background-color:  antiquewhite;;
   }
-  .note{
-    background-color: #ffffcc;
-  }
   a{
     text-decoration: none;
+  }
+  .note{
+    background-color: #ffffcc;
   }

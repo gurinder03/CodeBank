@@ -14,6 +14,10 @@ import { DotNetCoreProjectFilesComponent } from './dot-net-core-project-files/do
 import { DotNetCorePackageReferencesComponent } from './dot-net-core-package-references/dot-net-core-package-references.component';
 import { DotNetCoreMsbuildComponent } from './dot-net-core-msbuild/dot-net-core-msbuild.component';
 import { DotNetCoreMetapackageComponent } from './dot-net-core-metapackage/dot-net-core-metapackage.component';
+import { WindowRuntimeExtSdkComponent } from './window-runtime-ext-sdk/window-runtime-ext-sdk.component';
+import { CreateDotnetStandardLibraryComponent } from './create-dotnet-standard-library/create-dotnet-standard-library.component';
+import { DotNetCorePortableClassLibraryComponent } from './dot-net-core-portable-class-library/dot-net-core-portable-class-library.component';
+import { DotNetCoreAddingReferenceToLibraryComponent } from './dot-net-core-adding-reference-to-library/dot-net-core-adding-reference-to-library.component';
 
 
 @NgModule({
@@ -28,7 +32,11 @@ import { DotNetCoreMetapackageComponent } from './dot-net-core-metapackage/dot-n
     DotNetCoreProjectFilesComponent,
     DotNetCorePackageReferencesComponent,
     DotNetCoreMsbuildComponent,
-    DotNetCoreMetapackageComponent
+    DotNetCoreMetapackageComponent,
+    WindowRuntimeExtSdkComponent,
+    CreateDotnetStandardLibraryComponent,
+    DotNetCorePortableClassLibraryComponent,
+    DotNetCoreAddingReferenceToLibraryComponent
   ],
   imports: [
     CommonModule,

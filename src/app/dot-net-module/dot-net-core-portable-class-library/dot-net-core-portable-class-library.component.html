@@ -1,0 +1,183 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="garbage p-2 pt-0 ">
+                <h1>.NET Core - Portable Class Library</h1>
+                <p>In this chapter, we will discuss what is PCL (Portable Class Library), and also why we need PCL. To
+                    understand this concept, let us open the class library project folder which we have created in the
+                    previous chapter.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/pcl.jpg">
+            </div>
+            <div class="garbage p-2 pt-0 ">
+                <p>In this folder, you can see that in addition to project.json and CS files we also have *.xproj file,
+                    and that is because Visual Studio setup .NET Core project type as *.xproj instead of *.csproj.
+                </p>
+                <p>
+                    As mentioned by Microsoft, *.xproj will be going away, but it is still here in preview 2 tooling. As
+                    we have covered that UWP application uses the *.csproj.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/tooling.jpg">
+            </div>
+            <div class="garbage p-2 pt-0 ">
+                <p>Now it is actually not feasible to get *.csproj to reference and *.xproj and that functionality is
+                    not going to be implemented because *.xproj will move out.
+                </p>
+                <p>
+                    So instead, we need a class library which can be shared between the console app and the UWP app and
+                    here comes PCL.
+                </p>
+            </div>
+            <div class="garbage p-2 pt-0 ">
+                <h2>What is PCL</h2>
+                <p>
+                    Let us now understand what PCL is −
+                </p>
+            </div>
+            <div class="note  p-3">
+                <ul>
+                    <li>
+                        The Portable Class Library project enables you to write and build managed assemblies that work
+                        on more than one .NET Framework platform.
+                    </li>
+                    <li>
+                        You can create classes that contain code you wish to share across many projects, such as shared
+                        business logic, and then reference those classes from different types of projects.
+                    </li>
+                    <li>
+                        It can also help you build cross-platform apps and libraries for Microsoft platforms quickly and
+                        easily.
+                    </li>
+                    <li>
+                        Portable class libraries can help you reduce the time and costs of developing and testing code.
+                    </li>
+                    <li>
+                        Use this project type to write and build portable .NET Framework assemblies, and then reference
+                        those assemblies from apps that target multiple platforms such as Windows and Windows Phone,
+                        etc.
+                    </li>
+                </ul>
+            </div>
+            <div class="garbage p-2 pt-0 ">
+                <p>
+                    Let us now remove the class library which we have created from the Solution Explorer. At the same
+                    time, delete it from the Solution folder and further add a new project item.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/remove.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    Select the <strong>Visual C# → Windows</strong> template in the left pane and select Class Library
+                    (Portable) in the middle pane.
+                </p>
+                <p>
+                    Enter StringLibrary in the name field and click OK to create this project.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/stringlibrary.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    Now we need to select the target frameworks to reference. Let us select Windows Universal and
+                    ASP.NET Core for a moment then we will retarget it. Click <strong>OK</strong>.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/retarget.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    You can see that it has created a new project in PCF format. Let us now right-click StringLibrary
+                    project in the Solution Explorer and select Properties.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/properties.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    Click on the Target .NET Platform Standard.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/target.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    Click Yes; it is now the same class library with one minor difference. The difference is that it can
+                    be used by UWP as well, because it contains *.csproj file instead of *.xproj.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/class_library.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    Let us now add a new class; for this, you need to right-click on project in Solution Explorer and
+                    select <strong>Add → Class...</strong>
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/add_new_class.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    Select class in the middle pane and enter <strong>StringLib.cs</strong> in the name field and then
+                    Click <strong>Add</strong>. Once
+                    the class is added, then replace the following code in StringLib.cs file.
+                </p>
+            </div>
+            <div class="note p-3">
+                <pre>
+
+                </pre>
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    Let us build this portable class library project and it should compile without error. Now we need to
+                    add reference of this portable class library in our console project. So, expand FirstApp and
+                    right-click on References and select <strong>Add Reference…</strong>
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/references.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    In the Reference Manager dialog box, select StringLibrary which is our portable class library
+                    project, and then click <strong>OK</strong>.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/library_project.jpg">
+            </div>
+            <div class="garbage p-2 pt-2 ">
+                <p>
+                    You can see that the StringLibrary reference is added to the console project and it can be seen in
+                    the project.json file as well.
+                </p>
+                <p>
+                    You can now run the application again and you will see the same output.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/run_application.jpg">
+            </div>
+        </div>
+    </div>
+</div>
