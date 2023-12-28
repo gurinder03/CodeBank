@@ -38,3 +38,10 @@
   .red-text{
     color: red;
   }
+  iframe{
+    width: 100%;
+  }
+
+  .easy-learning{
+    background: #D9EEE1;
+  }

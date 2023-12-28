@@ -1,0 +1,107 @@
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+
+            <div class="garbage p-2 pt-0 ">
+                <h1>.NET Core - Sharing Libraries</h1>
+                <p>In this chapter, we will discuss how to share your library as <strong>NuGet Package</strong> so that
+                    it can be
+                    consumed within another project. Creating a package starts with the code you want to package and
+                    share with others, either through the public nuget.org gallery or a private gallery within your
+                    organization. The package can also include additional files such as a <strong>readme</strong> that
+                    is displayed when
+                    the package is installed, and can include transformations to certain project files.
+                </p>
+                <p>
+                    Let us now consider a simple example in which we will create a NuGet package from our library. To do
+                    so, open the command prompt and go to the folder where the project.json file of your library project
+                    is located.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/example.jpg">
+            </div>
+            <div class="garbage p-2 pt-3">
+                <p>
+                    Let us now run the following command.
+                </p>
+            </div>
+            <div class="note mt-3 p-3 mb-3">
+                <p>
+                    dotnet help
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/command.jpg">
+            </div>
+            <div class="garbage p-2 pt-3">
+                <p>
+                    At the end, you can see different commands like new, restore and build, etc.
+                </p>
+                <p>
+                    The last command is pack; this will create a NuGet package. Let us now execute the following
+                    command.
+                </p>
+            </div>
+            <div class="note mt-3 p-3 mb-3">
+                <p>
+                    dotnet pack
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/execute.jpg">
+            </div>
+            <div class="garbage p-2 pt-3">
+                <p>
+                    You can now see that the NuGet packages are produced in the bin folder; let us open the bin\Debug
+                    folder.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/debug_folder.jpg">
+            </div>
+            <div class="garbage p-2 pt-3">
+                <p>
+                    Now the question is what is inside the NuGet packages, to see that we can use NuGet Package
+                    Explorer. Let us now open the NuGet Package Explorer.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/open_nuget.jpg">
+            </div>
+            <div class="garbage p-2 pt-3">
+                <p>
+                    Select the first option <strong>Open a local package.</strong>
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/first_option.jpg">
+            </div>
+            <div class="garbage p-2 pt-3">
+                <p>
+                    Select the <strong>StringLibrary.1.0.0.nupkg</strong> and click <Strong>Open</Strong>.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/click_ok.jpg">
+            </div>
+            <div class="garbage p-2 pt-3">
+                <p>
+                    You can see that in the Package contents section we have StringLibrary.dll only. In the Package
+                    metadata section, you will see a bit of information about this library like Id, Versions and all the
+                    of the dependencies.
+                </p>
+                <p>
+                    Let us now open the <strong>StringLibrary.1.0.0.symbols.nupkg.</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

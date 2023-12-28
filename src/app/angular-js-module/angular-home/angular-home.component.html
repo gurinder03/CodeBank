@@ -87,21 +87,31 @@
             </div>
             <div class="code-section mx-4 p-3 mb-4 mt-3" id="html-content">
                 <div class="code-section mx-4 p-3 mb-4 mt-3">
-                  <textarea #codeEditor [(ngModel)]="defaultHtml"></textarea>
+                    <textarea #codeEditor [(ngModel)]="defaultHtml"></textarea>
                 </div>
                 <div class="output-frame w-100 p-3 mx-3">
-                  <div #outputContainer></div>
+                    <div #outputContainer></div>
                 </div>
-              </div>
-              
-              <div class="try-yourself px-4 pb-4">
+            </div>
+
+            <div class="try-yourself px-4 pb-4">
                 <button type="button" class="home-btn" (click)="runCode()">
-                  Try it yourself
-                  <span class="right-arrow">
-                    <i class="fas fa-chevron-right fa-2x"></i>
-                  </span>
+                    Try it yourself
+                    <span class="right-arrow">
+                        <i class="fas fa-chevron-right fa-2x"></i>
+                    </span>
                 </button>
-              </div>
+            </div>
+            <div class="easy-learning p-4 mt-5">
+                <h2>Easy Learning with Video Tutorial</h2>
+                <p class="example-txt">With our video tutorial you can easily learn html:</p>
+                <div class="example-editor text-center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JJ9rC74EwKQ?si=3gRoe23ilEIkW4Wn"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </div>
 </div>

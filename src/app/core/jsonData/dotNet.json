@@ -18,6 +18,10 @@
         "link": "/dotnet/dot-net-numerics"
         },
         {
+        "text": ".Net Core Data Types",
+        "link": "/dotnet/dot-net-core-data-types"
+        },
+        {
         "text": ".Net Core Garbage Collection",
         "link": "/dotnet/dot-net-core-garbage-collection"
         },
@@ -60,9 +64,14 @@
         {
         "text": "Adding Reference to Library",
         "link": "/dotnet/dot-net-core-adding-reference-to-library"
+        },
+        {
+        "text": "Sharing .Net Core Libraries",
+        "link": "/dotnet/sharing-dot-net-core-libraries"
         }
+
 
 
     ]
 }
-  
+

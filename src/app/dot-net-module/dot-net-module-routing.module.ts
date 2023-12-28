@@ -15,6 +15,8 @@ import { WindowRuntimeExtSdkComponent } from './window-runtime-ext-sdk/window-ru
 import { CreateDotnetStandardLibraryComponent } from './create-dotnet-standard-library/create-dotnet-standard-library.component';
 import { DotNetCorePortableClassLibraryComponent } from './dot-net-core-portable-class-library/dot-net-core-portable-class-library.component';
 import { DotNetCoreAddingReferenceToLibraryComponent } from './dot-net-core-adding-reference-to-library/dot-net-core-adding-reference-to-library.component';
+import { SharingDotNetCoreLibrariesComponent } from './sharing-dot-net-core-libraries/sharing-dot-net-core-libraries.component';
+import { DotNetCoreDataTypesComponent } from './dot-net-core-data-types/dot-net-core-data-types.component';
 
 const routes: Routes = [
   {
@@ -89,6 +91,14 @@ const routes: Routes = [
       {
         path: 'dot-net-core-adding-reference-to-library',
         component:DotNetCoreAddingReferenceToLibraryComponent
+      },
+      {
+        path: 'sharing-dot-net-core-libraries',
+        component:SharingDotNetCoreLibrariesComponent
+      },
+      {
+        path: 'dot-net-core-data-types',
+        component:DotNetCoreDataTypesComponent
       }
     ],
   },

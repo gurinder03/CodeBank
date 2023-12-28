@@ -50,6 +50,10 @@ const routes: Routes = [
     loadChildren: () => import('./angular-js-module/angular-js-module.module').then(m => m.AngularJsModuleModule),
   },
   {
+    path: 'css',
+    loadChildren: () => import('./css-module/css-module.module').then(m => m.CssModuleModule),
+  },
+  {
     path: 'formatting',
     component: CplusComponent,
   },

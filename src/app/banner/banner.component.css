@@ -1,6 +1,6 @@
  .main-background-banner{
     position: relative;
-    background-image: url(../../assets/images/main-banner.jpg);
+    background-image: url(.assets/images/main-banner.jpg);
     background-repeat:no-repeat;
     min-height: 100vh;
     background-position:bottom;

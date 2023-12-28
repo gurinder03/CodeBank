@@ -1,0 +1,57 @@
+{
+    "title": "CSS Tutorial",
+    "sidebarData": [
+        {
+            "text": "CSS Home",
+            "link": "/css/css-home"
+        },
+        {
+            "text": "CSS Introduction",
+            "link": "/css/css-intro"
+        },
+        {
+            "text": "CSS Syntax",
+            "link": "/css/css-syntax"
+        },
+        {
+            "text": "CSS Selectors",
+            "link": "/css/css-selectors"
+        },
+        {
+            "text": "CSS How To",
+            "link": "/css/css-how-to"
+        },
+        {
+            "text": "CSS Comments",
+            "link": "/css/css-comments"
+        },
+        {
+            "text": "CSS Colors",
+            "link": "/css/css-colors"
+        },
+        {
+            "text": "CSS Backgrounds",
+            "link": "/css/css-backgrounds"
+        },
+        {
+            "text": "CSS Borders",
+            "link": "/css/css-borders"
+        },
+        {
+            "text": "CSS Margins",
+            "link": "/css/css-margins"
+        },
+        {
+            "text": "CSS Padding",
+            "link": "/css/css-padding"
+        },
+        {
+            "text": "CSS Height/Width",
+            "link": "/css/css-height-width"
+        },
+        {
+            "text": "CSS Box Model",
+            "link": "/css/css-box-model"
+        }
+    ]
+}

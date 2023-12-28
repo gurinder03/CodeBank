@@ -1,1 +1,102 @@
-<p>dot-net-core-adding-reference-to-library works!</p>
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+                            class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <div class="garbage p-2 pt-0 ">
+                <h1>.NET Core - Adding References to Library</h1>
+                <p>
+                    In this chapter, we will discuss how to add references to your library. Adding references to library
+                    is like adding references to your other projects, like console project and UWP project.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/uwp_project.jpg">
+            </div>
+            <div class="garbage p-2 pt-0 ">
+                <p>
+                    You can now see that the PCL project has some references by default. You can also add other
+                    references as per your application need.
+                </p>
+                <p>
+                    In the PCL library, you can also see the project.json file.
+                </p>
+            </div>
+            <div class="note p-3">
+                <pre>
+
+                </pre>
+            </div>
+            <div class="garbage p-2 pt-0 ">
+                <p>
+                    One method of adding references to your library is by typing it directly in the project.json file.
+                    As you can see that we have added some references under the dependencies section as shown in the
+                    following code.
+                </p>
+            </div>
+            <div class="note p-3">
+                <pre>
+
+                </pre>
+            </div>
+            <div class="garbage p-2 pt-0 ">
+                <p>
+                    Let us now save this file and you will see that references are added to your library now.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/references_added.jpg">
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    The other method of adding references to your library is the NuGet Package Manager. Let us now
+                    right-click on the <strong>StringLibrary (Portable)</strong> project and select <strong>Mange NuGet
+                        Packages…</strong>
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/portable.jpg">
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    On the Browse tab, you can search any NuGet package; let us say we want to add
+                    “System.Runtime.Serialization.Primitives” package.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/browse_tab.jpg">
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    Click the Install button, which will display the following screen.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/press_install.jpg">
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    Now, click the OK button.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/button.jpg">
+            </div>
+            <div class="garbage p-2 pt-3 ">
+                <p>
+                    Finally, click the <strong>I Accept</strong> button to start installation of this NuGet package. Once installation is
+                    finished, then you will see that the “System.Runtime.Serialization.Primitives” NuGet package is
+                    added to your library.
+                </p>
+            </div>
+            <div class="console-img text-center">
+                <img src="./assets/images/installation.jpg">
+            </div>
+        </div>
+    </div>
+</div>
