@@ -30,7 +30,7 @@ const routes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'angular', component: AngularComponent },
   { path: 'dot', component: DotnetComponent },
-  { path: 'javascript', component: JavascriptComponent },
+  // { path: 'javascript', component: JavascriptComponent },
   { path: 'span', component: JqueryComponent },
   { path: 'elements', component: ReactComponent },
   { path: 'home', component: HomeComponent},
@@ -52,6 +52,10 @@ const routes: Routes = [
   {
     path: 'css',
     loadChildren: () => import('./css-module/css-module.module').then(m => m.CssModuleModule),
+  },
+  {
+    path: 'javascript',
+    loadChildren: () => import('./javascript-module/javascript.module').then(m => m.JavascriptModule),
   },
   {
     path: 'formatting',

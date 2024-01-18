@@ -1,0 +1,13 @@
+{
+    "title": "Javascript Tutorial",
+    "sidebarData": [
+        {
+        "text": "Javascript Home",
+        "link": "/javascript/javascript-home"
+        },
+        {
+        "text": "Javascript Introduction",
+        "link": "/javascript/javascript-intro"
+        }
+    ]
+}

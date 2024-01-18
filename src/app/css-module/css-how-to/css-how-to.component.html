@@ -1,1 +1,120 @@
-<p>css-how-to works!</p>
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn" [routerLink]="['/css/css-selectors']"> <span
+                        class="left-arrow"><i class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn " [routerLink]="['/css/css-comments']">Next <span
+                        class="right-arrow"><i class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <div class="css p-2 pt-0 ">
+                <h1>How To Add CSS</h1>
+                <p>When a browser reads a style sheet, it will format the HTML document according to the information in
+                    the style sheet.</p>
+            </div>
+            <div class="css p-2">
+                <h2>Three Ways to Insert CSS</h2>
+                <p>
+                    There are three ways of inserting a style sheet:
+                </p>
+                <ul>
+                    <li>External CSS</li>
+                    <li>Internal CSS</li>
+                    <li>Inline CSS</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="css p-2">
+                <h2>External CSS</h2>
+                <p>
+                    With an external style sheet, you can change the look of an entire website by changing just one
+                    file!
+                </p>
+                <p>
+                    Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt;
+                    element, inside the head section.
+                </p>
+                <p>
+                    An external style sheet can be written in any text editor, and must be saved with a .css extension.
+                </p>
+                <p>
+                    The external .css file should not contain any HTML tags.
+                </p>
+
+            </div>
+            <hr>
+            <div class="note p-4">
+                <p>
+                    <strong>Note: </strong>Do not add a space between the property value (20) and the unit (px):
+                </p>
+                <p>
+                    Incorrect (space): <span class="red-text">margin-left: 20px;</span>
+                </p>
+                <p>
+                    Correct (no space): <span class="red-text">margin-left: 20px;</span>
+                </p>
+            </div>
+            <hr>
+            <div class="css p-2">
+                <h2>Internal CSS </h2>
+                <p>An internal style sheet may be used if one single HTML page has a unique style.</p>
+                <p>The internal style is defined inside the &lt;style&gt; element, inside the head section.</p>
+            </div>
+            <hr>
+            <div class="css p-2">
+                <h2>Inline CSS </h2>
+                <p>An inline style may be used to apply a unique style for a single element.</p>
+                <p>To use inline styles, add the style attribute to the relevant element. The style attribute can
+                    contain any CSS property.</p>
+            </div>
+            <hr>
+            <div class="example-editor bg-light p-4">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3 mb-4 p-3 mx-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-2">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="note p-4">
+                <p>
+                    <strong>Tip:</strong> An inline style loses many of the advantages of a style sheet (by mixing
+                    content with presentation). Use this method sparingly.
+                </p>
+            </div>
+            <hr>
+            <div class="css p-2">
+                <h2>Multiple Style Sheets </h2>
+                <p>If some properties have been defined for the same selector (element) in different style sheets, the
+                    value from the last read style sheet will be used. </p>
+                <p>To use inline styles, add the style attribute to the relevant element. The style attribute can
+                    contain any CSS property.</p>
+            </div>
+            <hr>
+            <div class="css p-2">
+                <h2>Cascading Order</h2>
+                <p>What style will be used when there is more than one style specified for an HTML element?</p>
+                <p>All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules,
+                    where number one has the highest priority:</p>
+                <ol>
+                    <li>Inline style (inside an HTML element)</li>
+                    <li>External and internal style sheets (in the head section)</li>
+                    <li>Browser default</li>
+                </ol>
+                <p>So, an inline style has the highest priority, and will override external and internal styles and
+                    browser defaults.</p>
+            </div>
+        </div>
+    </div>
+</div>

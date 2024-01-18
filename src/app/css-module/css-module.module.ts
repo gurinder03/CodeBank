@@ -16,6 +16,9 @@ import { CssMarginsComponent } from './css-margins/css-margins.component';
 import { CssPaddingComponent } from './css-padding/css-padding.component';
 import { CssHeightWidthComponent } from './css-height-width/css-height-width.component';
 import { CssBoxModelComponent } from './css-box-model/css-box-model.component';
+import { CssOutlineComponent } from './css-outline/css-outline.component';
+import { CssTextComponent } from './css-text/css-text.component';
+import { CssFontsComponent } from './css-fonts/css-fonts.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { CssBoxModelComponent } from './css-box-model/css-box-model.component';
     CssMarginsComponent,
     CssPaddingComponent,
     CssHeightWidthComponent,
-    CssBoxModelComponent
+    CssBoxModelComponent,
+    CssOutlineComponent,
+    CssTextComponent,
+    CssFontsComponent
   ],
   imports: [
     CommonModule,

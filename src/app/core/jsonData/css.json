@@ -52,6 +52,18 @@
         {
             "text": "CSS Box Model",
             "link": "/css/css-box-model"
+        },
+        {
+            "text": "CSS Outline",
+            "link": "/css/css-outline"
+        },
+        {
+            "text": "CSS Text",
+            "link": "/css/css-text"
+        },
+        {
+            "text": "CSS Fonts",
+            "link": "/css/css-fonts"
         }
     ]
 }

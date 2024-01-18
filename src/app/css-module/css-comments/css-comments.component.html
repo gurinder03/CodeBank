@@ -1,1 +1,53 @@
-<p>css-comments works!</p>
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn" [routerLink]="['/css/css-how-to']"> <span
+                        class="left-arrow"><i class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn " [routerLink]="['/css/css-css-colors']">Next <span
+                        class="right-arrow"><i class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <div class="css p-2 pt-0 ">
+                <h1>CSS Comments</h1>
+                <p>CSS comments are not displayed in the browser, but they can help document your source code.</p>
+            </div>
+            <div class="css p-2">
+                <h2>CSS Comments</h2>
+                <p>
+                    Comments are used to explain the code, and may help when you edit the source code at a later date.
+                </p>
+                <p>
+                    Comments are ignored by browsers.
+                </p>
+                <p>
+                    A CSS comment is placed inside the <span class="red-text">&lt;style&gt;</span> element, and starts with <span class="red-text">/*</span> and ends with <span class="red-text">*/</span>.
+                </p>
+            </div>
+            <hr>
+            <div class="css p-2">
+                <h2>HTML and CSS Comments</h2>
+                <p>
+                    From the HTML tutorial, you learned that you can add comments to your HTML source by using the <span class="red-text">&lt;!--...--&gt;</span> syntax.
+                </p>
+            </div>
+            <div class="example-editor bg-light p-4">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3 mb-4 p-3 mx-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-2">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

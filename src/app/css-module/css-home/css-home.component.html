@@ -2,17 +2,30 @@
     <div class="main-container">
         <app-sidebar [sidebarData]="sidebar"></app-sidebar>
         <div class="content mb-5 p-4">
-            <div class="home-next d-flex justify-content-between p-3">
-                <button type="button" class="home-btn"> <span class="left-arrow"><i
-                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
-                <button type="button" class="next-btn ">Next <span class="right-arrow"><i
+            <div class="home-next d-flex align-items-end flex-column p-3">
+                <!-- <button type="button" class="home-btn"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Home</button> -->
+                <button type="button" class="next-btn" [routerLink]="['/css/css-intro']">Next <span class="right-arrow"><i
                             class="fas fa-chevron-right fa-2x"></i></span></button>
             </div>
             <div class="css p-2 pt-0 ">
                 <h1>CSS Tutorial</h1>
-                <p>CSS is the language we use to style an HTML document.</p>
-                <p>CSS describes how HTML elements should be displayed.</p>
-                <p>This tutorial will teach you CSS from basic to advanced.</p>
+                <div class="definition p-4">
+                    <p>CSS is the language we use to style an HTML document.</p>
+                    <p>CSS describes how HTML elements should be displayed.</p>
+                    <p>This tutorial will teach you CSS from basic to advanced.</p>
+                </div>
+            </div>
+            <div class="css p-4">
+                <h2>Examples in Each Chapter</h2>
+                <p>This CSS tutorial contains hundreds of CSS examples.</p>
+                <p>With our online editor, you can edit the CSS, and click on a button to view the result.</p>
+            </div>
+            <div class="css p-4">
+                <h2>Use the Menu</h2>
+                <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
+                <p>If you have a large screen, the menu will always be present on the left.</p>
+                <p>If you have a small screen, open the menu by clicking the top menu sign ☰.</p>
             </div>
     </div>
 </div>

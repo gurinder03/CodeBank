@@ -1,1 +1,74 @@
-<p>css-syntax works!</p>
+<div class="wrapper">
+    <div class="main-container">
+        <app-sidebar [sidebarData]="sidebar"></app-sidebar>
+        <div class="content mb-5 p-4">
+            <div class="home-next d-flex justify-content-between p-3">
+                <button type="button" class="home-btn" [routerLink]="['/css/css-intro']"> <span class="left-arrow"><i
+                            class="fas fa-chevron-left fa-2x"></i></span>Privious</button>
+                <button type="button" class="next-btn " [routerLink]="['/css/css-selectors']">Next <span
+                        class="right-arrow"><i class="fas fa-chevron-right fa-2x"></i></span></button>
+            </div>
+            <div class="css p-2 pt-0 ">
+                <h1>CSS Syntax</h1>
+                <p>A CSS rule consists of a selector and a declaration block.</p>
+            </div>
+            <div class="css p-2">
+                <h2>CSS Syntax</h2>
+                <div class="syntax-image text-center">
+                    <img src="./assets/images/orange1.png">
+                </div>
+                <p>
+                    The selector points to the HTML element you want to style.
+                </p>
+                <p>
+                    The declaration block contains one or more declarations separated by semicolons.
+                </p>
+                <p>
+                    Each declaration includes a CSS property name and a value, separated by a colon.
+                </p>
+                <p>
+                    Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by
+                    curly braces.
+                </p>
+            </div>
+            <div class="example-editor bg-light p-4">
+                <h2 class="p-3 pb-0">Example</h2>
+                <div class="code-section mx-4 p-3 mb-4 p-3 mx-3">
+                    <textarea #codeEditor></textarea>
+                </div>
+                <div class="output-frame w-100 p-2">
+                    <div #outputContainer></div>
+                </div>
+                <div class="try-yourself px-4  pb-4">
+                    <button type="button" class="home-btn" (click)="runCode()">
+                        Try it yourself
+                        <span class="right-arrow">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="example-explained px-4">
+                <h2>Example Explained</h2>
+                <ul>
+                    <li><span class="red-text">p</span> is a selector in CSS (it points to the HTML element you want to
+                        style: &lt;p&gt;).
+                    </li>
+                    <li>
+                        <span class="red-text">Color</span> is a property, and <span class="red-text">red</span> is the
+                        property value
+                    </li>
+                    <li>
+                        <span class="red-text">text-align</span> is a property, and <span class="red-text">center</span>
+                        is the property value
+                    </li>
+                </ul>
+            </div>
+            <div class="note p-3">
+                <p>
+                    You will learn much more about CSS selectors and CSS properties in the next chapters!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
