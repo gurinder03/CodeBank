@@ -69,6 +69,27 @@ body{
     text-decoration: none;
   }
   /* css end */
+
+
+  /* tables css begin */
+  table{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #e7e7e7
+  }
+  tr{
+    height: 40px;
+  }
+  th,td{
+    border: 2px solid #e7e7e7;
+    padding: 4px;
+  }
+
+th{
+    text-align: center;
+    background-color: #ff6930;
+}
+  /* tables css end */
 @media only screen and (max-width:768px)
 {
     .card{

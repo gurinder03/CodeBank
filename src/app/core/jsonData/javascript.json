@@ -2,12 +2,64 @@
     "title": "Javascript Tutorial",
     "sidebarData": [
         {
-        "text": "Javascript Home",
-        "link": "/javascript/javascript-home"
+            "text": "Javascript Home",
+            "link": "/javascript/javascript-home"
         },
         {
-        "text": "Javascript Introduction",
-        "link": "/javascript/javascript-intro"
+            "text": "Javascript Introduction",
+            "link": "/javascript/javascript-intro"
+        },
+        {
+            "text": "JS Where To",
+            "link": "/javascript/js-where-to"
+        },
+        {
+            "text": "JavaScript Output",
+            "link": "/javascript/javaScript-output"
+        },
+        {
+            "text": "JavaScript Statements",
+            "link": "/javascript/javaScript-statements"
+        },
+        {
+            "text": "JavaScript Syntax",
+            "link": "/javascript/js-syntax"
+        },
+        {
+            "text": "JavaScript Comments",
+            "link": "/javascript/js-comments"
+        },
+        {
+            "text": "JavaScript Variables",
+            "link": "/javascript/js-variables"
+        },
+        {
+            "text": "JavaScript Let",
+            "link": "/javascript/js-let"
+        },
+        {
+            "text": "JavaScript Const",
+            "link": "/javascript/js-const"
+        },
+        {
+            "text": "JavaScript Operators",
+            "link": "/javascript/js-operators"
+        },
+        {
+            "text": "JavaScript Arithmetic",
+            "link": "/javascript/js-arithmetic"
+        },
+        {
+            "text": "JavaScript Assignment",
+            "link": "/javascript/js-assignment"
+        },
+        {
+            "text": "JavaScript Data Types",
+            "link": "/javascript/js-data-types"
+        },
+        {
+            "text": "JavaScript Functions",
+            "link": "/javascript/js-functions"
         }
     ]
 }

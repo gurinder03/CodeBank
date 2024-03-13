@@ -1,0 +1,30 @@
+.black{
+    background-color: #000;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.aquamarine{
+    background-color: Aquamarine;
+}
+.l-green{
+    background-color: #00FF00;
+}
+.yellow{
+    background-color: #FFFF00;
+}
+.purple{
+    background-color: #FF00FF;
+}
+.grey{
+    background-color: #C0C0C0;
+}
+td{
+    text-align: center;
+}
